@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Alliswell.iml" filepath="$PROJECT_DIR$/.idea/Alliswell.iml" />
+      <module fileurl="file://$PROJECT_DIR$/E-Mall/e-mall.iml" filepath="$PROJECT_DIR$/E-Mall/e-mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaDemo/javaDemo.iml" filepath="$PROJECT_DIR$/JavaDemo/javaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PatternDemo/patternDemo.iml" filepath="$PROJECT_DIR$/PatternDemo/patternDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebDemo/webDemo.iml" filepath="$PROJECT_DIR$/WebDemo/webDemo.iml" />
+    </modules>
+  </component>
+</project>
