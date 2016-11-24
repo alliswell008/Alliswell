@@ -53,7 +53,7 @@ public class SimpleFactoryCalculator {
         int operationB = s.nextInt();
         int opRulst = 0;
 
-        Operation op = OperationFactory.createOperate(operation);
+        Operation op = OperationSimpleFactory.createOperate(operation);
         op.setOperationA(operationA);
         op.setOperationB(operationB);
         opRulst = op.getResult();

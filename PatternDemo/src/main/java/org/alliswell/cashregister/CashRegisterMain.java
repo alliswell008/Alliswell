@@ -16,6 +16,8 @@ package org.alliswell.cashregister;
 
 import org.alliswell.cashregister.original.OriginalCashRegister;
 import org.alliswell.cashregister.simplefactory.SimpleFactoryCashRegister;
+import org.alliswell.cashregister.strategy.StrategyCashRegistor;
+import org.alliswell.cashregister.strategysimplefactory.StategySimpleFactoryCashRegister;
 
 /**
  * @author alliswell008
@@ -33,7 +35,7 @@ public class CashRegisterMain {
 
         OriginalCashRegister.acceptCash();
 		SimpleFactoryCashRegister.acceptCash();
-//        策略模式_收银软件.acceptCash();
-//        策略简单工厂_收银软件.acceptCash();
+        StrategyCashRegistor.acceptCash();
+        StategySimpleFactoryCashRegister.acceptCash();
     }
 }

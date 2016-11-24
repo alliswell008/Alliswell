@@ -2,127 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72722036-e639-469a-93fe-005402007e4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/abstractfactoryreflect/AbstractReflectFactoryCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/operation/Addition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/binarydemo/BinaryDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/CalculatorMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/ConvertSprice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/CovertEightPrice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/CovertFivePrice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/datatypedemo/DataTypeDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/operation/Division.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/filedemo/FileDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/target/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrmenu/controller/MenuController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrmenu/service/MenuService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrmenu/service/impl/MenuServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/operation/Multiplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/operation/Operation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/abstractfactoryreflect/OperationAbstractFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/abstractfactoryreflect/OperationConcreteFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactoryreflect/OperationReflectFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/OperationSimpleFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/original/OriginalCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/original/OriginalCashRegister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/OriginalImproveCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/OriginalPrice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/Promotion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/controller/PromotionController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/dao/PromotionDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/service/PromotionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/service/impl/PromotionServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/base/component/ProxyUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PublicUtils/PublicUtils.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/ReducePrice200to100.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/ReducePrice20to10.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/ReduceSprice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/base/utils/SQLAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/SimpleFactoryCashRegister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactoryreflect/SimpleReflectFactoryCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/SpecialSprice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/operation/Subtraction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PublicUtils/src/main/java/org/alliswell/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PublicUtils/src/test/java/alliswell/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebDemo/src/main/java/org/alliswell/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/unicodedemo/UnicodeDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/sql/core/mgruser/UserDao.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/model/dto/UserDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/base/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/service/impl/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/model/vo/UserVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/Valution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/ValutionSimpleFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareConvertVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/sql/core/mgrware/WareDao.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/dto/WareDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareReduceVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareSpecialVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/resources/a.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/resources/config/dev-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/resources/config/dev-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PublicUtils/src/main/resources/config/dev-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebDemo/src/main/resources/config/dev-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PublicUtils/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaDemo/src/main/resources/config/test-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/resources/config/test-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PublicUtils/src/main/resources/config/test-config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebDemo/src/main/resources/config/test-config.properties" />
-      <change type="DELETED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\compent\MyLog.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\controller\mgrmenu\MenuController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\controller\mgruser\UserController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\impl\mgrmenu\MenuServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\impl\mgruser\UserServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\mgrmenu\MenuService.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/bigdecimaldemo/BigDecimalDemo.java" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/bigdecimaldemo/BigDecimalDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/continuebreakdemo/ContinueBreakDemo.java" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/continuebreakdemo/ContinueBreakDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/datedemo/DateDemo.java" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/datedemo/DateDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/arraydemo/DyadicArrayDemo.java" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/arraydemo/DyadicArrayDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/exceptiondemo/ExceptionDemo.java" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/exceptiondemo/ExceptionDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/ifelsedemo/IfElseDemo.java" afterPath="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/ifelsedemo/IfElseDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/E-Mall/e-mall.iml" afterPath="$PROJECT_DIR$/E-Mall/e-mall.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/e_mall_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/e_mall_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/StategySimpleFactoryCashRegister.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/ValutionSimpleFactoryContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/ValutionContext.java" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/ValutionContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/javaDemo.iml" afterPath="$PROJECT_DIR$/JavaDemo/javaDemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatternDemo/patternDemo.iml" afterPath="$PROJECT_DIR$/PatternDemo/patternDemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/patternDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/patternDemo_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/E-Mall/pom.xml" afterPath="$PROJECT_DIR$/E-Mall/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaDemo/pom.xml" afterPath="$PROJECT_DIR$/JavaDemo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatternDemo/pom.xml" afterPath="$PROJECT_DIR$/PatternDemo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebDemo/pom.xml" afterPath="$PROJECT_DIR$/WebDemo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebDemo/webDemo.iml" afterPath="$PROJECT_DIR$/WebDemo/webDemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webDemo_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\controller\mgrorder\OrderController.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrorder/controller/OrderController.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\controller\mgrshopcart\ShopCartController.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrshopcart/controller/ShopCartController.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\controller\mgrware\WareController.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/controller/WareController.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\dao\mgrmenu\MenuDao.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrmenu/dao/MenuDao.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\dao\mgrorder\OrderDao.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrorder/dao/OrderDao.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\dao\mgrshopcart\ShopCartDao.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrshopcart/dao/ShopCartDao.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\dao\mgruser\UserDao.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/dao/UserDao.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\dao\mgrware\WareDao.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/dao/WareDao.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\impl\mgrorder\OrderServiceImpl.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrorder/service/impl/OrderServiceImpl.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\impl\mgrshopcart\ShopCartServiceImpl.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrshopcart/service/impl/ShopCartServiceImpl.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\impl\mgrware\WareServiceImpl.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/service/impl/WareServiceImpl.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\mgrorder\OrderService.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrorder/service/OrderService.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\mgrshopcart\ShopCartService.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrshopcart/service/ShopCartService.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\mgruser\UserService.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/service/UserService.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\service\mgrware\WareService.java" afterPath="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/service/WareService.java" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\sql\mgrmenu\MenuDao.sql" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/config/dev-config.properties" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\sql\mgrorder\OrderDao.sql" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/config/test-config.properties" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\sql\mgrshopcart\ShopCartDao.sql" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/sql/core/mgrmenu/MenuDao.sql" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\sql\mgruser\UserDao.sql" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/sql/core/mgrorder/OrderDao.sql" />
-      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\E-Mall\src\main\java\org\alliswell\core\sql\mgrware\WareDao.sql" afterPath="$PROJECT_DIR$/E-Mall/src/main/resources/sql/core/mgrshopcart/ShopCartDao.sql" />
+      <change type="MOVED" beforePath="D:\alliswell\server\gitserver\Alliswell\PatternDemo\src\main\java\org\alliswell\cashregister\strategy\StrategyCaseRegistor.java" afterPath="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/StrategyCashRegistor.java" />
     </list>
     <ignored path="Alliswell.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -152,11 +40,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CashRegisterMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CashRegisterMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="765">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.75714284" vertical-offset="107" max-vertical-offset="578">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleFactoryCalculator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="952">
+              <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalculatorMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/CalculatorMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1003">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -165,92 +77,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev-config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PublicUtils/src/main/resources/config/dev-config.properties">
+      <file leaf-file-name="OperationSimpleFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/OperationSimpleFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="799">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev-config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebDemo/src/main/resources/config/dev-config.properties">
+      <file leaf-file-name="StategySimpleFactoryCashRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/StategySimpleFactoryCashRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebDemo/src/main/java/org/alliswell/Test.java">
+      <file leaf-file-name="StrategyCashRegistor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/StrategyCashRegistor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValutionContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/ValutionContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="816">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Valution.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/Valution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="884">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PublicUtils/src/main/java/org/alliswell/Test.java">
+      <file leaf-file-name="Valution.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/valution/Valution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PublicUtils/src/test/java/alliswell/Test.java">
+      <file leaf-file-name="ValutionSimpleFactoryContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/ValutionSimpleFactoryContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2608089" vertical-offset="0" max-vertical-offset="717">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CovertEightPrice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/CovertEightPrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReducePrice200to100.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/ReducePrice200to100.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReducePrice20to10.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/ReducePrice20to10.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CovertFivePrice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/CovertFivePrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1088">
+              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -263,11 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaDemo/src/main/resources/a.txt" />
-        <option value="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/datatypedemo/datatypedemo.java" />
-        <option value="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/datatypedemo/DataTypeDemo.java" />
-        <option value="$PROJECT_DIR$/JavaDemo/src/main/java/org/alliswell/demo/binarydemo/BinaryDemo.java" />
-        <option value="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareSpecialVo.java" />
         <option value="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareReduceVo.java" />
         <option value="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareConvertVo.java" />
         <option value="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/ConvertSprice.java" />
@@ -290,7 +183,6 @@
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/originalimprove/OriginalImproveCalculator.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactoryreflect/SimpleFactoryReflectCalculator.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactoryreflect/OperationReflectFactory.java" />
-        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactoryreflect/SimpleReflectFactoryCalculator.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/CalculatorMain.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/abstractfactoryreflect/OperationAbstractFactory.java" />
@@ -308,12 +200,18 @@
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/CovertFivePrice.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/ReducePrice200to100.java" />
         <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/ReducePrice20to10.java" />
-        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java" />
         <option value="$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/Test.java" />
         <option value="$PROJECT_DIR$/PublicUtils/src/main/java/alliswell/Test.java" />
         <option value="$PROJECT_DIR$/PublicUtils/src/main/java/org/alliswell/Test.java" />
         <option value="$PROJECT_DIR$/PublicUtils/src/test/java/org/alliswell/demo/DataTypeDemo/Test.java" />
         <option value="$PROJECT_DIR$/PublicUtils/src/test/java/alliswell/Test.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/StrategyCaseRegistor.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/ValutionContext.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/StrategyCashRegistor.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/StategySimpleFactoryCashRegister.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/ValutionSimpleFactoryContext.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java" />
+        <option value="$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java" />
       </list>
     </option>
   </component>
@@ -359,7 +257,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -681,6 +579,280 @@
               <option name="myItemId" value="alliswell" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cashregister" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cashregister" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strategysimplefactory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cashregister" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strategy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cashregister" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strategy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="valution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simplefactory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="originalimprove" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alliswell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="originalimprove" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="operation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -743,146 +915,14 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alliswell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E-Mall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -893,7 +933,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
@@ -925,7 +965,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CalculatorMain">
+  <component name="RunManager" selected="Application.CashRegisterMain">
     <configuration default="false" name="BinaryDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -934,32 +974,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="org.alliswell.demo.binarydemo.BinaryDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="javaDemo" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
-    <configuration default="false" name="DataTypeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.alliswell.demo.datatypedemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.alliswell.demo.datatypedemo.DataTypeDemo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1038,6 +1052,32 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="org.alliswell.calculator.CalculatorMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="patternDemo" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CashRegisterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.alliswell.cashregister.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.alliswell.cashregister.CashRegisterMain" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1301,18 +1341,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.BinaryDemo" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DataTypeDemo" />
-      <item index="2" class="java.lang.String" itemvalue="Application.UnicodeDemo" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BigDecimalDemo" />
-      <item index="4" class="java.lang.String" itemvalue="Application.CalculatorMain" />
+      <item index="1" class="java.lang.String" itemvalue="Application.UnicodeDemo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.BigDecimalDemo" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CalculatorMain" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CashRegisterMain" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CalculatorMain" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BigDecimalDemo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.UnicodeDemo" />
-        <item index="3" class="java.lang.String" itemvalue="Application.BinaryDemo" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DataTypeDemo" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CashRegisterMain" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CalculatorMain" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BigDecimalDemo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.UnicodeDemo" />
+        <item index="4" class="java.lang.String" itemvalue="Application.BinaryDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -1328,11 +1368,12 @@
       <updated>1479738938410</updated>
       <workItem from="1479738939845" duration="416000" />
       <workItem from="1479778640829" duration="32985000" />
+      <workItem from="1480004232956" duration="987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33401000" />
+    <option name="totallyTimeSpent" value="34388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1340,21 +1381,20 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39919356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1363,9 +1403,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24903722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1394,59 +1435,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgruser/model/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/dto/WareDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareSpecialVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareReduceVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrware/model/vo/WareConvertVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/ReduceSprice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/E-Mall/src/main/java/org/alliswell/core/mgrpromotion/model/Promotion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,9 +1446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="31" column="50" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1464,7 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1472,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="413" max-vertical-offset="1190">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1488,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1496,20 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#669#670#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#778#779#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#844#845#0" expanded="false" />
-            <element signature="e#892#893#0" expanded="false" />
-            <element signature="e#932#933#0" expanded="false" />
-            <element signature="e#969#970#0" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1172#1173#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1517,7 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7306" max-vertical-offset="20281">
           <caret line="451" column="0" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1525,9 +1495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="752" max-vertical-offset="1224">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,7 +1502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="1615">
           <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,7 +1509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1551,9 +1516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1887">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1561,7 +1523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1569,7 +1530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1577,7 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1595,10 +1554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="e#622#623#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1606,10 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#631#632#0" expanded="false" />
-            <element signature="e#677#678#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1617,10 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1628,10 +1575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1639,18 +1582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#678#679#0" expanded="false" />
-            <element signature="e#711#712#0" expanded="false" />
-            <element signature="e#816#817#0" expanded="false" />
-            <element signature="e#860#861#0" expanded="false" />
-            <element signature="e#935#936#0" expanded="false" />
-            <element signature="e#968#969#0" expanded="false" />
-            <element signature="e#1073#1074#0" expanded="false" />
-            <element signature="e#1117#1118#0" expanded="false" />
-            <element signature="e#1146#1147#0" expanded="false" />
-            <element signature="e#1170#1171#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1672,16 +1603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="952">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactoryreflect/SimpleReflectFactoryCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
@@ -1697,7 +1618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1705,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
           <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1713,24 +1632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1768">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1088#1103#0" expanded="false" />
-            <element signature="e#1368#1383#0" expanded="false" />
-            <element signature="e#1641#1656#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/CalculatorMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1003">
-          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1738,14 +1639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="918">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/OperationSimpleFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="799">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1768,32 +1661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/Valution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8103208" vertical-offset="371" max-vertical-offset="1088">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding>
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#685#686#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#787#788#0" expanded="false" />
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#872#873#0" expanded="false" />
-            <element signature="e#946#947#0" expanded="false" />
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1041#1042#0" expanded="false" />
-            <element signature="e#1068#1069#0" expanded="false" />
-            <element signature="e#1153#1154#0" expanded="false" />
-            <element signature="e#1185#1186#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/OriginalPrice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1801,7 +1672,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1809,7 +1682,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1817,7 +1692,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1825,17 +1702,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="765">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1860,7 +1728,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1868,15 +1738,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PublicUtils/src/test/java/alliswell/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2608089" vertical-offset="0" max-vertical-offset="717">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/simplefactory/valution/Valution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="884">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/valution/Valution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/ValutionSimpleFactoryContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1088">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategysimplefactory/StategySimpleFactoryCashRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/ValutionContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="816">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/strategy/StrategyCashRegistor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/com/sun/corba/se/spi/orb/OperationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33262712" vertical-offset="421" max-vertical-offset="8092">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/OperationSimpleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="799">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/simplefactory/SimpleFactoryCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="952">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/calculator/CalculatorMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1003">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatternDemo/src/main/java/org/alliswell/cashregister/CashRegisterMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75714284" vertical-offset="107" max-vertical-offset="578">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
