@@ -1,1 +1,6 @@
 *.class
+PatternDemo/target/
+JavaDemo/target/
+E-Mall/target/
+PublicUtils/target/
+WebDemo/target/
