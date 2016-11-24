@@ -6,9 +6,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="e-mall" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.org.alliswell:PublicUtils:1.0-SNAPSHOT" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/E-Mall/target/E-Mall/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/E-Mall/target/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="e-mall/web/Web" />
     </root>

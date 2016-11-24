@@ -2,7 +2,7 @@
  * @Title: IfElseDemo.java
  * @Package com.alliswell008.ifelse
  * @Description: ifelse和多if的使用
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午2:26:31
  * @version V1.0
  * Update Logs:
@@ -18,7 +18,7 @@ package org.alliswell.demo.ifelsedemo;
  * @ClassName: IfElseDemo
  * @Description: 本程序旨在说明区别：ifelse的多条件语句和多个if条件语句。
  *               分支语句ifelse只会执行第一个满足条件的分支，而if语句会顺序执行
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午2:26:31
  *
  */
