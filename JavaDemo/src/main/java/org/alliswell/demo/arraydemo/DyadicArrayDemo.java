@@ -1,8 +1,8 @@
 /**
  * @Title: DyadicArrayDemo.java
- * @Package org.alliswell.demo.arraydemo
+ * @Package org.org.alliswell.demo.arraydemo
  * @Description: 数组的使用
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午1:58:07
  * @version V1.0
  * Update Logs:
@@ -17,7 +17,7 @@ package org.alliswell.demo.arraydemo;
 /**
  * @ClassName: DyadicArrayDemo
  * @Description: 二位数组的长度
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午1:58:07
  *
  */

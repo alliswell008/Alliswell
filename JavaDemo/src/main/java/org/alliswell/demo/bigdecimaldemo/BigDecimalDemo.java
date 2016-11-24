@@ -1,8 +1,8 @@
 /**
  * @Title: BigDecimalDemo.java
- * @Package org.alliswell.demo.bigdecimaldemo
+ * @Package org.org.alliswell.demo.bigdecimaldemo
  * @Description: 大数值的转化
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午1:48:40
  * @version V1.0
  * Update Logs:
@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 /**
  * @ClassName: BigDecimalDemo
  * @Description: 当一个数据大于等于一千万时，通过String.valueOf()会转成科学计数
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午1:48:40
  *
  */
@@ -37,6 +37,7 @@ public class BigDecimalDemo {
         //若以BigDecimal类来转化并设置小数点后的有效位，以及进位（四舍五入）
         System.out.println(new BigDecimal(dNum).setScale(5, BigDecimal.ROUND_HALF_UP).toString());
         System.out.println("0123769545657328450261047692038118839263916015625".length());
+        System.out.println("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111".length());
     }
 
 }

@@ -1,8 +1,8 @@
 /**
  * @Title: DateDemo.java
- * @Package org.alliswell.demo.datedemo
+ * @Package org.org.alliswell.demo.datedemo
  * @Description: 日期时间的使用
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 上午11:21:45
  * @version V1.0
  * Update Logs:
@@ -34,7 +34,7 @@ import java.util.Locale;
  *                      java.text.SimpleDateFormat（DateFormat的直接子类）、
  *                      java.util.Calendar（抽象类）、
  *                      java.util.GregorianCalendar（Calendar的直接子类）
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 上午11:21:45
  */
 public class DateDemo {

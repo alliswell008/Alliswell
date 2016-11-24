@@ -2,7 +2,7 @@
  * @Title: ContinueBreakDemo.java
  * @Package com.alliswell008.testcontinue
  * @Description: continue和break的使用
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午2:20:01
  * @version V1.0
  * Update Logs:
@@ -17,7 +17,7 @@ package org.alliswell.demo.continuebreakdemo;
 /**
  * @ClassName: ContinueBreakDemo
  * @Description: continue跳过当前值继续魂环，break从当前值开始中断跳出循环
- * @author alliswell
+ * @author org.alliswell
  * @date 2016-11-20 下午2:20:01
  *
  */
