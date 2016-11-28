@@ -55,7 +55,31 @@ public class IfElseDemo {
         }
         // if条件语句结束
 
+        System.out.println("并列的if语运行结果：" + getFlag(othFlagStr));
+
         System.out.println("通过此程序说明ifelse只会执行一个ifelse分支语句，而if语句会顺序执行");
 
     }
+
+    /**
+     * 并列的if语句配合return语句可以实现ifelse语句的效果
+     * @param othFlagStr
+     * @return
+     */
+    public static String getFlag(String othFlagStr) {
+        String type = "";
+        // if条件语句开始
+        if ("9".equals(othFlagStr.substring(4, 5))) {// othFlag[5]=9表示上传立案
+            return type = "05";
+        }
+        if ("9".equals(othFlagStr.substring(5, 6))) {// othFlag[6]=9表示上传赔案
+            return type = "06";
+        }
+        if ("9".equals(othFlagStr.substring(6, 7))) {// othFlag[6]=9表示上传注销/拒赔
+            return type = "07";
+        }
+        // if条件语句结束
+        return null;
+    }
+
 }
