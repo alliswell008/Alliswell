@@ -36,10 +36,10 @@ public class SimpleReflectFactoryCalculator {
     // 可配置的操作符-操作类名字符串
     private static Map<String,String> map = new HashMap<String,String>();
     static {
-        map.put("+", "计算器.操作.加法");
-        map.put("-", "计算器.操作.减法");
-        map.put("*", "计算器.操作.乘法");
-        map.put("/", "计算器.操作.除法");  // 扩展除法时，增加key-value
+        map.put("+", "org.alliswell.calculator.originalimprove.operation.Addition");
+        map.put("-", "org.alliswell.calculator.originalimprove.operation.Subtraction");
+        map.put("*", "org.alliswell.calculator.originalimprove.operation.Multiplication");
+        map.put("/", "org.alliswell.calculator.originalimprove.operation.Division");  // 扩展除法时，增加key-value
     }
 
     /**

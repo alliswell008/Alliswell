@@ -14,5 +14,5 @@ package org.alliswell.core.mgruser.service;
  * Description:
  * *****************************************************
  */
-public class UserService {
+public interface UserService {
 }

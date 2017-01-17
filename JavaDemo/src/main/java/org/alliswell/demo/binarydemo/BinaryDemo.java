@@ -25,7 +25,7 @@ public class BinaryDemo {
     public static void main(String[] args) {
         // 定义二进制数
         int b_x = 0b00000110;
-        int b_y = 0b0000_0001;
+        int b_y = 0b0000_0011;
 
         // 定义八进制数
         int o_x = 07777;

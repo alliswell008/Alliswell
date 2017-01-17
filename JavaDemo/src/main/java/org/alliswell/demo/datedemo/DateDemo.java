@@ -39,6 +39,18 @@ import java.util.Locale;
  */
 public class DateDemo {
     public static void main(String[] args) throws ParseException {
+
+        String ctime = "2017-01-03 01:01:01";
+        String strYesterday = "";
+        Calendar cal   =   Calendar.getInstance();
+        cal.add(Calendar.DATE, -1);
+
+        strYesterday = new SimpleDateFormat("yyyy-MM-dd HH:mm:SS").format(cal.getTime());
+        System.out.println("------------"+strYesterday);
+        System.out.println("------------"+ctime);
+
+        System.out.println("------------=" + getDateDiffValue(ctime, strYesterday, "yyyy-MM-dd HH:mm"));
+
         // 创建日期：创建有多种方式
         // 创建方式一：
         Date date1 = new Date();
@@ -102,6 +114,40 @@ public class DateDemo {
         System.out.println(dateFormat5.format(date3));
         System.out.println(dateFormat5.format(date4));
         System.out.println(dateFormat5.format(date5));
+        System.out.println("---------");
+        long cTime = System.currentTimeMillis();
+        long lTime = System.currentTimeMillis()-1L;
+        System.out.println(dateFormat5.format(new Date(cTime)));
+        System.out.println(dateFormat5.format(new Date(lTime)));
 
+    }
+
+
+    private static int getDateDiffValue(String strDate1, String strDate2, String dateFormat) {
+        DateFormat df = new SimpleDateFormat(dateFormat);
+//        strDate1 = df.format(strDate1);
+//        strDate2 = df.format(strDate2);
+        int num = 1000 * 3600 * 24;
+        if ("yyyy-MM-dd HH:mm".equals(dateFormat)) {
+            num = 1000 * 60 * 5;
+        }
+        Date date1 = new Date();
+        Date date2 = new Date();
+
+        try {
+            date1 = df.parse(strDate1);
+            date2 = df.parse(strDate2);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date1);
+        Date dd = cal.getTime();
+        cal.setTime(date2);
+        Date dd2 = cal.getTime();
+
+        int days = (int) ((date2.getTime() - date1.getTime()) / num);
+        return days;
     }
 }

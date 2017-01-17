@@ -42,7 +42,7 @@ public class SimpleFactoryCashRegister {
         String 计算方式 = s.nextLine();
         double 总计 = 0;
 
-        Valution op = ValutionSimpleFactory.create计价方式(计算方式);
+        Valution op = ValutionSimpleFactory.createValution(计算方式);
         op.set单价(单价);
         op.set数量(数量);
 

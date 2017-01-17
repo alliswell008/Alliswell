@@ -14,11 +14,10 @@
  */
 package org.alliswell.core.mgruser.service.impl;
 
-import com.allis.core.base.service.impl.UBaseuserBaseServiceImpl;
-import com.allis.core.mgruser.dao.UserDao;
-import com.allis.core.mgruser.model.dto.UserDto;
-import com.allis.core.mgruser.service.UserService;
-import org.springframework.beans.BeanUtils;
+
+import org.alliswell.core.mgruser.dao.UserDao;
+import org.alliswell.core.mgruser.model.dto.UserDto;
+import org.alliswell.core.mgruser.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,17 +33,15 @@ import java.util.List;
  * ${TAGS}
  */
 @Service("UserService")
-public class UserServiceImpl extends UBaseuserBaseServiceImpl implements
-        UserService
-{
+public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
     public void addUser(UserDto userDto) {
         System.out.println("add user into database.");
     }
-    public UserDto getUser(String id)
-    {
+
+    public UserDto getUser(String id) {
 //                UserEntity userEntity = userDao.queryUserById(id);
 //                userEntity.setId(id);
 //                System.out.println("getUser from database.");

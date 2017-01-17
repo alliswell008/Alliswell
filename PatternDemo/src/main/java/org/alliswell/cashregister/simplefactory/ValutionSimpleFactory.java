@@ -32,7 +32,7 @@ public class ValutionSimpleFactory {
      * @return
      * @throws
      */
-    public static Valution create计价方式(String 计算方式) {
+    public static Valution createValution(String 计算方式) {
         Valution op = null;
         switch (计算方式) {
             case "打八折":
