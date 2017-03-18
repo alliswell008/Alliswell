@@ -25,12 +25,16 @@ public class Client {
      * @param args
      */
     public static void main(String[] args) {
+        // 汉堡
         Compenent humburger = new ConcreteCompenent();
         System.out.println(humburger.getName()+"  价钱："+humburger.getPrice());
+        // +生菜
         ConcreteDecorator lettuce = new ConcreteDecorator(humburger);
         System.out.println(lettuce.getName()+"  价钱："+lettuce.getPrice());
+        // +辣椒
         ConcreteDecorator2 chilli = new ConcreteDecorator2(humburger);
         System.out.println(chilli.getName()+"  价钱："+chilli.getPrice());
+        // +生菜+辣椒
         ConcreteDecorator2 chilli2 = new ConcreteDecorator2(lettuce);
         System.out.println(chilli2.getName()+"  价钱："+chilli2.getPrice());
     }

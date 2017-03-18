@@ -14,6 +14,8 @@
  */
 package org.alliswell.pattern.observer;
 
+import java.util.Observable;
+
 /**
  * @author alliswell008
  * @ClassName: Subject

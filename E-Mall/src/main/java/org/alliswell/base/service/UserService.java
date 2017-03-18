@@ -17,4 +17,10 @@ public interface UserService<T> {
     public void delUser(Object dto);
     public void updUser(Object dto);
     public void queryUser(Object dto);
+    default void queryUser2(Object dto){
+        System.out.println();
+    }
+
+
+
 }

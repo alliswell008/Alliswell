@@ -1,6 +1,7 @@
 package org.alliswell.core.mgrmenu.service;
 
-import com.allis.core.mgruser.model.dto.UserDto;
+
+import org.alliswell.core.mgruser.model.dto.UserDto;
 
 /**
  * @author org.alliswell

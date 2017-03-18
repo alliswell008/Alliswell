@@ -15,9 +15,9 @@
 package org.alliswell.base.component;
 
 
-import com.allis.core.mgruser.model.dto.UserDto;
-import com.allis.core.mgruser.service.UserService;
-import com.allis.core.mgruser.service.impl.UserServiceImpl;
+
+import org.alliswell.core.mgruser.service.UserService;
+import org.alliswell.core.mgruser.service.impl.UserServiceImpl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -67,7 +67,7 @@ public class ProxyUtil implements InvocationHandler
         UserService proxyObject = (UserService) Proxy.newProxyInstance(
                 Thread.currentThread().getContextClassLoader(),
                 UserServiceImpl.class.getInterfaces(), proxyUtils);
-        proxyObject.getUser("1");
-        proxyObject.addUser(new UserDto());
+//        proxyObject.getUser("1");
+//        proxyObject.addUser(new UserDto());
     }
 }

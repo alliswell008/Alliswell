@@ -23,15 +23,36 @@ package test;
  * @date 2016/12/12 17:07
  */
 public class Test {
+
+    // 构造方法 在new时执行
+    public Test() {
+        System.out.println("Test class");
+    }
+
+    // 静态代码块 在类加载到jvm时执行
+    static{
+        System.out.println("static code block");
+    }
+
+    // 静态内部类 在调用时执行
+    private static class StaticInnerClass {
+        static {
+            System.out.println("inner class static code block");
+        }
+        private static Test test = new Test();
+    }
+
     public static void main(String args[]){
-        int x=2,t=0;
-        t=(x++)/3;
-        System.out.println(t);
-        System.out.println(x);
+        int x=2,t1=0,t2;
+        t1=(x++)/3;
 
         x=2;
-        t=(++x)/3;
-        System.out.println(t);
-        System.out.println(x);
+        t2=(++x)/3;
+
+        System.out.println("t1="+t1+",t2="+t2);
+
+        // 调用静态内部类
+//        Test test = StaticInnerClass.test;
+        System.out.println(Integer.MAX_VALUE);
     }
 }

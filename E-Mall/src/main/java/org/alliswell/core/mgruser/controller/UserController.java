@@ -15,6 +15,8 @@
 package org.alliswell.core.mgruser.controller;
 
 import org.alliswell.core.mgruser.service.UserService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author org.alliswell
@@ -24,21 +26,21 @@ import org.alliswell.core.mgruser.service.UserService;
  * <p/>
  * ${TAGS}
  */
-public class UserController
-{
+@Controller
+@RequestMapping("UserController")
+public class UserController {
+
     private UserService userService;
 
-    public void regist(String userInfo)
-    {
+    public void regist(String userInfo) {
         System.out.println("注册成功");
     }
 
-    public void login(String userAccount, String userPasswd)
-    {
-
+    public void login(String userAccount, String userPasswd) {
+        System.out.println("登录成功");
     }
 
-    public void modifyUserInfo(String userInfo)
-    {
+    public void modifyUserInfo(String userInfo) {
+        System.out.println("修改成功");
     }
 }

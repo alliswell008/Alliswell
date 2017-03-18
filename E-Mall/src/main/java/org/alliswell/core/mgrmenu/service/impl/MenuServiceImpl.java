@@ -14,9 +14,8 @@
  */
 package org.alliswell.core.mgrmenu.service.impl;
 
-import com.allis.core.mgrmenu.service.MenuService;
-import com.allis.core.mgruser.model.dto.UserDto;
-import com.allis.core.mgruser.service.UserService;
+import org.alliswell.core.mgrmenu.service.MenuService;
+import org.alliswell.core.mgruser.model.dto.UserDto;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,7 +35,6 @@ import java.util.List;
 public class MenuServiceImpl implements MenuService
 {
     @Autowired
-
     public void addUser(UserDto userDto) {
         System.out.println("add user into database.");
     }
