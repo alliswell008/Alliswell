@@ -17,9 +17,7 @@ package test;
 /**
  * @author alliswell008
  * @ClassName: Test
- * @Description: （x++)/3是先执行x/3的操作，就相当于先执行2/3，/操作取结果的整数部分，
- *                所以是0，这些操作完成之后才会将+1的值赋值给x。你如果将x++换成++x,
- *                就是先将+1的值赋给x（此时x）,再进行3/3操作，此时在运行，结果为1
+ * @Description:
  * @date 2016/12/12 17:07
  */
 public class Test {
@@ -39,10 +37,36 @@ public class Test {
         static {
             System.out.println("inner class static code block");
         }
-        private static Test test = new Test();
+
+        // 非常量成员具有默认初始值
+        private static String str0;
+        // 常量成员必须被初始化
+        private static final String str1 = "abc";
+        private static String str2 = new String("abc");
+        private static final String str3 = new String("abc");
+        private final static Test test = new Test();
+
+        static void staticFun() {
+            System.out.println("staticFun");
+        }
     }
 
     public static void main(String args[]){
+        //getResult();
+
+        // 调用静态内部类
+//        String test = StaticInnerClass.str1;
+//        String test = StaticInnerClass.str2;
+        String test = StaticInnerClass.str3;
+//        StaticInnerClass.staticFun();
+    }
+
+    /**
+     * （x++)/3是先执行x/3的操作，就相当于先执行2/3，/操作取结果的整数部分，
+     *  所以是0，这些操作完成之后才会将+1的值赋值给x。你如果将x++换成++x,
+     *  就是先将+1的值赋给x（此时x）,再进行3/3操作，此时在运行，结果为1
+     */
+    static void getResult() {
         int x=2,t1=0,t2;
         t1=(x++)/3;
 
@@ -50,9 +74,5 @@ public class Test {
         t2=(++x)/3;
 
         System.out.println("t1="+t1+",t2="+t2);
-
-        // 调用静态内部类
-//        Test test = StaticInnerClass.test;
-        System.out.println(Integer.MAX_VALUE);
     }
 }
