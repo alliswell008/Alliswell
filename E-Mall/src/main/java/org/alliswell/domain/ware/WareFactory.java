@@ -1,0 +1,39 @@
+package org.alliswell.domain.ware;
+
+import org.alliswell.domain.order.Order;
+import org.alliswell.domain.order.vo.paa.PAAOrderVO;
+import org.alliswell.domain.order.vo.pcz.PCZOrderVO;
+
+/**
+ * 商品工厂
+ * Created by cxs on 2017/8/31.
+ */
+public class WareFactory {
+
+
+    /**
+     * 商品工厂创建商品
+     *
+     * @param type      商品类型
+     * @param wareJson 商品json参数
+     * @return
+     */
+    public static Ware createOrder(String type, String wareJson) {
+        Ware ware = null;
+
+        switch (type) {
+            case "PAA":
+//                ware = new PAAWareVO();
+                break;
+
+            case "PCZ":
+//                ware = new PCZWareVO();
+                break;
+
+            default:
+                break;
+        }
+
+        return ware;
+    }
+}

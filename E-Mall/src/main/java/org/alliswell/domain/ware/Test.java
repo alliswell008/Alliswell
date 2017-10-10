@@ -1,4 +1,4 @@
-package org.alliswell.domain.order.ware;
+package org.alliswell.domain.ware;
 
 /**
  * Created by Administrator on 2017/8/31.
