@@ -1,5 +1,7 @@
 package org.alliswell.core.mgrorder.service;
 
+import org.alliswell.domain.order.Order;
+
 /**
  * @ Title: OrderService
  * @ Package org.org.alliswell.core.service.mgrorder
@@ -14,5 +16,6 @@ package org.alliswell.core.mgrorder.service;
  * Description:
  * *****************************************************
  */
-public class OrderService {
+public interface OrderService {
+    void generateOrder(String account, Order order);
 }

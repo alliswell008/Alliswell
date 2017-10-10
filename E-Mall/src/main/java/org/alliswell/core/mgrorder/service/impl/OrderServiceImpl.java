@@ -1,5 +1,8 @@
 package org.alliswell.core.mgrorder.service.impl;
 
+import org.alliswell.core.mgrorder.service.OrderService;
+import org.alliswell.domain.order.Order;
+
 /**
  * @ Title: OrderServiceImpl
  * @ Package org.org.alliswell.core.service.impl.mgrorder
@@ -14,5 +17,9 @@ package org.alliswell.core.mgrorder.service.impl;
  * Description:
  * *****************************************************
  */
-public class OrderServiceImpl {
+public class OrderServiceImpl implements OrderService {
+    @Override
+    public void generateOrder(String account, Order order) {
+
+    }
 }
