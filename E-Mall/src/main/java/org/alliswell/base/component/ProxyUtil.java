@@ -15,9 +15,9 @@
 package org.alliswell.base.component;
 
 
-import com.allis.core.mgruser.model.dto.UserDto;
-import com.allis.core.mgruser.service.UserService;
-import com.allis.core.mgruser.service.impl.UserServiceImpl;
+import org.alliswell.core.mgruser.model.dto.UserDto;
+import org.alliswell.core.mgruser.service.UserService;
+import org.alliswell.core.mgruser.service.impl.UserServiceImpl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

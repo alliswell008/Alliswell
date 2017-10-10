@@ -1,5 +1,7 @@
 package org.alliswell.core.mgruser.service;
 
+import org.alliswell.core.mgruser.model.dto.UserDto;
+
 /**
  * @ Title: UserService
  * @ Package org.org.alliswell.core.service.mgruser
@@ -15,4 +17,7 @@ package org.alliswell.core.mgruser.service;
  * *****************************************************
  */
 public interface UserService {
+
+    void addUser(UserDto userDto);
+    UserDto getUser(String userId);
 }
