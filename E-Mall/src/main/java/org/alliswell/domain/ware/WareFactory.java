@@ -18,7 +18,7 @@ public class WareFactory {
      * @param wareJson 商品json参数
      * @return
      */
-    public static Ware createOrder(String type, String wareJson) {
+    public static Ware createWare(String type, String wareJson) {
         Ware ware = null;
 
         switch (type) {
