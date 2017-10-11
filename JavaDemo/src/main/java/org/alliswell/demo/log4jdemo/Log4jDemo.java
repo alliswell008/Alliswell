@@ -23,6 +23,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.Properties;
 import java.util.ResourceBundle;
 
@@ -40,27 +41,48 @@ public class Log4jDemo {
     private static final org.slf4j.Logger logger2 = LoggerFactory.getLogger(Log4jDemo.class);
 
     public static void main(String[] args) throws IOException {
-        // 绝对路径
-//        PropertyConfigurator.configure("D:\\alliswell\\server\\gitserver\\Alliswell\\JavaDemo\\src\\main\\resources\\config\\log4j.properties");
-        // 通过user.dir获取绝对路径
-        //PropertyConfigurator.configure(System.getProperty("user.dir")+"/JavaDemo/src/main/resources/config/log4j.properties");
-        // 通过.获取绝对路径
-//        PropertyConfigurator.configure(new File(".").getCanonicalPath() + File.separator + "JavaDemo" + File.separator + "src/main/resources/config/log4j.properties");
-//        Logger logger = Logger.getLogger(Log4jDemo.class);
-//        logger.debug("debug");
-//        logger.error("error");
-//        logger.info("info");
+        long start_time = 0L;
+        long end_time = 0L;
+        long time_interval = 0L;
 
-//        Logger logger2 = Logger.getLogger("NTlog"); //要和配置文件中设置的名字相同
-//        logger2.debug("debug!!!");
-//        logger2.info("info!!!");
-//        logger2.warn("warn!!!");
-//        logger2.error("error!!!");
-//        //只有这个错误才会写入2000日志
-//        logger2.fatal("fatal!!!");
+        //把日志发记录到本地文件
+        String configFile = "D:\\alliswell\\server\\gitserver\\Alliswell\\JavaDemo\\src\\main\\resources\\config\\log4j.properties";
+        PropertyConfigurator.configure(configFile);
+        start_time = System.currentTimeMillis();
+        int i = 0;
+        while (i < 50000){
+            // 用户行为日志，记录用户 操作从controller到dao 然后返回结果的一个完整事物流程
+            LoggerModel loggerModel = new LoggerModel();
+            // 类名
+            loggerModel.setClassName(Log4jDemo.class.getName());
+            // 操作时间
+            loggerModel.setDateTime("2017");
+            // 操作函数
+            loggerModel.setMainName("add");
+            // 操作类型 add query
+            loggerModel.setOprs("add");
+            // 请求参数
+            loggerModel.setParams("[sd,fsdf]");
+            // 返回结果
+            loggerModel.setResMsg("ok");
+            // 一次结果
+            loggerModel.setExcMsg("error");
+            // 操作描述
+            loggerModel.setText("test logsss");
+            UserOperatorFactory.getInstance().writeUserLogger(loggerModel);
+//            logger2.error("test name:{}");
+            i ++;
+        }
+        end_time = System.currentTimeMillis();
+        // 记录50，000条日志的耗时
+        time_interval = end_time - start_time;
+        logger.info("i=" + i + ", time=" + time_interval);
+
+
 
         //把日志发送到mail
 //        sendMailLog4j();
+//        String configFile = "D:\\alliswell\\server\\gitserver\\Alliswell\\JavaDemo\\src\\main\\resources\\config\\maillog4j.properties";
 //        String configFile = "D:\\alliswell\\server\\gitserver\\Alliswell\\JavaDemo\\src\\main\\resources\\config\\maillog4j2.properties";
 //        sendLog4jByConfigFile(3, configFile);
 
@@ -75,7 +97,6 @@ public class Log4jDemo {
 //        logger2.error("test name:{}");
 
 
-        System.out.println(null + "");
 
     }
 
@@ -121,6 +142,13 @@ public class Log4jDemo {
         // 读取Log4j.properties配置文件
         PropertyConfigurator.configure(configFile);
 //        PropertyConfigurator.configure(Log4jDemo.class.getResource("/maillog4j.properties"));
+        // 绝对路径
+//        PropertyConfigurator.configure("D:\\alliswell\\server\\gitserver\\Alliswell\\JavaDemo\\src\\main\\resources\\config\\log4j.properties");
+        // 通过user.dir获取绝对路径
+        //PropertyConfigurator.configure(System.getProperty("user.dir")+"/JavaDemo/src/main/resources/config/log4j.properties");
+        // 通过.获取绝对路径
+//        PropertyConfigurator.configure(new File(".").getCanonicalPath() + File.separator + "JavaDemo" + File.separator + "src/main/resources/config/log4j.properties");
+
         int i = 0;
         while (i < n) {
             i += 1;

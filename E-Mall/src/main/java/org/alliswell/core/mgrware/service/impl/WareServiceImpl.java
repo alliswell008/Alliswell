@@ -26,11 +26,11 @@ public class WareServiceImpl implements WareService {
 
     @Override
     public List<WareVo> queryWareList(String userId, String areaId, String wareType) {
-        return wareDao.queryWareList(userId, areaId, wareType);
+        return wareDao.queryList(userId, areaId, wareType);
     }
 
     @Override
     public WareVo queryWareDetail(String wareId, String wareType) {
-        return wareDao.queryWareDetail(wareId, wareType);
+        return wareDao.queryDetail(wareId, wareType);
     }
 }

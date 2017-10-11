@@ -13,7 +13,7 @@
 <body>
 <h6>账户登录</h6>
 
-<form action="" method="post">
+<form action="/UserController" method="post">
     <table class="">
         <tr>
             <td>账户ID:</td>

@@ -12,7 +12,7 @@
  * Description:
  * *****************************************************
  */
-package test;
+package org.alliswell.demo.variablesdemo;
 
 /**
  * @author alliswell008
@@ -21,9 +21,11 @@ package test;
  * 只拥有私有构造方法的类不能被继承
  * @date 2016/12/9 17:54
  */
-public class TestPrivate {
+public class PrivateVariablesTest {
     public static void main(String[] args) {
         SubPrivate subPrivate = new SubPrivate();
+        // private变量不能被外部访问
+//        System.out.println(subPrivate.priName);
         System.out.println(subPrivate.freName);
         System.out.println(subPrivate.proName);
         System.out.println(subPrivate.pubName);

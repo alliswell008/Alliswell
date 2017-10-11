@@ -10,7 +10,7 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * *****************************************************
  */
 package org.alliswell.base.component;
 
@@ -31,35 +31,30 @@ import java.lang.reflect.Proxy;
  * <p/>
  * ${TAGS}
  */
-public class ProxyUtil implements InvocationHandler
-{
+public class ProxyUtil implements InvocationHandler {
     private Object target;    // 被代理的对象
 
     public Object invoke(Object proxy, Method method, Object[] args)
-            throws Throwable
-    {
+            throws Throwable {
         System.out.println("do sth before....");
         Object result = method.invoke(target, args);
         System.out.println("do sth after....");
         return result;
     }
 
-    ProxyUtil(Object target)
-    {
+    ProxyUtil(Object target) {
         this.target = target;
     }
 
-    public Object getTarget()
-    {
+    public Object getTarget() {
         return target;
     }
 
-    public void setTarget(Object target)
-    {
+    public void setTarget(Object target) {
         this.target = target;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Object proxyedObject = new UserServiceImpl();    // 被代理的对象
         ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
 

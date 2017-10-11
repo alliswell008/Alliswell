@@ -35,12 +35,12 @@ public class Client {
         subject.change();
 
         ConcreteSubjectB subject2 = new ConcreteSubjectB();
-        subject.addObserver(o1);
-        subject.addObserver(o2);
+        subject2.addObserver(o1);
+        subject2.addObserver(o2);
         System.out.println("准备:");
         subject2.setBoss(new Boss("来了"));
-        subject.change();
+        subject2.change();
         subject2.setBoss(new Boss("走了"));
-        subject.change();
+        subject2.change();
     }
 }
