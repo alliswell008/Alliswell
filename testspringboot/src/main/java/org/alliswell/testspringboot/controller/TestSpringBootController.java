@@ -36,7 +36,7 @@ public class TestSpringBootController {
 
     @RequestMapping("getuser2")
     public Map<String, Object> getUser2() {
-        Page page = PageHelper.startPage(1, 2);
+        Page page = PageHelper.startPage(1, 10);
         List<User> countries = userDao.findAll();
 
         Map<String, Object> map = new HashMap<String, Object>();
@@ -44,5 +44,18 @@ public class TestSpringBootController {
         map.put("List", countries);
 
         return map;
+    }
+
+    @RequestMapping("saveuser")
+    public User saveUser() {
+        User user = new User();
+        user.setId("4");
+        user.setAccount("test4");
+        user.setPasswd("1234");
+        user.setPersonId("1");
+        user.setName("aa");
+        userDao.saveUser(user);
+
+        return user;
     }
 }
