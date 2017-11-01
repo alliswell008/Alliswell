@@ -14,6 +14,9 @@
  */
 package test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author alliswell008
  * @ClassName: Test
@@ -59,6 +62,12 @@ public class Test {
 //        String test = StaticInnerClass.str2;
         String test = StaticInnerClass.str3;
 //        StaticInnerClass.staticFun();
+
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("Msg", "msg");
+        map.put("State", null);
+
+        System.out.println(map.toString());
     }
 
     /**
