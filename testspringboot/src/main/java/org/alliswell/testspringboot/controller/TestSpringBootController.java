@@ -2,6 +2,8 @@ package org.alliswell.testspringboot.controller;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.alliswell.testspringboot.dao.UserDao;
 import org.alliswell.testspringboot.model.User;
 import org.mybatis.spring.annotation.MapperScan;
@@ -35,14 +37,18 @@ public class TestSpringBootController {
     }
 
     @RequestMapping("getuser2")
-    public Map<String, Object> getUser2() {
-        Page page = PageHelper.startPage(1, 10);
+//    public Map<String, Object> getUser2(int pageNum, int pageSize) {
+    public Map<String, Object> getUser2(int pageNum, int pageSize) {
+        Page page = PageHelper.startPage(pageNum, pageSize);
         List<User> countries = userDao.findAll();
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("Total", page.getTotal());
         map.put("List", countries);
-
+        System.out.println(new Gson().toJson(countries));
+//        Gson gson = new GsonBuilder().setVersion(1.1).serializeNulls().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        System.out.println(gson.toJson(countries));
         return map;
     }
 
