@@ -59,6 +59,26 @@ public class Test {
 //        String test = StaticInnerClass.str2;
         String test = StaticInnerClass.str3;
 //        StaticInnerClass.staticFun();
+
+        Integer in = 5;
+
+        String s = "5";
+
+        if (s.equals(in)) {
+            System.out.println("String 5 == Integer 5");
+        }
+
+        if (in.equals(5)) {
+            System.out.println("Integer 5 == Integer 5");
+        }
+
+        Integer c = 3;
+        Integer d = 3;
+        Integer e = 321;
+        Integer f = 321;
+
+        System.out.println(c == d);
+        System.out.println(e == f);
     }
 
     /**
