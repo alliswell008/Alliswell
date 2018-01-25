@@ -28,8 +28,8 @@ import java.util.Properties;
  * 版本: 1.0
  * JDK: since 1.8
  */
-//@Configuration
-//@EnableTransactionManagement
+@Configuration
+@EnableTransactionManagement
 public class MyBatisConfig implements TransactionManagementConfigurer {
 
 

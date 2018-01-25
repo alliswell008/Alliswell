@@ -22,6 +22,7 @@ package test;
  * @date 2017/3/27 14:10
  */
 
+
 import org.springframework.scheduling.annotation.AsyncResult;
 
 import java.util.Map;

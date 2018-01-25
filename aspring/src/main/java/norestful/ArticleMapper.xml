@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="norestful.ArticleMapper">
+
+    <resultMap id="articleMap" type="norestful.Article">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="summary" property="summary" jdbcType="VARCHAR"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+        <result column="public_time" property="publicTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="base_column">
+        title,summary,user_id,status,create_time,update_time,public_time
+    </sql>
+
+    <insert id="insertArticle" parameterType="norestful.Article">
+        INSERT INTO
+        tb_article(<include refid="base_column"/>)
+        VALUE
+        (#{title},#{summary},#{userId},#{status},#{createTime},#{updateTime},#{publicTime})
+    </insert>
+
+    <update id="updateArticle" parameterType="norestful.Article">
+        UPDATE tb_article
+        <set>
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="summary != null">
+                summary = #{summary},
+            </if>
+            <if test="status!=null">
+                status = #{status},
+            </if>
+            <if test="publicTime !=null ">
+                public_time = #{publicTime},
+            </if>
+            <if test="updateTime !=null ">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <select id="queryById" parameterType="Long" resultMap="articleMap">
+        SELECT id,<include refid="base_column"></include> FROM tb_article
+        WHERE id = #{id}
+    </select>
+
+    <select id="queryArticlesByPage" resultMap="articleMap">
+        SELECT id,<include refid="base_column"></include> FROM tb_article
+        <where>
+            <if test="article.title != null">
+                title like CONCAT（'%',${article.title},'%'）
+            </if>
+            <if test="article.userId != null">
+                user_id = #{article.userId}
+            </if>
+        </where>
+        limit #{offset},#{pageSize}
+
+    </select>
+</mapper>

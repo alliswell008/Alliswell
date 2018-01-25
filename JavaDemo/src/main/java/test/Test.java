@@ -59,6 +59,21 @@ public class Test {
 //        String test = StaticInnerClass.str2;
         String test = StaticInnerClass.str3;
 //        StaticInnerClass.staticFun();
+
+        // 类型转换
+        short s1 = 1;
+        s1 = (short) (s1 + 1);
+        s1 += s1 +1;
+
+        // 值越界
+        short s2 = 32767;
+        s2 += 1;
+        System.out.println(s2);
+
+        // 值传递
+        String a = "1";
+        chuandi(a);
+        System.out.println("方法外a=" + a);
     }
 
     /**
@@ -74,5 +89,11 @@ public class Test {
         t2=(++x)/3;
 
         System.out.println("t1="+t1+",t2="+t2);
+    }
+
+    static void chuandi(String a) {
+        String b = "2";
+        a = new String(b);
+        System.out.println("方法内a=" + a);
     }
 }
