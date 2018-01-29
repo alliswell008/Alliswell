@@ -9,6 +9,7 @@ import org.alliswell.testspringboot.model.User;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,7 +24,7 @@ import java.util.Map;
 @RestController
 @EnableAutoConfiguration
 @RequestMapping("/testboot")
-@MapperScan("org.alliswell.testspringboot.dao")
+//@MapperScan("org.alliswell.testspringboot.dao")
 public class TestSpringBootController {
 
     @Autowired
@@ -34,6 +35,11 @@ public class TestSpringBootController {
         User user = new User();
         user.setName("test");
         return user;
+    }
+
+    @RequestMapping("getUserById")
+    public User getUserById() {
+        return userDao.getUserById("id = '1'");
     }
 
     @RequestMapping("getuser2")

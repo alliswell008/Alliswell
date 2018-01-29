@@ -14,6 +14,12 @@
  */
 package test;
 
+import sun.misc.VM;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 /**
  * @author alliswell008
  * @ClassName: Test
@@ -79,6 +85,18 @@ public class Test {
 
         System.out.println(c == d);
         System.out.println(e == f);
+
+        String host = "172.16.145.159";
+
+        String ff = !host.equals("127.0.0.1") && !host.startsWith("localhost") && !host.equals("0.0.0.0") && !host.startsWith("169.254") && !host.startsWith("::1") && !host.startsWith("0:0:0:0:0:0:0:1")?host:"";
+        System.out.println(ff);
+
+        String var1 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+        Integer a = new Integer(2);
+        String var2 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+
+        System.out.println(var1);
+        System.out.println(var2);
     }
 
     /**

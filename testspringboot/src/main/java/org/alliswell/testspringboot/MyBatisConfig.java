@@ -6,6 +6,7 @@ import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,8 +29,8 @@ import java.util.Properties;
  * 版本: 1.0
  * JDK: since 1.8
  */
-//@Configuration
-//@EnableTransactionManagement
+@Configuration
+@EnableTransactionManagement
 public class MyBatisConfig implements TransactionManagementConfigurer {
 
 

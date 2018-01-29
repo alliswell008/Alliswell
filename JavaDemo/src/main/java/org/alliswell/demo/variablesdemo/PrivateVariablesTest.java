@@ -29,6 +29,11 @@ public class PrivateVariablesTest {
         System.out.println(subPrivate.freName);
         System.out.println(subPrivate.proName);
         System.out.println(subPrivate.pubName);
+
+        MainPrivate mainPrivate = new MainPrivate();
+        System.out.println(mainPrivate.freName);
+        System.out.println(mainPrivate.proName);
+        System.out.println(mainPrivate.pubName);
     }
 }
 
@@ -41,4 +46,14 @@ class MainPrivate {
     String freName = "MainPrivate";
     protected String proName = "MainPrivate";
     public String pubName = "MainPrivate";
+
+    /**
+     * 私有的空构造方法使MainPrivate类不能被子类SubPrivate继承
+     * 错误提示：There is no default constructor available in 'org.alliswell.demo.variablesdemo.MainPrivate'
+     */
+//    private MainPrivate() {
+//
+//    }
+
+
 }

@@ -2,6 +2,7 @@ package org.alliswell.testspringboot.dao;
 
 import org.alliswell.testspringboot.model.User;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -15,4 +16,7 @@ public interface UserDao {
 
     @Insert("INSERT INTO `t_user_account` VALUES (#{id}, #{account}, #{passwd}, #{personId}, now(), null);")
     int saveUser(User user);
+
+//    @Select("select * from t_user_account where ${userId}")
+    User getUserById(@Param("userId") String userId);
 }

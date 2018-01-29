@@ -24,7 +24,7 @@ package org.alliswell.demo.variablesdemo;
 public class FinalVariablesTest {
 
     public static void main(String[] args) throws ClassNotFoundException {
-//        System.out.println(VariablesClass.str0);
+        System.out.println(VariablesClass.str1);
         new VariablesClass().f();
     }
 }
@@ -33,7 +33,7 @@ public class FinalVariablesTest {
 class VariablesClass {
     // 非常量成员具有默认初始值
     static String str0;
-    // 常量成员必须被初始化，再被调用时不会加载类
+    // 常量成员必须被初始化，在被调用时不会加载类
     static final String str1 = "abc";
     static String str2 = new String("abc");
     static final String str3 = new String("abc");
@@ -43,6 +43,7 @@ class VariablesClass {
     static String str20 = null;
     static final FinalVariablesTest str40 = null;
 
+    // 静态代码块：在类被加载时执行
     static {
         System.out.println("static class VariablesClass");
     }
@@ -60,7 +61,18 @@ class VariablesClass {
  * 一个类的运行分为以下步骤： 1.装载 2.连接 3.初始化
  */
 class ClassTest {
+    // 静态代码块：在类被加载时执行
     static {
         System.out.println("static class ClassTest");
     }
+}
+
+interface InterfaceTest {
+    // 接口不能有静态代码块
+//    static {
+//        System.out.println("static interface InterfaceTest");
+//    }
+
+    // 接口中的成员变量默认是静态static且常量final的，常量final必须被初始化
+    int i = 0;
 }

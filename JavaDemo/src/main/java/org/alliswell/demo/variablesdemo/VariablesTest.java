@@ -31,6 +31,7 @@ public class VariablesTest {
     long l;
     float f;
     double d;
+    String str;
 
     void print() {
         System.out.println(
@@ -42,7 +43,8 @@ public class VariablesTest {
                         "int        " + i + "\n" +
                         "long       " + l + "\n" +
                         "float      " + f + "\n" +
-                        "double     " + d
+                        "double     " + d + "\n" +
+                        "String     " + str        // String类toString()方法将null转成字符串
         );
     }
 

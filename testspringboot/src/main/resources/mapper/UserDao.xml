@@ -2,5 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="org.alliswell.testspringboot.dao.UserDao">
 
+    <resultMap id="UserMap" type="org.alliswell.testspringboot.model.User">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="account" property="account" jdbcType="VARCHAR"/>
+        <result column="passwd" property="passwd" jdbcType="VARCHAR"/>
+        <result column="personId" property="personId" jdbcType="VARCHAR"/>
+        <result column="ctime" property="ctime" jdbcType="VARCHAR"/>
+        <result column="mtime" property="mtime" jdbcType="VARCHAR"/>
+    </resultMap>
 
+    <select id="getUserById" parameterType="map" resultMap="UserMap">
+        select * from t_user_account where ${userId}
+    </select>
 </mapper>

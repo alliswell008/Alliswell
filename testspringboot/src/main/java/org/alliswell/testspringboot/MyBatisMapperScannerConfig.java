@@ -2,8 +2,11 @@ package org.alliswell.testspringboot;
 
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import javax.sql.DataSource;
 
 /**
  * MyBatis扫描接口
@@ -11,9 +14,9 @@ import org.springframework.context.annotation.Configuration;
  * @author liuzh
  * @since 2015-12-19 14:46
  */
-//@Configuration
+@Configuration
 //TODO 注意，由于MapperScannerConfigurer执行的比较早，所以必须有下面的注解
-//@AutoConfigureAfter(MyBatisConfig.class)
+@AutoConfigureAfter(MyBatisConfig.class)
 public class MyBatisMapperScannerConfig {
 
     @Bean

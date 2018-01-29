@@ -1,5 +1,7 @@
 package org.alliswell.domain.order;
 
+import org.alliswell.base.exception.OrderException;
+import org.alliswell.base.utils.OrderTypeEnum;
 import org.alliswell.domain.order.vo.paa.PAAOrderVO;
 import org.alliswell.domain.order.vo.pcz.PCZOrderVO;
 
@@ -19,6 +21,11 @@ public class OrderFactory {
      */
     public static Order createOrder(String type, String orderJson) {
         Order order = null;
+
+
+        if (OrderTypeEnum.valueOf(type).ordinal() == -1) {
+            throw new OrderException("无效的订单类型");
+        }
 
         switch (type) {
             case "PAA":
