@@ -53,7 +53,7 @@ class MyActionListener2 implements ActionListener {
     }
 }
 
-class ActionEvent {
+class ActionEvent implements Cloneable {
     long when;
     Object source;
 
