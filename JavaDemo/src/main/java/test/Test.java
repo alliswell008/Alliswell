@@ -114,8 +114,12 @@ public class Test {
         System.out.println("t1="+t1+",t2="+t2);
     }
 
-    void test() {
-        System.out.println("test");
+    void testGitKraken() {
+        System.out.println("testGitKraken");
+    }
+
+    void testSmartGit() {
+        System.out.println("testSmartGit");
     }
 
 }
