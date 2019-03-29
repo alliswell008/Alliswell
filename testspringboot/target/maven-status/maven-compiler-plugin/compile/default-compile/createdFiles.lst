@@ -1,8 +1,0 @@
-org\alliswell\testspringboot\MyBatisConfig.class
-org\alliswell\testspringboot\model\User.class
-org\alliswell\testspringboot\MyBatisMapperScannerConfig.class
-org\alliswell\testspringboot\service\impl\UserServiceImpl.class
-org\alliswell\testspringboot\Application.class
-org\alliswell\testspringboot\dao\UserDao.class
-org\alliswell\testspringboot\controller\TestSpringBootController.class
-org\alliswell\testspringboot\service\UserService.class
