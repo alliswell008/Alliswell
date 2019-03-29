@@ -49,13 +49,13 @@ public class OriginalCashRegister {
                 break;
             case "满20元减10元":
                 总计 = 单价 * 数量;
-                总计 = 总计 > 20 ? (总计 - 10) : 总计 ;
+                总计 = 总计 >= 20 ? (总计 - 10) : 总计 ;
                 break;
             default:
                 总计 = 单价 * 数量;
                 break;
         }
 
-        System.out.print(ps_总计 + 总计);
+        System.out.print((ps_总计 + 总计) + "\n");
     }
 }

@@ -1,7 +1,7 @@
 /**  
  * @Title:  Composite.java
  * @Package 组合模式
- * @Description: TODO(用一句话描述该文件做什么)
+ * @Description: TODO(用一句话描述该文件做�?�?)
  * @author alliswell
  * @date  2016-8-3 下午5:28:39
  * @version V1.0  
@@ -12,7 +12,7 @@
  * Description:
  * ****************************************************
  */
-package org.alliswell.pattern.composite;
+package src.main.java.org.alliswell.pattern.composite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class Composite extends Compenent {
 		// TODO Auto-generated constructor stub
 	}
 
-	/* (非 Javadoc)
+	/* (�? Javadoc)
 	 * <p>Title: add</p>
 	 * <p>Description: </p>
 	 * @param c
@@ -51,7 +51,7 @@ public class Composite extends Compenent {
 		compenent.add(c);
 	}
 
-	/* (非 Javadoc)
+	/* (�? Javadoc)
 	 * <p>Title: remove</p>
 	 * <p>Description: </p>
 	 * @param c
@@ -63,7 +63,7 @@ public class Composite extends Compenent {
 		compenent.remove(c);
 	}
 
-	/* (非 Javadoc)
+	/* (�? Javadoc)
 	 * <p>Title: display</p>
 	 * <p>Description: </p>
 	 * @param c

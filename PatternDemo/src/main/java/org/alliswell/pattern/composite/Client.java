@@ -1,9 +1,9 @@
 /**  
  * @Title:  Client.java
- * @Package 组合模式
- * @Description: TODO(用一句话描述该文件做什么)
+ * @Package 缁勫悎妯″紡
+ * @Description: TODO(鐢ㄤ竴鍙ヨ瘽鎻忚堪璇ユ枃浠跺仛浠?涔?)
  * @author alliswell
- * @date  2016-8-3 下午5:36:02
+ * @date  2016-8-3 涓嬪崍5:36:02
  * @version V1.0  
  * Update Logs:
  * ****************************************************
@@ -12,14 +12,14 @@
  * Description:
  * ****************************************************
  */
-package org.alliswell.pattern.composite;
+package src.main.java.org.alliswell.pattern.composite;
 
 /**
  * @ClassName: Client
- * @Description: Client是面向Leaf和Composite的基类Compenent编程的，Client不区分操作Leaf和Composite
- * 满足依赖倒置原则
+ * @Description: Client鏄潰鍚慙eaf鍜孋omposite鐨勫熀绫籆ompenent缂栫▼鐨勶紝Client涓嶅尯鍒嗘搷浣淟eaf鍜孋omposite
+ * 婊¤冻渚濊禆鍊掔疆鍘熷垯
  * @author alliswell
- * @date 2016-8-3 下午5:36:02
+ * @date 2016-8-3 涓嬪崍5:36:02
  *
  */
 public class Client {
@@ -39,7 +39,16 @@ public class Client {
 		
 		composite2.add(new Leaf("leaf21"));
 		composite2.add(new Leaf("leaf22"));
-		
+
+
+		Composite composite2_1 = new Composite("composite2_1");
+		Composite composite2_2 = new Composite("composite2_2");
+		composite2.add(composite2_1);
+		composite2.add(composite2_2);
+
+		composite2_1.add(new Leaf("leaf2_11"));
+		composite2_2.add(new Leaf("leaf2_12"));
+
 		root.display(1);
 	}
 }

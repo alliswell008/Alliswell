@@ -21,7 +21,7 @@ package org.alliswell.shop.mo;
  * @date 2017/1/17 12:18
  */
 public abstract class Ware {
-    String name;			// 商品名
+    String name;    // 商品名
     double sprice;	// 商品价
 
     /**

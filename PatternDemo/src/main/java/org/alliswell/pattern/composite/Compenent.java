@@ -1,7 +1,7 @@
 /**  
  * @Title:  Compenent.java
  * @Package 组合模式
- * @Description: TODO(用一句话描述该文件做什么)
+ * @Description: TODO(用一句话描述该文件做�?�?)
  * @author alliswell
  * @date  2016-8-3 下午5:22:56
  * @version V1.0  
@@ -12,7 +12,7 @@
  * Description:
  * ****************************************************
  */
-package org.alliswell.pattern.composite;
+package src.main.java.org.alliswell.pattern.composite;
 
 /**
  * @ClassName: Compenent

@@ -17,8 +17,9 @@ package org.alliswell.demo.variablesdemo;
 /**
  * @author alliswell008
  * @ClassName: TestPrivate
- * @Description: private变量、方法、域不能被外部类调用，
- * 只拥有私有构造方法的类不能被继承
+ * @Description: 1.private变量、方法、域不能被外部类调用，
+ *               2.只拥有私有构造方法的类不能被继承
+ *               3.被允许继承的类必须要有public修饰的空构造方法
  * @date 2016/12/9 17:54
  */
 public class PrivateVariablesTest {
@@ -34,7 +35,12 @@ public class PrivateVariablesTest {
         System.out.println(mainPrivate.freName);
         System.out.println(mainPrivate.proName);
         System.out.println(mainPrivate.pubName);
+
+        subPrivate.publicFun();
+        mainPrivate.publicFun();
+//        mainPrivate.fun();
     }
+
 }
 
 class SubPrivate extends MainPrivate {
@@ -49,11 +55,20 @@ class MainPrivate {
 
     /**
      * 私有的空构造方法使MainPrivate类不能被子类SubPrivate继承
-     * 错误提示：There is no default constructor available in 'org.alliswell.demo.variablesdemo.MainPrivate'
+     * 错误提示：There is no default constructor available in 'org.alliswell.demo.variablesdemo.PrivateVariablesTest.MainPrivate'
      */
-//    private MainPrivate() {
-//
-//    }
+    private MainPrivate(int a) {
 
+    }
 
+    MainPrivate() {
+
+    }
+    private void fun() {
+        System.out.println("private method");
+    }
+
+    public void publicFun() {
+        System.out.println("public method");
+    }
 }

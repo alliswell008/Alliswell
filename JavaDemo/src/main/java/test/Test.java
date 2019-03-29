@@ -16,9 +16,7 @@ package test;
 
 import sun.misc.VM;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * @author alliswell008
@@ -27,6 +25,8 @@ import java.util.UUID;
  * @date 2016/12/12 17:07
  */
 public class Test {
+
+    static final String a = "aa";
 
     // 构造方法 在new时执行
     public Test() {
@@ -97,6 +97,15 @@ public class Test {
 
         System.out.println(var1);
         System.out.println(var2);
+
+        HashMap sb = new HashMap();
+
+        sb.put(null, null);
+        TreeSet set = new TreeSet();
+        set.add(null);
+
+        Hashtable ht = new Hashtable();
+        ht.put(null, null);
     }
 
     /**

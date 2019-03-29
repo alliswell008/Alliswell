@@ -25,7 +25,7 @@ import java.util.List;
  * @Description: TODO(用一句话来说明)
  * @date 2017/1/17 13:29
  */
-public class OrderBo extends Order {
+public class OrderBO extends Order {
     protected String orderId;
     protected String orderBh;
 

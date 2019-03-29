@@ -1,7 +1,7 @@
 /**
  * @Title: ConcreteDecorator
  * @Package org.alliswell.pattern.decoration
- * @Description: TODO(用一句话来说明)
+ * @Description: TODO(用一句话来说�?)
  * @author alliswell008
  * @date 2017/1/17 10:45
  * @version V1.0
@@ -12,12 +12,12 @@
  * Description:
  * *****************************************************
  */
-package org.alliswell.pattern.decoration;
+package src.main.java.org.alliswell.pattern.decoration;
 
 /**
  * @author alliswell008
  * @ClassName: ConcreteDecorator
- * @Description: TODO(用一句话来说明)
+ * @Description: TODO(用一句话来说�?)
  * @date 2017/1/17 10:45
  */
 public class ConcreteDecorator2 extends Decorator {
@@ -29,12 +29,12 @@ public class ConcreteDecorator2 extends Decorator {
 
     @Override
     public String getName() {
-        return humburger.getName()+" 加辣椒";
+        return humburger.getName()+" 加辣�?";
     }
 
     @Override
     public double getPrice() {
-        return humburger.getPrice();  //辣椒是免费的哦
+        return humburger.getPrice();  //辣椒是免费的�?
     }
 
 }

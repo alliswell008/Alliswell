@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.alliswell.testspringboot.annotation.TestAnnotation;
 import org.alliswell.testspringboot.dao.UserDao;
 import org.alliswell.testspringboot.model.User;
 import org.mybatis.spring.annotation.MapperScan;
@@ -25,13 +26,15 @@ import java.util.Map;
 @EnableAutoConfiguration
 @RequestMapping("/testboot")
 //@MapperScan("org.alliswell.testspringboot.dao")
+@TestAnnotation(name = "cba")
 public class TestSpringBootController {
 
     @Autowired
     private UserDao userDao;
 
-    @RequestMapping("getuser")
-    public User getUser() {
+    @TestAnnotation(name="abc")
+    @RequestMapping("getUser")
+    public User getUser(@TestAnnotation(name="args") String n,@TestAnnotation(name="args") String m) {
         User user = new User();
         user.setName("test");
         return user;

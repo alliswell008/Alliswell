@@ -1,7 +1,7 @@
 /**
  * @Title: Leaf
  * @Package org.alliswell.pattern.singleton.composite
- * @Description: TODO(用一句话来说明)
+ * @Description: TODO(用一句话来说�?)
  * @author alliswell008
  * @date 2017/1/17 10:23
  * @version V1.0
@@ -12,7 +12,7 @@
  * Description:
  * *****************************************************
  */
-package org.alliswell.pattern.composite;
+package src.main.java.org.alliswell.pattern.composite;
 
 /**
  * @ClassName: Leaf
@@ -34,7 +34,7 @@ public class Leaf extends Compenent {
         // TODO Auto-generated constructor stub
     }
 
-    /* (非 Javadoc)
+    /* (�? Javadoc)
      * <p>Title: add</p>
      * <p>Description: </p>
      * @param c
@@ -46,7 +46,7 @@ public class Leaf extends Compenent {
 
     }
 
-    /* (非 Javadoc)
+    /* (�? Javadoc)
      * <p>Title: remove</p>
      * <p>Description: </p>
      * @param c
@@ -58,7 +58,7 @@ public class Leaf extends Compenent {
 
     }
 
-    /* (非 Javadoc)
+    /* (�? Javadoc)
      * <p>Title: display</p>
      * <p>Description: </p>
      * @param c
