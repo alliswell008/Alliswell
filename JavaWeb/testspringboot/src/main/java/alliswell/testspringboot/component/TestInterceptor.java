@@ -1,4 +1,4 @@
-package org.a.testspringboot.component;
+package alliswell.testspringboot.component;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
-package org.a.testspringboot.component;
+package alliswell.testspringboot.component;
 
-import org.a.testspringboot.annotation.TestAnnotation;
+import alliswell.testspringboot.annotation.TestAnnotation;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -20,7 +20,7 @@ public class TestAspect {
     }
 
     // 将“@TestAnnotation”注解在方法上才有效，注解在类型则无效
-    @Before("@annotation(org.a.testspringboot.annotation.TestAnnotation)")
+    @Before(value = "@annotation(alliswell.testspringboot.annotation.TestAnnotation)")
     public void beforeTest(JoinPoint point) {
         // Start-通过point获取注解的属性
         MethodSignature signature = (MethodSignature) point.getSignature();
@@ -37,18 +37,18 @@ public class TestAspect {
         System.out.println("beforeTest:" + test.name());
     }
 
-    @Before("execution(* org.a.testspringboot.controller.TestSpringBootController.*(..))")
+    @Before("execution(* alliswell.testspringboot.controller.TestSpringBootController.*(..))")
     public void beforeTest1(JoinPoint point) {
         System.out.println("beforeTest1:所有public方法");
     }
 
-    @Before("within(org.a.testspringboot..*)")
+    @Before("within(alliswell.testspringboot..*)")
     public void beforeTest2(JoinPoint point) {
         System.out.println("beforeTest2:所有public方法");
     }
 
 //    // 将“@TestAnnotation”注解在方法上则无效，注解在类型才有效
-//    @Before("@within(org.a.testspringboot.annotation.TestAnnotation)")
+//    @Before("@within(TestAnnotation)")
 //    public void beforeTest3(JoinPoint point) {
 //        System.out.println("beforeTest3:所有public方法");
 //    }
@@ -60,7 +60,7 @@ public class TestAspect {
     }
 
 //    // 始终无效，不知为何--可能是新版本特性
-//    @Before(value="@annotation(test) && @args(org.a.testspringboot.annotation.TestAnnotation)")
+//    @Before(value="@annotation(test) && @args(TestAnnotation)")
 //    public void before1(JoinPoint jp, TestAnnotation test) {
 //        System.out.println("===param1:");
 //    }

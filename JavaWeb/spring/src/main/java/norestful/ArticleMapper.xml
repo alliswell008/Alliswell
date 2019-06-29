@@ -24,7 +24,7 @@
         (#{title},#{summary},#{userId},#{status},#{createTime},#{updateTime},#{publicTime})
     </insert>
 
-    <update id="updateArticle" parameterType="norestful.Article">
+    <update id="updateArticleById" parameterType="norestful.Article">
         UPDATE tb_article
         <set>
             <if test="title != null">

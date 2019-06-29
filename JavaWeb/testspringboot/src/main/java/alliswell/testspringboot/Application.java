@@ -1,4 +1,4 @@
-package org.alliswell.testspringboot;
+package alliswell.testspringboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

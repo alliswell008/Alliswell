@@ -1,4 +1,4 @@
-package org.alliswell.testspringboot;
+package alliswell.testspringboot;
 
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.context.annotation.Bean;

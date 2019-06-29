@@ -1,5 +1,5 @@
 
-package org.alliswell.testspringboot;
+package alliswell.testspringboot;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;

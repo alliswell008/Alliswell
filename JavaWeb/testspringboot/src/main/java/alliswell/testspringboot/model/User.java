@@ -1,4 +1,4 @@
-package org.alliswell.testspringboot.model;
+package alliswell.testspringboot.model;
 
 /**
  * Created by alliswell on 2017/9/13.

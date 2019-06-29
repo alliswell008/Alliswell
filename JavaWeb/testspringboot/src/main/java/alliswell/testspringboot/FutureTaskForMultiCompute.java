@@ -1,4 +1,4 @@
-package org.a.testspringboot;
+package alliswell.testspringboot;
 
 import java.util.ArrayList;
 import java.util.List;

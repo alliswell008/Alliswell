@@ -1,9 +1,9 @@
-package org.alliswell.testspringboot.controller;
+package alliswell.testspringboot.controller;
 
+import alliswell.testspringboot.dao.UserDao;
+import alliswell.testspringboot.model.User;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import org.alliswell.testspringboot.dao.UserDao;
-import org.alliswell.testspringboot.model.User;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

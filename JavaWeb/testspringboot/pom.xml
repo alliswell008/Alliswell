@@ -88,6 +88,11 @@
             <artifactId>spring-context</artifactId>
             <version>RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.7.4</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>testspringboot</finalName>

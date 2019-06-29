@@ -1,4 +1,4 @@
-package org.alliswell.testspringboot.service;
+package alliswell.testspringboot.service;
 
 /**
  * Created by alliswell on 2017/10/3.

@@ -1,6 +1,6 @@
-package org.alliswell.testspringboot.dao;
+package alliswell.testspringboot.dao;
 
-import org.alliswell.testspringboot.model.User;
+import alliswell.testspringboot.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
