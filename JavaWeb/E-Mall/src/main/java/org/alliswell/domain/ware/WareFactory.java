@@ -1,9 +1,5 @@
 package org.alliswell.domain.ware;
 
-import org.alliswell.domain.order.Order;
-import org.alliswell.domain.order.vo.paa.PAAOrderVO;
-import org.alliswell.domain.order.vo.pcz.PCZOrderVO;
-
 /**
  * 商品工厂
  * Created by cxs on 2017/8/31.

@@ -14,6 +14,8 @@
  */
 package test;
 
+import sun.misc.VM;
+
 /**
  * @author alliswell008
  * @ClassName: Test
@@ -21,6 +23,8 @@ package test;
  * @date 2016/12/12 17:07
  */
 public class Test {
+
+    static final String a = "aa";
 
     // 构造方法 在new时执行
     public Test() {
@@ -74,6 +78,19 @@ public class Test {
         String a = "1";
         chuandi(a);
         System.out.println("方法外a=" + a);
+
+
+        String host = "172.16.145.159";
+
+        String ff = !host.equals("127.0.0.1") && !host.startsWith("localhost") && !host.equals("0.0.0.0") && !host.startsWith("169.254") && !host.startsWith("::1") && !host.startsWith("0:0:0:0:0:0:0:1")?host:"";
+        System.out.println(ff);
+
+        String var1 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+        Integer b = new Integer(2);
+        String var2 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+
+        System.out.println(var1);
+        System.out.println(var2);
     }
 
     /**

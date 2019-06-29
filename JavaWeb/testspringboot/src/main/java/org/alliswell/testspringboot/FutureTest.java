@@ -2,7 +2,6 @@ package org.a.testspringboot;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.*;
 
 /**
  * 试验 Java 的 Future 用法

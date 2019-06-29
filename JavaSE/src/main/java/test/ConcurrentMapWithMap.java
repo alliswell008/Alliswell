@@ -1,12 +1,12 @@
 package test;
 
+import org.apache.log4j.Logger;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutionException;
-
-import org.apache.log4j.Logger;
 
 public class ConcurrentMapWithMap {
 

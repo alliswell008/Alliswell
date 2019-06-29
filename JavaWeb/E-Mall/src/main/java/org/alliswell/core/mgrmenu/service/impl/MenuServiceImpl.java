@@ -16,12 +16,8 @@ package org.alliswell.core.mgrmenu.service.impl;
 
 import org.alliswell.core.mgrmenu.service.MenuService;
 import org.alliswell.core.mgruser.model.dto.UserDto;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author org.alliswell

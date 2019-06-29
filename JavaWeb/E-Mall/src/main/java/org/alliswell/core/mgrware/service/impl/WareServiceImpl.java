@@ -1,7 +1,6 @@
 package org.alliswell.core.mgrware.service.impl;
 
 import org.alliswell.core.mgrware.dao.WareDao;
-import org.alliswell.core.mgrware.model.entity.WareEntity;
 import org.alliswell.core.mgrware.model.vo.WareVo;
 import org.alliswell.core.mgrware.service.WareService;
 
