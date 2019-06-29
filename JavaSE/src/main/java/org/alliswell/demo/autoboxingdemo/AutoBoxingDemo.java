@@ -2,6 +2,7 @@ package org.alliswell.demo.autoboxingdemo;
 
 /**
  * Created by Administrator on 2018/3/2.
+ * 如果a==c且b==c，则a与不一定相等
  */
 public class AutoBoxingDemo {
 
