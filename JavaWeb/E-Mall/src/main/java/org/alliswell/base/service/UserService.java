@@ -8,14 +8,19 @@ package org.alliswell.base.service;
 
 
 /**
-* The Service Interface, for future extend
+ * The Service Interface, for future extend
+ *
  * @author njtc
- * @create 2016-09-28*/
+ * @create 2016-09-28
+ */
 public interface UserService<T> {
 
-    public void saveUser(Object dto);
-    public void delUser(Object dto);
-    public void updUser(Object dto);
-    public void queryUser(Object dto);
+	public void saveUser(Object dto);
+
+	public void delUser(Object dto);
+
+	public void updUser(Object dto);
+
+	public void queryUser(Object dto);
 
 }

@@ -23,23 +23,23 @@ import org.alliswell.base.service.UserService;
  * @date 2017/2/22 16:03
  */
 public class UserServiceImpl implements UserService {
-    @Override
-    public void saveUser(Object dto) {
+	@Override
+	public void saveUser(Object dto) {
 
-    }
+	}
 
-    @Override
-    public void delUser(Object dto) {
+	@Override
+	public void delUser(Object dto) {
 
-    }
+	}
 
-    @Override
-    public void updUser(Object dto) {
+	@Override
+	public void updUser(Object dto) {
 
-    }
+	}
 
-    @Override
-    public void queryUser(Object dto) {
+	@Override
+	public void queryUser(Object dto) {
 
-    }
+	}
 }

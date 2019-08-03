@@ -9,9 +9,10 @@ package org.alliswell.core.mgruser.model.vo;
 
 /**
  * 用户基础信息表 Value Object
+ *
  * @author njtc
- * @create 2016-09-28 */
-public class UserVo
-{
+ * @create 2016-09-28
+ */
+public class UserVo {
 
 }

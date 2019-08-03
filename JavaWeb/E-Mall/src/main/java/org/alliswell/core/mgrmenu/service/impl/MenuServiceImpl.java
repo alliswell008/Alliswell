@@ -1,6 +1,6 @@
 /**
  * @Title: UserServiceImpl
- * @Package com.allis.core.service.impl.controller
+ * @Package com.allis.core.service.impl.api
  * @Description: 用户管理service业务层TODO(用一句话描述该文件做什么)
  * @author org.alliswell
  * @date 2016/9/25 17:38
@@ -10,7 +10,7 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * *****************************************************
  */
 package org.alliswell.core.mgrmenu.service.impl;
 
@@ -28,19 +28,17 @@ import org.springframework.stereotype.Service;
  * ${TAGS}
  */
 @Service("UserService")
-public class MenuServiceImpl implements MenuService
-{
-    @Autowired
-    public void addUser(UserDto userDto) {
-        System.out.println("add user into database.");
-    }
-    public UserDto getUser(String id)
-    {
+public class MenuServiceImpl implements MenuService {
+	@Autowired
+	public void addUser(UserDto userDto) {
+		System.out.println("add user into database.");
+	}
 
-        return null;
-    }
+	public UserDto getUser(String id) {
 
-    public static void main(String[] args)
-    {
-    }
+		return null;
+	}
+
+	public static void main(String[] args) {
+	}
 }

@@ -13,30 +13,30 @@ import java.util.List;
 @Service
 public class ArticleServiceImpl implements ArticleService {
 
-    @Autowired
-    private ArticleMapper articleMapper;
+	@Autowired
+	private ArticleMapper articleMapper;
 
-    @Override
-    public Long saveArticle(@RequestBody Article article) {
-        return articleMapper.insertArticle(article);
-    }
+	@Override
+	public Long saveArticle(@RequestBody Article article) {
+		return articleMapper.insertArticle(article);
+	}
 
-    @Override
-    public List<Article> getArticles(String title, Long userId, int offset, int pageSize) {
-        Article article = new Article();
-        article.setTitle(title);
-        article.setUserId(userId);
-        return articleMapper.queryArticlesByPage(article,offset,pageSize);
-    }
+	@Override
+	public List<Article> getArticles(String title, Long userId, int offset, int pageSize) {
+		Article article = new Article();
+		article.setTitle(title);
+		article.setUserId(userId);
+		return articleMapper.queryArticlesByPage(article, offset, pageSize);
+	}
 
-    @Override
-    public Article getById(Long id) {
-        return articleMapper.queryById(id);
-    }
+	@Override
+	public Article getById(Long id) {
+		return articleMapper.queryById(id);
+	}
 
-    @Override
-    public void updateArticle(Article article) {
-        article.setUpdateTime(new Date());
-        articleMapper.updateArticleById(article);
-    }
+	@Override
+	public void updateArticle(Article article) {
+		article.setUpdateTime(new Date());
+		articleMapper.updateArticleById(article);
+	}
 }

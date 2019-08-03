@@ -11,9 +11,8 @@ import org.alliswell.core.mgruser.model.dto.UserDto;
  * <p/>
  * ${TAGS}
  */
-public interface MenuService
-{
-    UserDto getUser(String id);
+public interface MenuService {
+	UserDto getUser(String id);
 
-    void addUser(UserDto userDto);
+	void addUser(UserDto userDto);
 }

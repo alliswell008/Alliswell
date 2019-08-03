@@ -32,37 +32,37 @@ import java.lang.reflect.Proxy;
  * ${TAGS}
  */
 public class ProxyUtil implements InvocationHandler {
-    private Object target;    // 被代理的对象
+	private Object target;    // 被代理的对象
 
-    public Object invoke(Object proxy, Method method, Object[] args)
-            throws Throwable {
-        System.out.println("do sth before....");
-        Object result = method.invoke(target, args);
-        System.out.println("do sth after....");
-        return result;
-    }
+	public Object invoke(Object proxy, Method method, Object[] args)
+			throws Throwable {
+		System.out.println("do sth before....");
+		Object result = method.invoke(target, args);
+		System.out.println("do sth after....");
+		return result;
+	}
 
-    ProxyUtil(Object target) {
-        this.target = target;
-    }
+	ProxyUtil(Object target) {
+		this.target = target;
+	}
 
-    public Object getTarget() {
-        return target;
-    }
+	public Object getTarget() {
+		return target;
+	}
 
-    public void setTarget(Object target) {
-        this.target = target;
-    }
+	public void setTarget(Object target) {
+		this.target = target;
+	}
 
-    public static void main(String[] args) {
-        Object proxyedObject = new UserServiceImpl();    // 被代理的对象
-        ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
+	public static void main(String[] args) {
+		Object proxyedObject = new UserServiceImpl();    // 被代理的对象
+		ProxyUtil proxyUtils = new ProxyUtil(proxyedObject);
 
-        // 生成代理对象，对被代理对象的这些接口进行代理：UserServiceImpl.class.getInterfaces()
-        UserService proxyObject = (UserService) Proxy.newProxyInstance(
-                Thread.currentThread().getContextClassLoader(),
-                UserServiceImpl.class.getInterfaces(), proxyUtils);
-        proxyObject.getUser("1");
-        proxyObject.addUser(new UserDto());
-    }
+		// 生成代理对象，对被代理对象的这些接口进行代理：UserServiceImpl.class.getInterfaces()
+		UserService proxyObject = (UserService) Proxy.newProxyInstance(
+				Thread.currentThread().getContextClassLoader(),
+				UserServiceImpl.class.getInterfaces(), proxyUtils);
+		proxyObject.getUser("1");
+		proxyObject.addUser(new UserDto());
+	}
 }

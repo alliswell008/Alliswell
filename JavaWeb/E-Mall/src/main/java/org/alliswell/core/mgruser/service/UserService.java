@@ -18,6 +18,7 @@ import org.alliswell.core.mgruser.model.dto.UserDto;
  */
 public interface UserService {
 
-    void addUser(UserDto userDto);
-    UserDto getUser(String userId);
+	void addUser(UserDto userDto);
+
+	UserDto getUser(String userId);
 }

@@ -1,6 +1,6 @@
 /**
  * @Title: UserServiceImpl
- * @Package com.allis.core.service.impl.controller
+ * @Package com.allis.core.service.impl.api
  * @Description: 用户管理service业务层TODO(用一句话描述该文件做什么)
  * @author org.alliswell
  * @date 2016/9/25 17:38
@@ -10,7 +10,7 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * *****************************************************
  */
 package org.alliswell.core.mgruser.service.impl;
 
@@ -31,14 +31,14 @@ import org.springframework.stereotype.Service;
  */
 @Service("UserService")
 public class UserServiceImpl implements UserService {
-    @Autowired
-    private UserDao userDao;
+	@Autowired
+	private UserDao userDao;
 
-    public void addUser(UserDto userDto) {
-        System.out.println("add user into database.");
-    }
+	public void addUser(UserDto userDto) {
+		System.out.println("add user into database.");
+	}
 
-    public UserDto getUser(String id) {
+	public UserDto getUser(String id) {
 //                UserEntity userEntity = userDao.queryUserById(id);
 //                userEntity.setId(id);
 //                System.out.println("getUser from database.");
@@ -51,9 +51,9 @@ public class UserServiceImpl implements UserService {
 //        UserEntity userEntity = userDao.getTableSql(sqlAdapter);
 //        //        UserEntity userEntity = userDao.getSql(sqlAdapter);
 
-        UserDto userDto = new UserDto();
+		UserDto userDto = new UserDto();
 //        BeanUtils.copyProperties(userEntity, userDto);
-        return userDto;
-    }
+		return userDto;
+	}
 
 }

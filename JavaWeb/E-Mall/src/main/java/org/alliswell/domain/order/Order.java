@@ -6,10 +6,10 @@ package org.alliswell.domain.order;
  */
 public abstract class Order {
 
-    private String orderBuyer;
+	private String orderBuyer;
 
-    private String orderSeller;
+	private String orderSeller;
 
-    private String orderBaseInfo;
+	private String orderBaseInfo;
 
 }

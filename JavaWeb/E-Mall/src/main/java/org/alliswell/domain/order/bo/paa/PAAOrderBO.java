@@ -7,5 +7,5 @@ import org.alliswell.domain.order.Order;
  */
 public class PAAOrderBO extends Order {
 
-    private String features;
+	private String features;
 }

@@ -10,7 +10,7 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * *****************************************************
  */
 package org.alliswell.core.mgruser.controller;
 
@@ -30,17 +30,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("UserController")
 public class UserController {
 
-    private UserService userService;
+	private UserService userService;
 
-    public void regist(String userInfo) {
-        System.out.println("注册成功");
-    }
+	public void regist(String userInfo) {
+		System.out.println("注册成功");
+	}
 
-    public void login(String userAccount, String userPasswd) {
-        System.out.println("登录成功");
-    }
+	public void login(String userAccount, String userPasswd) {
+		System.out.println("登录成功");
+	}
 
-    public void modifyUserInfo(String userInfo) {
-        System.out.println("修改成功");
-    }
+	public void modifyUserInfo(String userInfo) {
+		System.out.println("修改成功");
+	}
 }

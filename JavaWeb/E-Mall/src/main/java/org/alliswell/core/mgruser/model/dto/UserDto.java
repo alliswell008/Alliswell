@@ -10,7 +10,7 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * *****************************************************
  */
 package org.alliswell.core.mgruser.model.dto;
 
@@ -22,5 +22,5 @@ package org.alliswell.core.mgruser.model.dto;
  * <p/>
  * ${TAGS}
  */
-public class UserDto
-{}
+public class UserDto {
+}

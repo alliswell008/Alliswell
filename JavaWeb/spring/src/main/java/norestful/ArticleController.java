@@ -14,19 +14,19 @@ import java.util.List;
 @RequestMapping("/article")
 public class ArticleController {
 
-    @Autowired
-    private ArticleService articleService;
+	@Autowired
+	private ArticleService articleService;
 
-    @RequestMapping("/list.json")
-    @ResponseBody
-    public List<Article> listArticles(String title, Integer pageSize, Integer pageNum) {
-        if (pageSize == null) {
-            pageSize = 10;
-        }
-        if (pageNum == null) {
-            pageNum = 1;
-        }
-        int offset = (pageNum - 1) * pageSize;
-        return articleService.getArticles(title, 1L, offset, pageSize);
-    }
+	@RequestMapping("/list.json")
+	@ResponseBody
+	public List<Article> listArticles(String title, Integer pageSize, Integer pageNum) {
+		if (pageSize == null) {
+			pageSize = 10;
+		}
+		if (pageNum == null) {
+			pageNum = 1;
+		}
+		int offset = (pageNum - 1) * pageSize;
+		return articleService.getArticles(title, 1L, offset, pageSize);
+	}
 }

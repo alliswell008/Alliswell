@@ -10,18 +10,18 @@ package org.alliswell.core.mgrpromotion.controller;
  */
 public class PromotionController {
 
-    /**
-     * 生成促销规则
-     */
-    public void genPromotionRule() {
+	/**
+	 * 生成促销规则
+	 */
+	public void genPromotionRule() {
 
-    }
+	}
 
-    public void getPromotionRules() {
+	public void getPromotionRules() {
 
-    }
+	}
 
-    public void getPromotionRuleByWareId() {
+	public void getPromotionRuleByWareId() {
 
-    }
+	}
 }

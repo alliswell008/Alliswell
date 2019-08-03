@@ -20,18 +20,20 @@ import java.util.List;
  */
 public interface WareService {
 
-    /**
-     * 查询商品列表
-     * @param userId
-     * @param areaId
-     * @param wareType
-     */
-    public List<WareVo> queryWareList(String userId, String areaId, String wareType);
+	/**
+	 * 查询商品列表
+	 *
+	 * @param userId
+	 * @param areaId
+	 * @param wareType
+	 */
+	public List<WareVo> queryWareList(String userId, String areaId, String wareType);
 
-    /**
-     * 查询商品详情
-     * @param wareId
-     * @param wareType
-     */
-    public WareVo queryWareDetail(String wareId, String wareType);
+	/**
+	 * 查询商品详情
+	 *
+	 * @param wareId
+	 * @param wareType
+	 */
+	public WareVo queryWareDetail(String wareId, String wareType);
 }

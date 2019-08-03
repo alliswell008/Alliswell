@@ -7,11 +7,11 @@ import java.util.List;
  */
 public interface ArticleMapper {
 
-    Long insertArticle(Article article);
+	Long insertArticle(Article article);
 
-    List<Article> queryArticlesByPage(Article article, int offset, int pageSize);
+	List<Article> queryArticlesByPage(Article article, int offset, int pageSize);
 
-    Article queryById(Long id);
+	Article queryById(Long id);
 
-    void updateArticleById(Article article);
+	void updateArticleById(Article article);
 }

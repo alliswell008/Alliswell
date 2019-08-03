@@ -7,6 +7,6 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 
 mybatis:
-  config-locations: mybatis/mybatis-config.xml
-  mapper-locations: mybatis/mapper/*.xml
+  config-locations: mybatis/mybatis-config.mapper
+  mapper-locations: mybatis/mapper/*.mapper
   type-aliases-package: norestful

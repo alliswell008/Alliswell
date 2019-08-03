@@ -26,7 +26,8 @@
 
     <!--  一种映射方式，注意as后面的名字要跟model的属性名字一样 -->
     <select id="get" parameterType="int" resultType="com.pandy.model.SentEmailQueue">
-        SELECT data_id as dataId, from_email as fromEmail, to_email as toEmail, to_user_id as toUserId, send_date_time as sendDateTime, invalid_date_time as invalidDateTime, email_type as emailType, email_data_id as emailDataId,
+        SELECT data_id as dataId, from_email as fromEmail, to_email as toEmail, to_user_id as toUserId, send_date_time
+        as sendDateTime, invalid_date_time as invalidDateTime, email_type as emailType, email_data_id as emailDataId,
         subject as subject, template_name as templateName, content_params as contentParams, sent_status as sentStatus,
         actual_sent_date_time as actualSentDateTime,
         CREATED_TIME as createdTime,
@@ -40,9 +41,10 @@
 
     <!--  另一种映射方式，直接映射到model的类 -->
     <select id="getAll" resultMap="sentEmailQueueMap">
-        SELECT data_id, from_email, to_email, to_user_id, send_date_time, invalid_date_time, email_type, email_data_id, subject, template_name, content_params, sent_status, actual_sent_date_time, CREATED_TIME, MODIFIED_TIME, LAST_UPDATED_STAMP, LAST_UPDATED_TX_STAMP, CREATED_STAMP, CREATED_TX_STAMP FROM send_email_queue1
+        SELECT data_id, from_email, to_email, to_user_id, send_date_time, invalid_date_time, email_type, email_data_id,
+        subject, template_name, content_params, sent_status, actual_sent_date_time, CREATED_TIME, MODIFIED_TIME,
+        LAST_UPDATED_STAMP, LAST_UPDATED_TX_STAMP, CREATED_STAMP, CREATED_TX_STAMP FROM send_email_queue1
     </select>
-
 
 
     <insert id="insert" parameterType="com.pandy.model.SentEmailQueue" useGeneratedKeys="true" keyProperty="dataId">
@@ -50,7 +52,7 @@
         VALUES (#{toEmail}, #{toEmail})
     </insert>
     <update id="update" parameterType="com.pandy.model.SentEmailQueue">
-        UPDATE send_email_queue1 SET  from_email = #{toEmail}, to_email = #{toEmail}
+        UPDATE send_email_queue1 SET from_email = #{toEmail}, to_email = #{toEmail}
         WHERE data_id = #{dataId}
 
     </update>

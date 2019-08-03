@@ -27,8 +27,8 @@ import org.alliswell.core.mgrware.model.vo.WareVo;
  */
 public class PromotionServiceImpl {
 
-    public static void main(String[] args) {
-        WareVo wareVo = new WareConvertVo();
-        Promotion promotion = new ConvertSprice();
-    }
+	public static void main(String[] args) {
+		WareVo wareVo = new WareConvertVo();
+		Promotion promotion = new ConvertSprice();
+	}
 }

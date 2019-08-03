@@ -1,5 +1,9 @@
 package test;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
+
 /**
  * 空对象靠右原则可以避免NPE异常
  *
@@ -17,6 +21,13 @@ public class Test6 {
         } else {
             System.out.println("!=");
         }
+
+        boolean e = Objects.equals("", "");
+        System.out.println(e);
+
+        String[] str = new String[]{"you", "me"};
+        List list = Arrays.asList(str);
+        list.add("11");
 
         // 抛出异常NPE
         boolean equals = num.equals(new Integer(8));

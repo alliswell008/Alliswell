@@ -10,29 +10,29 @@ import org.alliswell.domain.order.vo.pcz.PCZOrderVO;
 public class OrderFactory {
 
 
-    /**
-     * 订单工厂创建订单
-     *
-     * @param type      订单类型
-     * @param orderJson 订单json参数
-     * @return
-     */
-    public static Order createOrder(String type, String orderJson) {
-        Order order = null;
+	/**
+	 * 订单工厂创建订单
+	 *
+	 * @param type      订单类型
+	 * @param orderJson 订单json参数
+	 * @return
+	 */
+	public static Order createOrder(String type, String orderJson) {
+		Order order = null;
 
-        switch (type) {
-            case "PAA":
-                order = new PAAOrderVO();
-                break;
+		switch (type) {
+			case "PAA":
+				order = new PAAOrderVO();
+				break;
 
-            case "PCZ":
-                order = new PCZOrderVO();
-                break;
+			case "PCZ":
+				order = new PCZOrderVO();
+				break;
 
-            default:
-                break;
-        }
+			default:
+				break;
+		}
 
-        return order;
-    }
+		return order;
+	}
 }

@@ -44,7 +44,7 @@ public class SimpleReflectFactoryCalculator {
 
     /**
      * 反射的作用在于可以利用类名（类名是一个字符串）来创建对象。
-     * 这样我们就可以将选择创建哪个对象的判断过程，采用key-value来配置（map、properities、xml）
+     * 这样我们就可以将选择创建哪个对象的判断过程，采用key-value来配置（map、properities、mapper）
      * ，通过匹配key来选择类名字符串。如本文件开头定义的map。
      * @Title: client_简单工厂_反射
      * @Description: TODO(这里用一句话描述这个方法的作用)

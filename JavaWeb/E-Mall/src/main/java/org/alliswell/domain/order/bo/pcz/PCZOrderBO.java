@@ -7,6 +7,6 @@ import org.alliswell.domain.order.Order;
  */
 public class PCZOrderBO extends Order {
 
-    private String features;
+	private String features;
 
 }

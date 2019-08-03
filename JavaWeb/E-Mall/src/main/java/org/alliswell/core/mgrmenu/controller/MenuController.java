@@ -1,10 +1,10 @@
 /**
  * @Title: MenuController
- * @Package com.allis.core.mgrmenu.controller
+ * @Package com.allis.core.mgrmenu.api
  * @Description: 菜单管理模块
- *               <p>1.用户注册</p>
- *               <p>2.用户登录</p>
- *               <p>3.修改用户信息</p>
+ * <p>1.用户注册</p>
+ * <p>2.用户登录</p>
+ * <p>3.修改用户信息</p>
  * @author org.alliswell
  * @date 2016/9/25 17:22
  * @version V1.0
@@ -13,7 +13,7 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * *****************************************************
  */
 package org.alliswell.core.mgrmenu.controller;
 
@@ -25,7 +25,6 @@ package org.alliswell.core.mgrmenu.controller;
  * <p/>
  * ${TAGS}
  */
-public class MenuController
-{
+public class MenuController {
 
 }

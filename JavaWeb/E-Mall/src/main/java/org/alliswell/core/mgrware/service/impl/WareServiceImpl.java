@@ -21,15 +21,15 @@ import java.util.List;
  * *****************************************************
  */
 public class WareServiceImpl implements WareService {
-    private WareDao wareDao;
+	private WareDao wareDao;
 
-    @Override
-    public List<WareVo> queryWareList(String userId, String areaId, String wareType) {
-        return wareDao.queryList(userId, areaId, wareType);
-    }
+	@Override
+	public List<WareVo> queryWareList(String userId, String areaId, String wareType) {
+		return wareDao.queryList(userId, areaId, wareType);
+	}
 
-    @Override
-    public WareVo queryWareDetail(String wareId, String wareType) {
-        return wareDao.queryDetail(wareId, wareType);
-    }
+	@Override
+	public WareVo queryWareDetail(String wareId, String wareType) {
+		return wareDao.queryDetail(wareId, wareType);
+	}
 }
