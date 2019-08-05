@@ -1,11 +1,15 @@
-package alliswell.pattern.adapter;
+package alliswell.pattern.adapter.classadapter;
 
-import alliswell.pattern.adapter.original.Adaptee;
+import alliswell.pattern.adapter.Targetable;
+import alliswell.pattern.adapter.original.Adaptee2;
 
 /**
- * 类适配器：可以对被适配类中的方法进行增强或削弱。
+ * 类适配器：通过继承获得被适配类的方法，可以对被适配类中的方法进行增强或削弱。
+ *
+ * @author chengxs
+ * @date 2019/8/3
  */
-public class Adapter extends Adaptee implements Targetable {
+public class Adapter2 extends Adaptee2 implements Targetable {
 
     @Override
     public void request() {
@@ -21,5 +25,4 @@ public class Adapter extends Adaptee implements Targetable {
         // 新增方法功能
         System.out.println("被适配类具有新增方法功能");
     }
-
 }

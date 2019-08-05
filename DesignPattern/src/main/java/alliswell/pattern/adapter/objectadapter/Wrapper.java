@@ -1,17 +1,24 @@
-package alliswell.pattern.adapter;
+package alliswell.pattern.adapter.objectadapter;
 
+import alliswell.pattern.adapter.Targetable;
 import alliswell.pattern.adapter.original.Adaptee;
 
 /**
- * 对象适配器：
+ * 对象适配器：通过持有被适配对象，可以调用被适配对象的方法
  */
 public class Wrapper implements Targetable {
 
-    // 直接关联被适配类
+    /**
+     * 直接关联被适配类对象
+     */
     private Adaptee adaptee;
 
-    // 可以通过构造函数传入具体需要适配的被适配类对象
-    public Wrapper (Adaptee adaptee) {
+    /**
+     * 可以通过构造函数传入具体需要适配的被适配类对象
+     *
+     * @param adaptee 被适配类对象
+     */
+    public Wrapper(Adaptee adaptee) {
         this.adaptee = adaptee;
     }
 

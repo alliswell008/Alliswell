@@ -1,6 +1,13 @@
 package alliswell.pattern.adapter;
 
+import alliswell.pattern.adapter.classadapter.Adapter;
+import alliswell.pattern.adapter.classadapter.Adapter2;
+import alliswell.pattern.adapter.interfaceadapter.IAdapterSub1;
+import alliswell.pattern.adapter.interfaceadapter.IAdapterSub2;
+import alliswell.pattern.adapter.objectadapter.Wrapper;
+import alliswell.pattern.adapter.objectadapter.Wrapper2;
 import alliswell.pattern.adapter.original.Adaptee;
+import alliswell.pattern.adapter.original.Adaptee2;
 
 /**
  * 适配器模式：
@@ -18,20 +25,28 @@ public class AdapterClient {
     public static void main(String[] args) {
         // 类适配器
         Targetable adapter = new Adapter();
-        adapter.request();
-        adapter.request2();
+        classAdapter(adapter);
+        adapter = new Adapter2();
+        classAdapter(adapter);
 
         // 对象适配器
         // 要先创建一个被适配类的对象作为参数
         Targetable adapter2 = new Wrapper(new Adaptee());
-        adapter2.request();
+        adapter2.request2();
+        adapter2 = new Wrapper2(new Adaptee2());
+        adapter2.request2();
 
         // 接口适配器
-        IAdapteeSub1 adapteeSub1 = new IAdapteeSub1();
-        IAdapteeSub2 adapteeSub2 = new IAdapteeSub2();
-        adapteeSub1.method1();
-        adapteeSub1.method2();
-        adapteeSub2.method1();
-        adapteeSub2.method2();
+        Targetable adapteeSub1 = new IAdapterSub1();
+        Targetable adapteeSub2 = new IAdapterSub2();
+        adapteeSub1.request();
+        adapteeSub1.request2();
+        adapteeSub2.request();
+        adapteeSub2.request2();
+    }
+
+    public static void classAdapter(Targetable adapter) {
+        adapter.request();
+        adapter.request2();
     }
 }
