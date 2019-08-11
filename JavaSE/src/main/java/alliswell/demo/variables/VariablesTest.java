@@ -14,6 +14,8 @@
  */
 package alliswell.demo.variables;
 
+import alliswell.demo.unicode.UnicodeDemo;
+
 /**
  * @author alliswell
  * @Title: VariablesTest
@@ -22,7 +24,7 @@ package alliswell.demo.variables;
  * 局部变量则必须要主动初始化（初始化之前需要先声明变量）</p>
  * @date 2017/3/27 15:29
  */
-public class VariablesTest {
+public class VariablesTest extends UnicodeDemo {
     boolean t;
     char c;
     byte b;

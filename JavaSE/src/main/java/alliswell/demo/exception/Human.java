@@ -1,4 +1,4 @@
-package test;
+package alliswell.demo.exception;
 
 class Annoyance extends Exception {}
 class Sneeze extends Annoyance {}
