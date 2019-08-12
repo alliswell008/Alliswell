@@ -24,5 +24,11 @@ public class IntegerDemo {
 
         System.out.println(c == d);
         System.out.println(e == f);
+        System.out.println(c.equals(d) );
+        System.out.println(e.equals(f));
+
+        Long ll = 1234567891011L;
+        System.out.println(ll.intValue());
+        System.out.println(ll.longValue());
     }
 }

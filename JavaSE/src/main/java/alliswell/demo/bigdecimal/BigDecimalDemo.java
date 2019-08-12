@@ -28,16 +28,15 @@ public class BigDecimalDemo {
 //		double dNum = 12345678.0123769;
 //        double dNum = 10000000;
 //		float dNum = 10000000;
-        double dNum = 8.01237695456573328;
+        double dNum = 8.01237695456573328F;
 
-        //基础类型的大数转化为String时会自动转为科学计数法的形式
+        //基础类型的大数转化为String时会自动转为二进制科学计数法的形式
+        System.out.println(dNum);
         System.out.println(String.valueOf(dNum));
-        //若以BigDecimal类来转化则不会转为科学计数的形式，但小数位数未受控制
-        System.out.println(new BigDecimal(dNum).toString());
+        //若以BigDecimal类来转化则不会转为二进制科学计数的形式，但小数位数未受控制
+        System.out.println(new BigDecimal(Double.toString(dNum)).toString());
         //若以BigDecimal类来转化并设置小数点后的有效位，以及进位（四舍五入）
-        System.out.println(new BigDecimal(dNum).setScale(5, BigDecimal.ROUND_HALF_UP).toString());
-        System.out.println("0123769545657328450261047692038118839263916015625".length());
-        System.out.println("1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111".length());
+        System.out.println(new BigDecimal(Double.toString(dNum)).setScale(5, BigDecimal.ROUND_HALF_UP).toString());
     }
 
 }

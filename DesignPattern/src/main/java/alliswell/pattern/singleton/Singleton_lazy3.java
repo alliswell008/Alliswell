@@ -1,7 +1,7 @@
 /**  
  * @Title:  Singleton.java
  * @Package 单例模式
- * @Description: TODO(用一句话描述该文件做�?�?)
+ * @Description: TODO(用一句话描述该文件做什么)
  * @author a
  * @date  2016-8-3 下午6:16:32
  * @version V1.0  
@@ -25,10 +25,10 @@ import java.io.Serializable;
  */
 public class Singleton_lazy3 implements Serializable {
 
-    // 单例对象私有，未实例�?
+    // 单例对象私有，未实例化
     private static Singleton_lazy3 singleton = null;
 
-	// 构�?�方法私�?
+	// 构造方法私有
 	private Singleton_lazy3(){
 
 	}

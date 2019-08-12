@@ -1,7 +1,7 @@
 /**  
  * @Title:  Singleton.java
  * @Package 单例模式
- * @Description: TODO(用一句话描述该文件做�?�?)
+ * @Description: TODO(用一句话描述该文件做什么)
  * @author a
  * @date  2016-8-3 下午6:16:32
  * @version V1.0  
@@ -41,12 +41,12 @@ public class Singleton_enum implements Serializable {
     }
 
     // 枚举
-    //枚举enum和静态代码块的特性相似，在使用枚举时，构造方法会被自动调用，利用这一特�?�也可以实现单例
+    //枚举enum和静态代码块的特性相似，在使用枚举时，构造方法会被自动调用，利用这一特性也可以实现单例
     private static enum Single {
         instance;
 
         private  Singleton_enum single;
-        //JVM会保证此方法绝对只调用一�?
+        //JVM会保证此方法绝对只调用一次
         private Single(){
             single = new Singleton_enum();
         }
