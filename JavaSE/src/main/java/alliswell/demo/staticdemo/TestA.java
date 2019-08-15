@@ -1,32 +1,32 @@
-package test;
+package alliswell.demo.staticdemo;
 
 public class TestA {
     public static void main(String[] args)
     {
-        StaticTest.staticFunction();
+        StaticTestDemo.staticFunction();
     }
 }
 // StaticTest
 //public
-class StaticTest
+class StaticTestDemo
 {
     // public static void main(String[] args)
     // {
     //     staticFunction();
     // }
 
-    static StaticTest st = new StaticTest();
+    static StaticTestDemo st = new StaticTestDemo();
 
     static
     {
-        System.out.println("1");
+        System.out.println("static 1");
     }
 
     {
         System.out.println("2");
     }
 
-    public StaticTest()
+    public StaticTestDemo()
     {
         System.out.println("3");
         System.out.println("a="+a+",b="+b);
@@ -39,6 +39,10 @@ class StaticTest
 
     int a=110;
     static int b =112;
+    static
+    {
+        System.out.println("static b="+b);
+    }
 
 
 }

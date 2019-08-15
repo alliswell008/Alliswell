@@ -1,5 +1,7 @@
 package alliswell.demo.integer;
 
+import sun.misc.VM;
+
 public class IntegerDemo {
     public static void main(String[] args) {
         testInteger();
@@ -17,6 +19,7 @@ public class IntegerDemo {
             System.out.println("Integer 5 == Integer 5");
         }
 
+        System.out.println(in == 5);
         Integer c = 3;
         Integer d = 3;
         Integer e = 321;
@@ -30,5 +33,13 @@ public class IntegerDemo {
         Long ll = 1234567891011L;
         System.out.println(ll.intValue());
         System.out.println(ll.longValue());
+
+        // -XX:AutoBoxCacheMax=20 或 -XX:AutoBoxCacheMax=200
+        String var1 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+        System.out.println(var1);
+
+        Integer aa = 199;
+        Integer bb = Integer.valueOf(199);
+        System.out.println(aa == bb);
     }
 }

@@ -18,7 +18,7 @@ public class WeakHashMapTest {
             // System.gc();
             System.err.println(i);
 
-            System.err.println(" size" + maps.size());
+            System.err.println("test1 size" + maps.size());
 
         }
     }
@@ -27,16 +27,19 @@ public class WeakHashMapTest {
         List<byte[][]> keys = new ArrayList<byte[][]>();
         byte[][] key = null;
         WeakHashMap<byte[][], byte[][]> maps = new WeakHashMap<byte[][], byte[][]>();
+
         for (int i = 0; i < 10000; i++) {
             key = new byte[1000][1000];
+            // 模拟对象被其他对象引用，因为存在其他对象的应用，所以WeakHashMap中的对象不会被回收而一直占用内存直到内存溢出
             keys.add(key);
+            // 模拟清除其他对象引用
+            // keys.clear();
             maps.put(key, new byte[1000][1000]);
 
             // System.gc();
             System.err.println(i);
 
-            System.err.println(" size" + maps.size());
-
+            System.err.println("test2 size" + maps.size());
         }
     }
 

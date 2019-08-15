@@ -21,12 +21,31 @@ package alliswell.demo.fordemo;
  */
 public class ForDemo {
 
+    static boolean foo(char c) {
+        System.out.print(c);
+        return true;
+    }
+
     public static void main(String[] args) {
+
+        // for循环的执行过程
+        testFor();
+        System.out.println();
+
         // 设置标签，直接跳出多重循环
         testBreakDoubleFor();
         // return; 也可以直接跳出多重循环
         testReturnDoubleFor();
     }
+
+    private static void testFor() {
+        int i = 0;
+        for (foo('A'); foo('B') && (i < 2); foo('c')) {
+            i++;
+            foo('D');
+        }
+    }
+
 
     public static void testBreakDoubleFor() {
         // 设置标签，在循环中可以直接break到这个标签

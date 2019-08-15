@@ -1,5 +1,8 @@
 package test;
 
+/**
+ * 加断点，再执行，执行的结果会不一样？？？
+ */
 public class Test3 {
     public static void main(String[] args) {
         System.out.println(new B().getValue());
@@ -21,6 +24,8 @@ public class Test3 {
             } catch (Exception e) {
                 System.out.println(e.toString());
             } finally {
+                // finally语句会在return之前执行
+                System.out.println("finally语句：" + this.value);
                 this.setValue(value);
                 System.out.println(value);
             }

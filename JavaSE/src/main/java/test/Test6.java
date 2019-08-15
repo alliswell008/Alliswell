@@ -22,11 +22,12 @@ public class Test6 {
             System.out.println("!=");
         }
 
-        boolean e = Objects.equals("", "");
+        boolean e = Objects.equals(8, new Integer(8));
         System.out.println(e);
 
         String[] str = new String[]{"you", "me"};
         List list = Arrays.asList(str);
+        // 实际是一个数组
         list.add("11");
 
         // 抛出异常NPE
