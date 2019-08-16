@@ -1,5 +1,7 @@
 package alliswell.demo.serializable;
 
+import alliswell.FileUtil;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -29,9 +31,8 @@ class Student implements Serializable{
 
 public class ObjectIO {
 
-    public static final String TEST_DIR_ROOT = "D:\\ObjectIO\\";
-    public static final String TEST_DIR_PATH = "aa\\";
-    public static final String TEST_FILE_TXT = "objTest.txt";
+    public static final String TEST_FILE_ROOT = "D:\\ObjectIO\\";
+    public static final String TEST_FILE_TXT = "aa\\objTest.txt";
 
     /**
      * @param args
@@ -48,14 +49,9 @@ public class ObjectIO {
     //（一）先写入对象
     public static void createObj() throws IOException {
         //1.创建目标路径
-        File dir = new File(TEST_DIR_ROOT + TEST_DIR_PATH );
-        if (!dir.isDirectory() && !dir.exists()) {
-            dir.mkdirs();
-        }
-        File file = new File(TEST_DIR_ROOT + TEST_DIR_PATH + TEST_FILE_TXT);
-        if (!file.exists()) {
-            file.createNewFile();
-        }
+        File file = new File(TEST_FILE_ROOT + TEST_FILE_TXT);
+        FileUtil.createFile(file);
+
         //2.创建流通道
         FileOutputStream fos = new FileOutputStream(file);
         //3.创建对象输出流
@@ -70,7 +66,7 @@ public class ObjectIO {
 
     //再读取对象
     public static void readObj() throws IOException, ClassNotFoundException {
-        File file = new File(TEST_DIR_ROOT + TEST_DIR_PATH + TEST_FILE_TXT);
+        File file = new File(TEST_FILE_ROOT + TEST_FILE_TXT);
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream objIP = new ObjectInputStream(fis);
         //读取对象数据，需要将对象流强制转换为 要写入对象的类型
@@ -79,26 +75,9 @@ public class ObjectIO {
         objIP.close();
 
         // 读取完毕，删除文件及目录
-        File dir = new File(TEST_DIR_ROOT);
-        deleteFile(dir);
+        FileUtil.deleteFile(file);
+        FileUtil.deleteFile(new File(TEST_FILE_ROOT));
     }
-
-    // 删除目录及目录中的所有文件
-    public static boolean deleteFile(File file) {
-        if (!file.exists()) {
-            return false;
-        }
-
-        // 要删除目录，需先删除目录中的所有文件及目录
-        if (file.isDirectory()) {
-            File[] subfiles = file.listFiles();
-            for (File f : subfiles) {
-                deleteFile(f);
-            }
-        }
-        return file.delete();
-    }
-
 }
 
 /*打印效果
