@@ -1,15 +1,13 @@
-package test;
+package alliswell.demo.method;
 
 /**
- * 方法重写(Overriding Method
+ * 方法重写(Overriding Method)
  */
-public class OverridingMethod {
+public class MethodOverriding {
     public static void main(String[] args) {
         Dog hd = new HomeDog("阿黄");
-        // 多态执行实际对象HomeDog中的方法
-        hd.desc();
-        // 没有多态
-//        hd.desc("barking");
+//        hd.desc();
+        hd.desc("barking");
 
         int a = 5, b = 10;
         hd.swap(a, b);
@@ -23,11 +21,13 @@ public class OverridingMethod {
         hd.swap(ad, bd);
         System.out.println("ad=" + ad.name + ",bd=" + bd.name);
 
+        ad.staticFun();
+        ((HomeDog) ad).staticFun();
     }
 }
 
 
-// 基类
+//基类
 class Dog {
     protected String name;
 
@@ -40,9 +40,14 @@ class Dog {
         System.out.println("I'm a dog");
     }
 
-    //重载-参数个数
+    //重载
     protected void desc(String action) {
         System.out.println("The dog is " + action);
+    }
+
+    // 静态方法
+    public static void staticFun() {
+        System.out.println("静态方法不能被子类重写");
     }
 
     void swap(int x, int y) {
@@ -51,14 +56,12 @@ class Dog {
         y = temp;
     }
 
-    // 重载-参数类型
     void swap(String x, String y) {
         String temp = x;
         x = y;
         y = temp;
     }
 
-    // 重载-参数类型
     void swap(Dog x, Dog y) {
         String temp = x.name;
         x.name = y.name;
@@ -67,15 +70,21 @@ class Dog {
 }
 
 
-// 子类
+//子类
 class HomeDog extends Dog {
     public HomeDog(String name) {
         super(name);
         System.out.println("HomeDog:这是一只狗，它的名字是" + this.name);
     }
 
-    //重写父类的方法
-    public void desc(){
-        System.out.println("这是一只狗，它的名字是"+this.name);
+    // 重写父类的方法
+    @Override
+    public void desc() {
+        System.out.println("这是一只狗，它的名字是" + this.name);
+    }
+
+    // 隐藏父类静态方法
+    public static void staticFun() {
+        System.out.println("静态方法不能被子类重写，只能被子类隐藏");
     }
 }

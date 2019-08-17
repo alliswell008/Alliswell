@@ -1,7 +1,7 @@
 /**  
  * @Title:  Client.java
  * @Package 单例模式
- * @Description: TODO(用一句话描述该文件做�?�?)
+ * @Description: TODO(用一句话描述该文件做什么)
  * @author a
  * @date  2016-8-3 下午6:19:57
  * @version V1.0  

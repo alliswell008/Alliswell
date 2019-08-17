@@ -24,55 +24,8 @@ import sun.misc.VM;
  */
 public class Test {
 
-    static final String a = "aa";
-
-    // 构造方法 在new时执行
-    public Test() {
-        System.out.println("Test class");
-    }
-
-    // 静态代码块 在类加载到jvm时执行
-    static{
-        System.out.println("static code block");
-    }
-
-    // 静态内部类 在调用时执行
-    private static class StaticInnerClass {
-        static {
-            System.out.println("inner class static code block");
-        }
-
-        // 非常量成员具有默认初始值
-        private static String str0;
-        // 常量成员必须被初始化
-        private static final String str1 = "abc";
-        private static String str2 = new String("abc");
-        private static final String str3 = new String("abc");
-        private final static Test test = new Test();
-
-        static void staticFun() {
-            System.out.println("staticFun");
-        }
-    }
-
     public static void main(String args[]){
-        //getResult();
-
-        // 调用静态内部类
-//        String test = StaticInnerClass.str1;
-//        String test = StaticInnerClass.str2;
-        String test = StaticInnerClass.str3;
-//        StaticInnerClass.staticFun();
-
-        // 类型转换
-        short s1 = 1;
-        s1 = (short) (s1 + 1);
-        s1 += s1 +1;
-
-        // 值越界
-        short s2 = 32767;
-        s2 += 1;
-        System.out.println(s2);
+        getResult();
 
         // 值传递
         String a = "1";
@@ -85,12 +38,7 @@ public class Test {
         String ff = !host.equals("127.0.0.1") && !host.startsWith("localhost") && !host.equals("0.0.0.0") && !host.startsWith("169.254") && !host.startsWith("::1") && !host.startsWith("0:0:0:0:0:0:0:1")?host:"";
         System.out.println(ff);
 
-        String var1 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
-        Integer b = new Integer(2);
-        String var2 = VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
 
-        System.out.println(var1);
-        System.out.println(var2);
     }
 
     /**

@@ -33,8 +33,8 @@ public class HashMapTest2 {
         str = "instance value:";
         System.out.println(str + value);
         Integer value1 = map.get(newInstance);
-        System.out.println("newInstance value:"+value1);
-        System.out.println("size:"+ map.size());
+        System.out.println("newInstance value:" + value1);
+        System.out.println("size:" + map.size());
         System.out.println(instance.equals(newInstance));
 
 
@@ -58,23 +58,23 @@ public class HashMapTest2 {
 
     @Override
     public boolean equals(Object o) {
-        if(o == this) {
+        if (o == this) {
             return true;
-        } else if(!(o instanceof HashMapTest)) {
+        } else if (!(o instanceof HashMapTest)) {
 
             return false;
         } else {
-            HashMapTest2 other = (HashMapTest2)o;
-            if(!other.canEqual(this)) {
+            HashMapTest2 other = (HashMapTest2) o;
+            if (!other.canEqual(this)) {
                 return false;
             } else {
                 Integer this$data = this.getA();
                 Integer other$data = other.getA();
-                if(this$data == null) {
-                    if(other$data != null) {
+                if (this$data == null) {
+                    if (other$data != null) {
                         return false;
                     }
-                } else if(!this$data.equals(other$data)) {
+                } else if (!this$data.equals(other$data)) {
                     return false;
                 }
 
@@ -82,16 +82,17 @@ public class HashMapTest2 {
             }
         }
     }
+
     protected boolean canEqual(Object other) {
         return other instanceof HashMapTest;
     }
 
-    public void setA(Integer a) {
-        this.a = a;
-    }
-
     public Integer getA() {
         return a;
+    }
+
+    public void setA(Integer a) {
+        this.a = a;
     }
 
     @Override
@@ -99,7 +100,7 @@ public class HashMapTest2 {
         boolean PRIME = true;
         byte result = 1;
         Integer $data = this.getA();
-        int result1 = result * 59 + ($data == null?43:$data.hashCode());
+        int result1 = result * 59 + ($data == null ? 43 : $data.hashCode());
         return result1;
     }
 }

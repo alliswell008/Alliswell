@@ -16,7 +16,7 @@ public class Test5 {
             System.out.println(o);
         }
 
-        System.out.println(v.get(100));
+        System.out.println(v.get(99));
     }
 }
 

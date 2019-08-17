@@ -1,7 +1,7 @@
 /**  
  * @Title:  Singleton.java
  * @Package 单例模式
- * @Description: TODO(用一句话描述该文件做�?�?)
+ * @Description: TODO(用一句话描述该文件做什么)
  * @author a
  * @date  2016-8-3 下午6:16:32
  * @version V1.0  
@@ -25,15 +25,15 @@ import java.io.Serializable;
  */
 public class Singleton_lazy2 implements Serializable {
 
-    // 单例对象私有，未实例�?
+    // 单例对象私有，未实例化
     private static Singleton_lazy2 singleton = null;
 
-	// 构�?�方法私�?
+	// 构造方法私有
 	private Singleton_lazy2(){
 
 	}
 
-    // 懒汉模式-2，线程安�?
+    // 懒汉模式-2，线程安全
     public static synchronized Singleton_lazy2 getInstance(){
         if(singleton == null ) {
             // @Test start 为测试多线程单例是否有效，模拟大对象创建时间
