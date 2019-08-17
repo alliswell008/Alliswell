@@ -17,10 +17,11 @@ public class StringDemo {
         System.out.println(s1 == s3);
         // intern()方法从常量池中查询，如果存在则返回其引用，如果不存在则将该值复制到常量池并返回其引用
         System.out.println(s1 == s1.intern());
+        System.out.println(s2 == s2.intern());
 
 
         String ss3 = new String("1") + new String("1");
-         ss3.intern();
+        ss3.intern();
         String s4 = "11";
         System.out.println(ss3 == s4);
 
