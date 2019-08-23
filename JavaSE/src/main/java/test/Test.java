@@ -38,6 +38,11 @@ public class Test {
         String ff = !host.equals("127.0.0.1") && !host.startsWith("localhost") && !host.equals("0.0.0.0") && !host.startsWith("169.254") && !host.startsWith("::1") && !host.startsWith("0:0:0:0:0:0:0:1")?host:"";
         System.out.println(ff);
 
+        Boolean f = null;
+        if (f) {
+            System.out.println("ff");
+        }
+
 
     }
 

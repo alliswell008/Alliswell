@@ -25,25 +25,44 @@ public class SwitchDemo {
         // 不允许long、float、double、Long、Float、Double和自定义类型
         // byte
         byte b = "1".getBytes()[0];
-        switch (b) { }
+        switch (b) {
+        }
         // char
-        switch ('1') { }
+        switch ('1') {
+        }
         // short
-        switch ((short)1) { }
+        switch ((short) 1) {
+        }
         // int
-        switch (1) { }
+        switch (1) {
+        }
         // Byte
-        switch (new Byte("1")) { }
+        switch (new Byte("1")) {
+        }
         // Character
-        switch (new Character('1')) { }
+        switch (new Character('1')) {
+        }
         // Short
-        switch (new Short("1")) { }
+        switch (new Short("1")) {
+        }
         // Integer
-        switch (new Integer("1")) { }
-        // String
-        switch ("1") { }
+        switch (new Integer("1")) {
+        }
+        // String 注意查看编译后的内容，它会调用hashCode()方法
+        switch ("2") {
+            case "1":
+                System.out.println(1);
+                break;
+            case "2":
+                System.out.println(2);
+                break;
+            default:
+                System.out.println(0);
+                break;
+        }
         // Enum
-        switch (State.OK) { }
+        switch (State.OK) {
+        }
     }
 
     enum State {
