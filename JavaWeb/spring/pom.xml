@@ -9,9 +9,9 @@
     <url>http://maven.apache.org</url>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <groupId>alliswell</groupId>
+        <artifactId>JavaWeb</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <dependencies>
