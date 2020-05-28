@@ -17,7 +17,7 @@ package alliswell.pattern.structural.decoration;
 /**
  * @author alliswell008
  * @ClassName: ConcreteCompenent
- * @Description: TODO(用一句话来说明)
+ * @Description: 好处就是不依赖装饰者
  * @date 2017/1/17 10:44
  */
 public class ConcreteCompenent extends Compenent {

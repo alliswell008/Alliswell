@@ -14,6 +14,11 @@
  */
 package alliswell.demo.array;
 
+import org.apache.commons.lang3.ArrayUtils;
+
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @ClassName: DyadicArrayDemo
  * @Description: 二位数组的长度

@@ -1,9 +1,6 @@
 package alliswell.demo.java8;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
 
 public class Java8Tester9 {
     public static void main(String args[]){
@@ -40,5 +37,10 @@ public class Java8Tester9 {
         // 解析字符串
         LocalTime date5 = LocalTime.parse("20:15:30");
         System.out.println("date5: " + date5);
+
+
+        Instant instant = Instant.now();
+        System.out.println("当前时间（UTC时区）:"+instant);
+        System.out.println("获取时间戳:"+instant.toEpochMilli());
     }
 }

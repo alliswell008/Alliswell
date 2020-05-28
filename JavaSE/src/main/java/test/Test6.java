@@ -25,12 +25,11 @@ public class Test6 {
         boolean e = Objects.equals(8, new Integer(8));
         System.out.println(e);
 
-        String[] str = new String[]{"you", "me"};
-        List list = Arrays.asList(str);
-        // 实际是一个数组
-        list.add("11");
 
+
+        boolean equals = Objects.equals(num, new Integer(8));
+        System.out.println(equals);
         // 抛出异常NPE
-        boolean equals = num.equals(new Integer(8));
+        equals = num.equals(new Integer(8));
     }
 }

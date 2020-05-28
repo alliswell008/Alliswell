@@ -1,5 +1,5 @@
 // Nashorn JavaScript引擎
-// jjs sample.js
+// 若要执行，打开控制台(在windows下定位到jdk/bin目录下)，输入以下命令：jjs sample.js
 
 var BigDecimal = Java.type('java.math.BigDecimal');
 
