@@ -35,6 +35,16 @@ public class ParameterPassing {
         swap(sa,sb);
         System.out.println(" sa : " + sa);
         System.out.println(" sb : " + sb);
+
+
+
+        Double da = 10D;
+        Double db = 20D;
+
+        // 方法里外都交换了
+        swap(da, db);
+        System.out.println(" da : " + da);
+        System.out.println(" db : " + db);
     }
 
     private static void swap(Integer a, Integer b) {
@@ -101,5 +111,27 @@ public class ParameterPassing {
 
         System.out.println("swap sa2 : " + a);
         System.out.println("swap sb2 : " + b);
+    }
+
+
+
+    private static void swap(Double a, Double b) {
+        Field field = null;
+        try {
+            field = Double.class.getDeclaredField("value");
+            // 私有属性可访问
+            field.setAccessible(true);
+
+            Double tmp = new Double(a.doubleValue());
+            field.set(a, b.doubleValue());
+            field.set(b, tmp);
+
+            System.out.println("swap da : " + a);
+            System.out.println("swap db : " + b);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
     }
 }

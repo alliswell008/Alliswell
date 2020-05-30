@@ -1,7 +1,7 @@
 /**
  * @Title: ListDemo
  * @Package test
- * @Description: TODO(用一句话描述该文件做什么)
+ * @Description: list集合demo
  * @author alliswell
  * @date 2017/3/6 16:24
  * @version V1.0
@@ -10,14 +10,16 @@
  * Name:
  * Date:
  * Description:
- ******************************************************
+ * java.util.ConcurrentModificationException（并发修改异常）：https://www.cnblogs.com/zhuyeshen/p/10956822.html
+ * *****************************************************
  */
 package alliswell.demo.list;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @author alliswell
@@ -26,12 +28,12 @@ import java.util.List;
  * @Description: TODO(用一句话描述该文件做什么)
  * @date 2017/3/6 16:24
  */
-public class ListDemo implements Cloneable  {
+public class ListDemo implements Cloneable {
 
     List<Student> students;
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Timestamp t = new Timestamp(new Date().getTime());
+        Timestamp t = new Timestamp(System.currentTimeMillis());
         System.out.println(t);
 
         List<Student> list = new ArrayList<>();
@@ -45,6 +47,97 @@ public class ListDemo implements Cloneable  {
         modifyTest(list);
         cloneTest(list);
 
+//        fun();
+        fun2();
+
+    }
+
+    /**
+     * Iterator不能添加和删除元素，否则会抛出异常java.util.ConcurrentModificationException（并发修改异常）
+     * 源码分析：ArrayList.remove()比Itr.remove()少了一步操作expectedModCount = modCount;
+     */
+    public static void fun() {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("2");
+        list.add("1");
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String item = iterator.next();
+            // 删除第一个元素，不会抛出并发修改异常
+            if ("2".equals(item)) {
+                list.remove(item);
+            }
+        }
+        System.out.println(list);
+
+//        for (String item : list) {
+//            if ("2".equals(item)) {
+//                list.remove(item);
+//            }
+//        }
+
+        ArrayList<String> list2 = new ArrayList<String>();
+        list2.add("1");
+        list2.add("2");
+        Iterator<String> iterator2 = list2.iterator();
+        while (iterator2.hasNext()) {
+            String item = iterator2.next();
+            // 删除最后一个元素，才会抛出并发修改异常
+            if ("2".equals(item))
+                list2.remove(item);
+        }
+        System.out.println(list2);
+    }
+
+    /**
+     * 多线程时ConcurrentModificationException异常解决办法：
+     * 1）在使用iterator迭代的时候使用synchronized或者Lock进行同步；
+     * 2）使用并发容器CopyOnWriteArrayList代替ArrayList和Vector。
+     */
+    public static void fun2() {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        Thread thread1 = new Thread() {
+            public void run() {
+                Iterator<Integer> iterator = list.iterator();
+                while (iterator.hasNext()) {
+                    Integer integer = iterator.next();
+//                    System.out.println(integer);
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            ;
+        };
+        Thread thread2 = new Thread() {
+            public void run() {
+                Iterator<Integer> iterator = list.iterator();
+                while (iterator.hasNext()) {
+                    Integer integer = iterator.next();
+                    if (integer == 2)
+                        iterator.remove();
+                }
+            }
+
+            ;
+        };
+        thread1.start();
+        thread2.start();
+        try {
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(list);
     }
 
     /**
