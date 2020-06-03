@@ -83,8 +83,9 @@ public class ListDemo implements Cloneable {
         while (iterator2.hasNext()) {
             String item = iterator2.next();
             // 删除最后一个元素，才会抛出并发修改异常
-            if ("2".equals(item))
+            if ("2".equals(item)) {
                 list2.remove(item);
+            }
         }
         System.out.println(list2);
     }
@@ -102,6 +103,7 @@ public class ListDemo implements Cloneable {
         list.add(4);
         list.add(5);
         Thread thread1 = new Thread() {
+            @Override
             public void run() {
                 Iterator<Integer> iterator = list.iterator();
                 while (iterator.hasNext()) {
@@ -118,12 +120,14 @@ public class ListDemo implements Cloneable {
             ;
         };
         Thread thread2 = new Thread() {
+            @Override
             public void run() {
                 Iterator<Integer> iterator = list.iterator();
                 while (iterator.hasNext()) {
                     Integer integer = iterator.next();
-                    if (integer == 2)
+                    if (integer == 2) {
                         iterator.remove();
+                    }
                 }
             }
 
@@ -215,6 +219,7 @@ public class ListDemo implements Cloneable {
         this.students = students;
     }
 
+    @Override
     public Object clone() {
         ListDemo o = null;
         try {
@@ -255,6 +260,7 @@ class Student implements Cloneable {
         this.age = age;
     }
 
+    @Override
     public Object clone() {
         Student o = null;
         try {
