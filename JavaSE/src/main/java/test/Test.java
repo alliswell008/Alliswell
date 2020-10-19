@@ -38,11 +38,16 @@ public class Test {
         String ff = !host.equals("127.0.0.1") && !host.startsWith("localhost") && !host.equals("0.0.0.0") && !host.startsWith("169.254") && !host.startsWith("::1") && !host.startsWith("0:0:0:0:0:0:0:1")?host:"";
         System.out.println(ff);
 
-        Boolean f = null;
-        if (f) {
-            System.out.println("ff");
-        }
+//        Boolean f = null;
+//        if (f) {
+//            System.out.println("ff");
+//        }
 
+        f(11d, 22d, 33d);
+
+        Integer ai = 3;
+        Integer bi = 3;
+        System.out.println(ai == bi);
 
     }
 
@@ -65,5 +70,9 @@ public class Test {
         String b = "2";
         a = new String(b);
         System.out.println("方法内a=" + a);
+    }
+
+    static void f(Double... salary) {
+        System.out.println(salary.length);
     }
 }
