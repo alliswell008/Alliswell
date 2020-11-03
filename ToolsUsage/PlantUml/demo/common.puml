@@ -1,0 +1,66 @@
+@startuml
+salt
+{
+Just plain text
+[This is my button]
+() Unchecked radio
+(X) Checked radio
+[] Unchecked box
+[X] Checked box
+"Enter text here "
+^This is a droplist^
+}
+@enduml
+
+@startsalt
+{
+Login    | "MyName "
+--|--
+Password | "**** "
+..|..
+~~|~~
+[Cancel] | [ OK ]
+==|==
+}
+@endsalt
+
+
+@startsalt
+{
+{T
++ World
+++ America
++++ Canada
++++ USA
+++++ New York
+++++ Boston
++++ Mexico
+++ Europe
++++ Italy
++++ Germany
+++++ Berlin
+++ Africa
+}
+}
+@endsalt
+
+@startsalt
+{+
+{* File | Edit | Source | Refactor }
+{/ General | Fullscreen | Behavior | Saving }
+{
+{ Open image in: | ^Smart Mode^ }
+[X] Smooth images when zoomed
+[X] Confirm image deletion
+[ ] Show hidden images
+}
+[Close]
+}
+@endsalt
+
+
+@startuml
+!define send(a,b,c) a->b : c
+send(Alice, Bob, Hello)
+send(Bob, Alice, ok)
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+object Object01
+object Object02
+object Object03
+object Object04
+object Object05
+object Object06
+object Object07
+object Object08
+Object01 <|-- Object02 : 继承
+Object03 *-- Object04 : 聚合
+Object05 o-- "4" Object06 : 组合
+Object07 .. Object08 : 关联
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+
+title __**git分支管理**__\n
+
+skinparam ParticipantPadding 30
+skinparam BoxPadding 10
+
+box "固定分支" #ADD1B2
+participant master
+participant develop
+participant test
+end box
+
+box "临时分支" #ADD1B2
+participant feature
+participant release
+end box
+
+master -> develop : 创建运行维护版本
+create feature
+develop -> feature : 创建功能分支
+feature -> feature : 开发完成
+activate feature
+feature -> test : 合并到dev环境分支
+test -> test : 发布dev分支进行提测
+feature -> test : 自测完成后合到test环境分支
+test -> test : 发布test分支进行提测
+create release
+develop -> release : 创建版本分支
+feature -> release : 提测完成后合并到release分支
+destroy feature
+release -> release : 发布release分支进行版测
+activate release
+release -> release : 版测完成后发布线上
+release -> master : 发布线上成功后合并回master
+destroy release
+master -> develop : develop变基到master
+develop -> feature : 未上线的feature变基到develop
+
+@enduml

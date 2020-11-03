@@ -4,6 +4,7 @@ import alliswell.demo.fordemo.ForEach;
 
 /**
  * 冒泡排序
+ * 时间复杂度n(n-1)/2
  *
  * 冒泡排序算法的原理如下：
  * 1.比较相邻的元素。如果第一个比第二个大，就交换他们两个。
@@ -18,9 +19,9 @@ public class BubbleSort {
     public static void main(String[] args) {
 
         int[] arr = {89, -7, 999, -89, 7, 0, -888, 7, -7};
-//        for (int k : arr) {
-//            System.out.print(k + ",");
-//        }
+        for (int k : arr) {
+            System.out.print(k + ",");
+        }
         System.out.println();
         bubbleSort(arr);
 //        for (int k : arr) {

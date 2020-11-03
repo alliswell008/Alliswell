@@ -1,0 +1,101 @@
+@startuml
+Class01 <|-- Class02
+Class03 "1" *-- "many" Class04
+Class05 o-- Class06 : aggregation
+Class07 .. Class08
+Class09 -- Class10
+
+newpage
+
+Class11 <|.. Class12
+Class13 --> "1" Class14
+Class15 ..> Class16
+Class17 ..|> Class18
+Class19 <--* Class20
+
+newpage
+
+Class21 #-- Class22
+Class23 x-- Class24
+Class25 }-- Class26
+Class27 +-- Class28
+Class29 ^-- Class30
+
+newpage
+
+class Car
+Driver -right- Car : drives >
+Car *- Wheel : have 4 >
+Car -- Person : < owns
+
+newpage
+
+Object <|-- ArrayList
+Object : equals()
+ArrayList : Object[] elementData
+ArrayList : size()
+
+class Dummy {
+String data
+void methods()
+}
+class Flight {
+flightNumber : Integer
+departureTime : Date
+}
+
+newpage
+
+'skinparam classAttributeIconSize 0
+class Dummy {
+-field1
+#field2
+~method1()
++void method2()
+}
+
+class Dummy {
+{static} String id
+{abstract} void methods()
+}
+
+class User {
+.. Simple Getter ..
++ getName()
++ getAddress()
+.. Some setter ..
++ setName()
+__ private data __
+int age
+-- encrypted --
+String password
+}
+
+newpage
+
+abstract class AbstractList
+abstract AbstractCollection
+interface List
+interface Collection
+List <|-- AbstractList
+Collection <|-- AbstractCollection
+Collection <|- List
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+class ArrayList <<Serializable>> {
+Object[] elementData
+size()
+}
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+annotation SuppressWarnings
+
+hide members
+hide <<Serializable>> circle
+show ArrayList methods
+show <<Serializable>> fields
+
+@enduml

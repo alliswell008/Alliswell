@@ -1,5 +1,6 @@
 package alliswell.demo.sort;
 
+import javax.sound.midi.Soundbank;
 import java.util.Random;
 
 /**
@@ -40,15 +41,17 @@ public class Quicksort {
     }
 
     public static int[] qsort(int arr[], int start, int end, int mode) {
-        int pivot = arr[getPivot(start, end, mode)];
+        int pivot = getPivot(start, end, mode);
+        System.out.println("pivot:" + pivot);
+        int pivotValue = arr[pivot];
 
         int i = start;
         int j = end;
         while (i < j) {
-            while ((i < j) && (arr[j] > pivot)) {
+            while ((i < j) && (arr[j] > pivotValue)) {
                 j--;
             }
-            while ((i < j) && (arr[i] < pivot)) {
+            while ((i < j) && (arr[i] < pivotValue)) {
                 i++;
             }
             if ((arr[i] == arr[j]) && (i < j)) {
@@ -67,7 +70,10 @@ public class Quicksort {
                 System.out.println();
             }
         }
+        System.out.println("------1------start="+start+",i-1=" + (i-1));
         if (i - 1 > start) arr = qsort(arr, start, i - 1, mode);
+
+        System.out.println("------2------j+1=" + (j + 1) + ",end=" + end);
         if (j + 1 < end) arr = qsort(arr, j + 1, end, mode);
         return arr;
     }

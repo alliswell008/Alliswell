@@ -1,0 +1,50 @@
+@startuml
+
+:涉众: as A1
+:参与者: as A2
+:用户: as A3 <<Human>>
+:角色1: as A4
+:角色2: as A5
+
+'note "代表其利益" as N1
+'A1 <.. N1
+'N1 .. A2
+'note "代表其职责1" as N2
+'A4 .. N2
+'N2 ..> A2
+'note "代表其职责2" as N3
+'A5 .. N3
+'N3 ..> A2
+'note "代表其使用" as N4
+'A2 <.. N4
+'N4 .. A3
+'note "获得其职责1" as N5
+'A4 <.. N5
+'N5 .. A3
+'note "获得其职责2" as N6
+'A5 <.. N6
+'N6 .. A3
+'A3 --> (登录系统入口)
+
+left to right direction
+A1 <-- A2 : 代表其利益
+A4 -> A2 : 代表其职责1
+A2 <- A5 : 代表其职责2
+A2 <-- A3 : 代表其使用
+A4 <-right- A3 : 获得其职责1
+A5 <-- A3 : 获得其职责2
+A3 --> (登录系统入口)
+
+newpage
+
+left to right direction
+skinparam packageStyle rectangle
+actor customer
+actor clerk
+rectangle checkout {
+customer -- (checkout)
+(checkout) .> (payment) : include
+(help) .> (checkout) : extends
+(checkout) -- clerk
+}
+@enduml
