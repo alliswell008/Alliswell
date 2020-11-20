@@ -28,7 +28,7 @@ import alliswell.cashregister.strategysimplefactory.StategySimpleFactoryCashRegi
 public class CashRegisterMain {
     public static void main(String[] args) {
         System.out.println("需求说明：");
-        System.out.println("1.先实现原总价、打八折、打五折、满20元减10元"); String qqqq = null;
+        System.out.println("1.先实现原总价、打八折、打五折、满20元减10元");
         System.out.println("2.现要求增加一个满200元减100元");
         System.out.println("3.现要求增加一个买1送1");
         System.out.println("4.实现GUI客户端，使用awt、swing或swt");

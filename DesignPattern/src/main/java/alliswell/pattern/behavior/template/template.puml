@@ -1,0 +1,33 @@
+@startuml
+title __**模板模式**__\n
+
+note as N1
+定义：定义一个操作中算法的骨架，而将一些步骤延迟到子类中。
+     模板方法使子类可以重定义算法的某些特定步骤而不改变该算法的结构。
+适用：1.需要一次性实现算法的不变部分，并将可变行为留给子类来实现。
+     2子类的共同行为应该被提出来放到公共类中，以避免代码重复。
+     现有代码的差别应该被分离为新的操作。然后用一个调用这些新操作的模板方法来替换这些不同的代码。
+end note
+
+newpage
+
+class Client
+class AbstractClass {
++ templateMethod()
+# {abstract} primitiveOperation1()
+# {abstract} primitiveOperation2()
+}
+class ConcreteClass {
+# primitiveOperation1()
+# primitiveOperation2()
+}
+
+Client o-right-> AbstractClass
+ConcreteClass -up-|> AbstractClass
+
+note as acn
+templateMethod调用自身的primitiveOperation1方法
+end note
+AbstractClass -right-> acn
+
+@enduml

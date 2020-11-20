@@ -1,0 +1,26 @@
+@startuml
+title __**单例模式**__\n
+
+note as N1
+**定义**：保证一个类仅有一个实例，并提供一个访问它的全局访问点。
+**适用**：当类只能有一个实例而且客户可以从一个众所周知的访问点访问它时
+end note
+
+newpage
+
+class Singleton {
+- Singleton instance
+- Singleton()
++ {static} getInstance()
+}
+
+
+note as sn
+Singleton类，定义一个getInstance方法，允许
+客户访问它的唯一实例。getInstance方法是一个
+静态方法，主要负责创建自己的唯一实例。
+end note
+Singleton -right-> sn
+
+
+@enduml

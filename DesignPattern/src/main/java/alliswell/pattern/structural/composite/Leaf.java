@@ -21,7 +21,7 @@ package alliswell.pattern.structural.composite;
  * @date 2016-8-3 下午5:28:10
  *
  */
-public class Leaf extends Compenent {
+public class Leaf extends Component {
 
     /**
      * <p>Title: </p>
@@ -41,7 +41,7 @@ public class Leaf extends Compenent {
      * @see 组合模式.Compenent#add(组合模式.Compenent)
      */
     @Override
-    public void add(Compenent c) {
+    public void add(Component c) {
         // TODO Auto-generated method stub
 
     }
@@ -53,7 +53,7 @@ public class Leaf extends Compenent {
      * @see 组合模式.Compenent#remove(组合模式.Compenent)
      */
     @Override
-    public void remove(Compenent c) {
+    public void remove(Component c) {
         // TODO Auto-generated method stub
 
     }

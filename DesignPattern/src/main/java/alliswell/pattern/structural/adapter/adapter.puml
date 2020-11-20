@@ -1,0 +1,36 @@
+@startuml
+title __**适配器模式**__\n
+
+note as N1
+定义：将一个类的接口转换成客户希望的另外一个接口，Adapter模式使得原本
+    由于接口不兼容而不能一起工作的那些类可以一起工作。
+角色：适配器（Adapter）、被适配类、对象（Adaptee）
+理解：客户需要Target，现实只有Adaptee，可以用一个实现Target协议的
+    适配器通过类继承或者对象组合类获得被Adaptee。
+end note
+
+newpage
+
+Client -r-> Target
+Adapter -up-|> Target
+Adapter -r-> Adaptee
+
+note as tn
+这是客户端所期待的接口，可以是具体的
+或抽象的类，也可以是接口
+end note
+Target -r-> tn
+
+note as arn
+通过在内部包装一个Adaptee对象，
+把源接口转换成目标接口
+end note
+Adapter --> arn
+
+note as aen
+需要适配的类
+end note
+Adaptee --> aen
+
+
+@enduml

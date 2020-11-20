@@ -35,8 +35,10 @@ public class Client {
         subject.change();
 
         ConcreteSubjectB subject2 = new ConcreteSubjectB();
-        subject2.addObserver(o1);
-        subject2.addObserver(o2);
+        Observer o3 = new ConcreteObserverB("张山b");
+        Observer o4 = new ConcreteObserverB("李四b");
+        subject2.addObserver(o3);
+        subject2.addObserver(o4);
         System.out.println("准备:");
         subject2.setBoss(new Boss("来了"));
         subject2.change();

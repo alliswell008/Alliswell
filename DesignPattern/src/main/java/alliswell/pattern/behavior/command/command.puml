@@ -1,0 +1,53 @@
+@startuml
+title __**命令模式**__\n
+
+note as N1
+定义：将请求封装成一个对象，从而可用不同的请求对客户端进行参数化，
+    对请求排队或记录请求日志，以及支持可撤销的操作。
+角色：客户端（Client）、命令调用者（Invoker）、命令接口（Command）、
+    具体命令（ConcreteCommand）、命令接收者（Receiver）
+理解：1.invoker保持有command的引用，command保持有Receiver的引用。
+    2.客户创建Receiver、ConcreteCommand并把Receiver设置给ConcreteCommand，
+    客户端直接通过ConcreteCommand.execute执行命令。或者创建一个Invoker并
+    把ConcreteCommand设置给Invoker，然后通过Invoker来调用命令。
+end note
+
+newpage
+
+class Client
+interface Command
+class Invoker
+class ConcreteCommand1 {
+- Receiver receiver
+}
+class ConcreteCommand2 {
+- Receiver receiver
+}
+class Receiver
+
+Client .right.> Invoker : 依赖
+Client ..> Receiver : 依赖
+Invoker o-right-> Command
+ConcreteCommand1 .up.|> Command
+ConcreteCommand1 --> Receiver : 关联
+ConcreteCommand2 .up.|> Command
+ConcreteCommand2 --> Receiver : 关联
+
+newpage
+
+class Customer
+interface BakeCommand
+class Waiter
+class Barbecuer
+class BakeGlutenCommand
+class BakeMuttonCommand
+
+Customer .right.> Waiter
+Customer ..> Barbecuer
+Waiter o-right-> BakeCommand
+BakeGlutenCommand .up.|> BakeCommand
+BakeMuttonCommand .up.|> BakeCommand
+BakeGlutenCommand --> Barbecuer : 关联
+BakeMuttonCommand --> Barbecuer : 关联
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+title __**责任链模式**__\n
+
+note as N1
+定义：使多个对象都有机会处理请求，从而避免请求的发送者与接受者之间的耦合关系。
+    将这个对象连成一条链传递该请求，直到有一个对象处理它为止。
+理解：对象引用同一类型的另一个对象，形成一条链。链中的每个对象实现了同样的方法，
+    处理对链中第一个对象发起的同一个请求。
+适用：
+    有多个对象可处理请求，而处理程序只有在运行时才能确定。
+    向一组对象发出请求，而不想先显式指定处理请求的特定处理程序。
+end note
+
+newpage
+
+Client -right-> Logger
+Logger <|--StderrLogger
+Logger <|--StdoutLogger
+Logger <|--EmailLogger
+Logger o-up-> Logger
+
+newpage
+
+Main -right-> Manager
+Manager <|--CommonManager
+Manager <|--MajorManager
+Manager <|--GeneralManager
+Manager o-up-> Manager
+
+@enduml
+

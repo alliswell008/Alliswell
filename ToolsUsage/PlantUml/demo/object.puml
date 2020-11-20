@@ -11,4 +11,13 @@ Object01 <|-- Object02 : 继承
 Object03 *-- Object04 : 聚合
 Object05 o-- "4" Object06 : 组合
 Object07 .. Object08 : 关联
+
+note as a
+This is **bold**
+This is //italics//
+This is ""monospaced""
+This is --stroked--
+This is __underlined__
+This is ~~waved~~
+end note
 @enduml

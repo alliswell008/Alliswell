@@ -1,0 +1,110 @@
+@startuml
+title __**工厂模式**__\n
+
+note as N1
+**定义**：定义一个用于创建对象的接口，让子类决定实例化哪一个类。使一个类的实例化延迟到其子类
+**适用**：当一个类不知道它所必须创建的对象的类的时候
+end note
+
+newpage
+
+title __**简单工厂模式**__\n
+class Client
+class SimpleFatory {
++ {static} getProduct()
+}
+abstract class Product
+class ConcreteProduct
+
+Client -right-> SimpleFatory
+SimpleFatory -right-> Product
+ConcreteProduct -up-|> Product
+
+
+note as sfn
+把客户端选择判断创建哪个具体产品的逻辑
+封装在简单工厂里。
+end note
+SimpleFatory -up-> sfn
+
+newpage
+
+title __**工厂模式**__\n
+class Client
+interface Factory {
++ Product getProduct()
+}
+interface Product
+class ConcreteFactory {
++ Product getProduct()
+}
+
+Client -right-> ConcreteFactory
+Factory <|-- ConcreteFactory
+ConcreteProduct -up-|> Product
+ConcreteFactory .right.> ConcreteProduct
+
+note as fn
+工厂模式中客户端需要知道创建哪个具体产品
+end note
+Client -up-> fn
+
+newpage
+
+title __**抽象工厂模式**__\n
+note as N2
+定义：提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类
+适用：一个系统要独立于它的产品的创建、组合和表示时
+与工厂模式的区别：工厂模式的一个工厂接口的子类只能实例化一个产品；抽象工厂能实例多个产品
+end note
+
+newpage
+
+class Client
+interface AbstractFactory {
++ getProductA()
++ getProductB()
+}
+interface AbstractProductA
+interface AbstractProductB
+class ConcreteFactory1 {
++ AbstractProductA getProductA()
++ AbstractProductB getProductB()
+}
+class ConcreteFactory2 {
++ AbstractProductA getProductA()
++ AbstractProductB getProductB()
+}
+
+Client -right-> AbstractFactory
+Client -right-> AbstractProductA
+Client -right-> AbstractProductB
+AbstractFactory <|-- ConcreteFactory1
+AbstractFactory <|-- ConcreteFactory2
+ConcreteProductA1 -up-|> AbstractProductA
+ConcreteProductA2 -up-|> AbstractProductA
+ConcreteProductB1 -up-|> AbstractProductB
+ConcreteProductB2 -up-|> AbstractProductB
+ConcreteFactory1 ..> ConcreteProductA1
+ConcreteFactory1 ..> ConcreteProductB1
+ConcreteFactory2 ..> ConcreteProductA2
+ConcreteFactory2 ..> ConcreteProductB2
+
+note as afn
+抽象工厂接口，它里面应该包含所有的产品创建的方法
+end note
+AbstractFactory .up. afn
+
+note as apan
+抽象产品，可能有两种不同的实现
+end note
+AbstractProductA .up. apan
+AbstractProductB .up. apan
+
+note as cfn
+具体工厂，创建具有特定实现的产品对象
+end note
+ConcreteFactory1 .. cfn
+ConcreteFactory2 .. cfn
+
+@enduml

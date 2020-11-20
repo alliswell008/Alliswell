@@ -21,6 +21,11 @@ package alliswell.pattern.structural.decoration;
  * @date 2017/1/17 10:39
  */
 public abstract class Decorator extends Compenent {
+
     // 装饰者如果不继承组件，那么就不能多次装饰；因为继承使得装饰者本身也可被视为被装饰者，以使装饰者可以互相装饰
-    public abstract String getName();
+    protected Compenent humburger;
+
+    public Decorator(Compenent humburger) {
+        this.humburger = humburger;
+    }
 }

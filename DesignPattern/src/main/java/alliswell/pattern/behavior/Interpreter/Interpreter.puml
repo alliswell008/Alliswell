@@ -1,0 +1,44 @@
+@startuml
+title __**解释器模式**__\n
+
+note as N1
+定义：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
+角色：环境（context）、解释器
+理解：给定一个环境，创建不同的解释器并把环境传给解释器，不同的解释器对环境有不同的解释。
+end note
+
+newpage
+
+Client -right-> Context
+Client --> AbstractExpression
+TerminalExpression -up-|> AbstractExpression
+NonterminalExpression -up-|> AbstractExpression
+
+AbstractExpression : + interpret()
+TerminalExpression : + interpret()
+NonterminalExpression : + interpret()
+
+note as cn
+包含解释器之外的一些全局信息
+end note
+Context -> cn
+
+note as aen
+抽象表达式，声明一个抽象的解释操作，
+这个接口为抽象语法树中所有的节点所共享
+end note
+AbstractExpression -> aen
+
+note as ten
+终结符表达式，实现与文法中的终结符相关的解释操作
+end note
+TerminalExpression --> ten
+
+note as nten
+非终结符表达式，为文法中的非终结符实现解释操作。
+对文法中每一条规则R1、R2...Rn都需要一个具体的
+非终结符表达式类
+end note
+NonterminalExpression --> nten
+
+@enduml

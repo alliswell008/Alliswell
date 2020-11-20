@@ -1,0 +1,58 @@
+@startuml
+title __**访问者模式**__\n
+
+note as N1
+定义：表示一个作用于某对象结构中的各元素的操作。它让我们可以在不改变各元素
+    的类的前提下定义作用于这些元素的新操作。
+角色：访问者（Visitor）接口、具体访问者、访问元素(Element)接口、具体元素
+理解：1.元素对象通常是“部分-整体”结构中的节点。
+     2.客户端创建一个ConcreteVisitoer，把它传给一个ConcreteElement，
+     ConcreteElement的所有集合都接受ConcreteVisitoer的访问。
+适用：
+    1.一个复杂的对象结构包含很多其他对象，它们有不同的接口，但是相对这些对象实施一些依赖于其具体类型的操作。
+    2.需要对一个组合结构中的对象进行很多不相关的操作，但是不想让这些操作污染这些对象的类。
+    可将相关操作集中起来，定义在一个访问者类中，并在需要在访问者中定义的操作时使用它。
+    3.定义复杂的结构类很少作修改，但经常需要向其添加新的操作。
+end note
+
+newpage
+
+class Visitor {
++ visitConcreteElementA()
++ visitConcreteElementB()
+}
+class ConcreteVisitor1 {
++ visitConcreteElementA()
++ visitConcreteElementB()
+}
+class ConcreteVisitor2 {
++ visitConcreteElementA()
++ visitConcreteElementB()
+}
+class Element {
++ accept(Visitor visitor)
+}
+class ConcreteElementA {
++ accept(Visitor visitor)
++ operationA()
+}
+class ConcreteElementB {
++ accept(Visitor visitor)
++ operationB()
+}
+
+ConcreteVisitor1 -up-|> Visitor
+ConcreteVisitor2 -up-|> Visitor
+ConcreteElementA -up-|> Element
+ConcreteElementB -up-|> Element
+Client --> Visitor
+Client --> ObjectStructure
+ObjectStructure --> Element
+
+note as sn
+能枚举一个对象结构中的元素，
+可以提供一个高层的接口以允许访问者访问它的元素。
+end note
+ObjectStructure -right-> sn
+
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+title __**策略模式**__\n
+
+note as N1
+定义：定义一系列算法，把它们一个个封装起来，并且使它们可互相替换。
+    本模式使得算法可独立于使用它的客户而变化。
+角色：策略接口（Strategy）、具体策略、环境对象
+理解：环境对象持有Strategy的引用，Strategy对象可以动态改
+end note
+
+newpage
+
+class Context
+Context : - strategy:Strategy
+Context : + contextInstance()
+interface Strategy {
++ {abstract} algorithmInterface()
+}
+class ConcreteStrategy {
++ algorithmInterface()
+}
+
+Context o-right-> Strategy
+ConcreteStrategy -up-|> Strategy
+
+@enduml

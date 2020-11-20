@@ -1,0 +1,47 @@
+@startuml
+title __**组合模式**__\n
+
+note as N1
+定义：将对象组合成树形结构以表示’部分-整体’的层次结构。
+    组合模式使得用户对单个对象和组合对象的使用具有一致性。
+理解：组合模式让我们可以把相同的基类型的对象组合到树状结构中，
+    其中父节点包含同类型的子节点。
+场景：1.想获得对象抽象的树形表示（部分-整体层次结构）。
+    2.想让客户端统一处理组合结构中的所有对象。
+end note
+
+newpage
+
+Client -r-> Component
+Leaf .up.|> Component
+Composite .up.|> Component
+Composite *--> Component
+
+Composite : + operation() : foreach node in children
+Composite : + add()
+Composite : + remove()
+Composite : + getChild()
+
+
+note as ctn
+组合中的对象声明接口，在适当的情况下，
+实现所有类共有接口的默认行为。声明一个
+接口用于访问和管理Component的子部件
+end note
+Component -r-> ctn
+
+note as ln
+在组合中表示叶子节点对象，
+叶子节点没有子节点
+end note
+Leaf --> ln
+
+note as cn
+定义有子节点行为，用来存储子部件，
+在Component接口中实现与子部件有关
+的操作，比如增加add和删除remove
+end note
+Composite --> cn
+
+
+@enduml

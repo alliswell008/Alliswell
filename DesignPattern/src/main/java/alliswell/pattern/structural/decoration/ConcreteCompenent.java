@@ -28,6 +28,7 @@ public class ConcreteCompenent extends Compenent {
 
     @Override
     public double getPrice() {
+        System.out.println("鸡腿堡");
         return 10;
     }
 }

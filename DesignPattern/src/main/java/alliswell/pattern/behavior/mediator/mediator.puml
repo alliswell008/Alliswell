@@ -1,0 +1,24 @@
+@startuml
+title __**中介者模式**__\n
+
+note as N1
+定义：用中介对象封装一系列的对象交互。中介者使得各对象不需要显示地互相引用，
+    从而使其耦合松散，而且可以独立的改变它们之间的交互。
+角色：中介者接口（Mediator）、具体中介者、同事者接口（Colleague），具体同事者。
+理解：每个Colleague都有一个Mediator实例，Mediator应该知道所有的Colleague
+end note
+
+newpage
+
+class Mediator
+class Colleague
+class ConcreteMediator
+
+ConcreteMediator -up-|> Mediator
+ConcreteColleague1 -up-|> Colleague
+ConcreteColleague2 -up-|> Colleague
+Mediator <-left- Colleague
+ConcreteMediator -right-> ConcreteColleague1
+ConcreteMediator -right-> ConcreteColleague2
+
+@enduml

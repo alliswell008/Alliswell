@@ -24,9 +24,9 @@ import java.util.List;
  * @date 2016-8-3 下午5:28:39
  *
  */
-public class Composite extends Compenent {
+public class Composite extends Component {
 
-    private List<Compenent> compenent = new ArrayList<>();
+    private List<Component> component = new ArrayList<>();
 
 	/**
 	 * <p>Title: </p>
@@ -46,9 +46,9 @@ public class Composite extends Compenent {
 	 * @see 组合模式.Compenent#add(组合模式.Compenent)
 	 */
 	@Override
-	public void add(Compenent c) {
+	public void add(Component c) {
 		// TODO Auto-generated method stub
-		compenent.add(c);
+		component.add(c);
 	}
 
 	/* (非 Javadoc)
@@ -58,9 +58,9 @@ public class Composite extends Compenent {
 	 * @see 组合模式.Compenent#remove(组合模式.Compenent)
 	 */
 	@Override
-	public void remove(Compenent c) {
+	public void remove(Component c) {
 		// TODO Auto-generated method stub
-		compenent.remove(c);
+		component.remove(c);
 	}
 
 	/* (非 Javadoc)
@@ -77,7 +77,7 @@ public class Composite extends Compenent {
 			sp += "-";
 		}
 		System.out.println(sp+this.name);
-		for (Compenent c : compenent) {
+		for (Component c : component) {
 			depth = depth + 2 ;
 			c.display(depth);
 			depth = depth - 2 ;

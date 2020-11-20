@@ -21,10 +21,10 @@ package alliswell.pattern.structural.decoration;
  * @date 2017/1/17 10:45
  */
 public class ConcreteDecorator2 extends Decorator {
-    Compenent humburger;
+//    Compenent humburger;
 
     public ConcreteDecorator2(Compenent humburger){
-        this.humburger = humburger;
+        super(humburger);
     }
 
     @Override
@@ -34,6 +34,7 @@ public class ConcreteDecorator2 extends Decorator {
 
     @Override
     public double getPrice() {
+        System.out.println("加辣椒");
         return humburger.getPrice();  //辣椒是免费的哦
     }
 

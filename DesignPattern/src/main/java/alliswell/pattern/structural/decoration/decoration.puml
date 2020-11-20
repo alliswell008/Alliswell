@@ -1,0 +1,46 @@
+@startuml
+title __**装饰器模式**__\n
+
+note as N1
+定义：动态的给对象添加一些额外的责任，就增加功能来说，装饰比生成子类更为灵活。
+角色：组件接口（Component）、具体的组件、继承至Component的修饰接口（Decorator）、具体的修饰
+理解：修饰接口Decorator继承Component，并持有Component的一个引用，所以起到了复用Component并增加新的功能。
+场景：1.想要在不影响其他对象的情况下，以动态、透明的方式给单个对象添加职责。
+    2.想要扩展一个类的行为，却做不到。类定义可能被隐藏，无法进行子类化；或者对类的每个行为的扩展，哦支持每种功能组合，将产生大量的子类。
+end note
+
+newpage
+Component <|-- ConcreteComponent
+Component <|-- Decorator
+Decorator o-up-> Component
+Decorator <|-- ConcreteDecoratorA
+Decorator <|-- ConcreteDecoratorB
+
+
+note as cn
+定义一个对象接口，
+可以给这些对象动态地添加职责。
+end note
+Component -r-> cn
+
+note as ccn
+定义了一个具体的对象，
+也可以给这个对象添加一些职责。
+end note
+ConcreteComponent .up. ccn
+
+note as dn
+装饰抽象类，继承了Component类的功能，
+但对与Component来说，是无需知道Decorator存在的
+end note
+Decorator .r. dn
+
+note as cdn
+装饰抽象类，继承了Component类的功能，
+但对与Component来说，是无需知道Decorator存在的
+end note
+ConcreteDecoratorA .. cdn
+ConcreteDecoratorB .. cdn
+
+
+@enduml

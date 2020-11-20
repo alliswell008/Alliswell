@@ -1,0 +1,38 @@
+@startuml
+title __**原型模式**__\n
+
+note as N1
+**定义**：用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象
+**适用**：当要实例化的类是在运行时刻指定时；或者需要创建多个对象并且这些
+         对象内部状态相差不大
+end note
+
+newpage
+
+abstract class Prototype {
++ clone()
+}
+class ConcretePrototype
+
+ConcretePrototype -up-|> Prototype
+Client -right-> Prototype
+
+
+note as pn
+原型类，声明一个
+克隆自身的接口
+end note
+Prototype -right-> pn
+
+note as cpn
+具体原型类，实现一个克隆自身的操作
+end note
+ConcretePrototype --> cpn
+
+note as cn
+让一个原型克隆自身
+从而创建一个新的对象
+end note
+Client -left-> cn
+
+@enduml

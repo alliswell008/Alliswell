@@ -21,7 +21,7 @@ package alliswell.pattern.structural.composite;
  * @date 2016-8-3 下午5:22:56
  *
  */
-public abstract class Compenent {
+public abstract class Component {
 	String name;
 	
 	/**
@@ -29,12 +29,12 @@ public abstract class Compenent {
 	 * <p>Description: </p>
 	 * @author alliswell
 	 */
-	public Compenent(String name) {
+	public Component(String name) {
 		// TODO Auto-generated constructor stub
 		this.name = name;
 	}
 
-	public abstract void add(Compenent c);
-	public abstract void remove(Compenent c);
+	public abstract void add(Component c);
+	public abstract void remove(Component c);
 	public abstract void display(int depth);
 }

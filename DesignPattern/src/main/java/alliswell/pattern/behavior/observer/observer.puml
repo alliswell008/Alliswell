@@ -1,0 +1,38 @@
+@startuml
+title __**观察者模式又称发布-订阅模式**__\n
+
+note as N1
+定义：定义了一种一对多的关系，让多个观察者监听某一主题对象，这个主题对象的状态变化时，
+    会通知所有观察者对象，使它们自己更新自己
+角色：发布者接口（Subject）、具体发布者、监听者接口（Observer）、具体监听者。
+理解：Subject提供注册于注销的方法，客户把所有的Observer注册到Subject当中，当需要
+    时Subject遍历所有注册的Observer并通知他们。
+end note
+
+newpage
+
+class Subject {
+- List<Observer> observers;
++ attachObserver()
++ dttachObserver()
++ notify() {observer.update()}
+}
+class Observer {
++  update()
+}
+class ConcreteSubject {
++ subjectState
++ getState()
++ setState()
+}
+
+class ConcreteObserver {
++ observerState
++  update()
+}
+
+ConcreteSubject -up-|> Subject
+ConcreteObserver -up-|> Observer
+ConcreteSubject <-left- ConcreteObserver
+
+@enduml

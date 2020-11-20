@@ -1,0 +1,27 @@
+@startuml
+title __**备忘录模式**__\n
+
+note as N1
+定义：在不破坏封装的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可将该对象恢复到原先保存的状态。
+角色：有三个角色：发起人（Originatior）、备忘录（Memento）、看管人（Caretaker）。
+理解：发起人生成一个备忘录给看管人，看管人保存备忘录。当需要时，看管人获取备忘录交给发起人，发起人根据备忘录恢复自己。
+end note
+
+newpage
+
+class Originatior {
+- state
++ setMemento()
++ mementoWithState()
++ createMemento()
+}
+class Memento {
+- state
++ setState()
+}
+class Caretaker
+
+Originatior .right.> Memento
+Memento <-left-o Caretaker
+
+@enduml

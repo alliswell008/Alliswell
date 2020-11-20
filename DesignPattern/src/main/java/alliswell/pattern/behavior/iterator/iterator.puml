@@ -1,0 +1,39 @@
+@startuml
+title __**迭代器模式**__\n
+
+note as N1
+定义：提供一种方法顺序的访问一个聚合对象的各个元素，而又不暴露该对象内部表示
+角色：迭代器、集合
+理解：把遍历集合的职能从集合本身转移到迭代器对象，不同的迭代器可以执行不同的遍历策略。
+适用：1.需要访问组合对象的内容，而又不暴露其内部表示。
+     2.需要通过多种方式遍历组合对象
+     3.需要提供一个统一的接口，用来遍历各种类型组合对象。
+end note
+
+newpage
+
+class Aggregate {
++ createIterator()
+}
+class Iterator {
++  first()
++  next()
++  isDone()
++  currentItem()
+}
+class ConcreteAggregate {
++ createIterator():Iterator
+}
+
+class ConcreteIterator {
+- aggregate:Aggregate
+}
+
+ConcreteAggregate -up-|> Aggregate
+ConcreteIterator -up-|> Iterator
+ConcreteAggregate ..> ConcreteIterator
+ConcreteAggregate <-left- ConcreteIterator
+Aggregate <-left- Client
+Iterator <-right- Client
+
+@enduml

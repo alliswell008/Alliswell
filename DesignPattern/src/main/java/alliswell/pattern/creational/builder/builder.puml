@@ -1,0 +1,47 @@
+@startuml
+title __**建造者模式**__\n
+
+note as N1
+**定义**：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示
+**适用**：当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时
+end note
+
+newpage
+
+abstract class Builder
+class ConcreteBuilder
+class Director
+
+Director : createProduct()
+Builder : + buildPart()
+Builder : + getResult()
+ConcreteBuilder : + buildPart()
+ConcreteBuilder : + Product getResult()
+
+ConcreteBuilder -up-|> Builder
+Director o-right-> Builder
+Client .right.> Director
+ConcreteBuilder .right.> Product
+
+note as bn
+为创建一个Product对象
+的各个部件指定的抽象接口
+end note
+Builder -right-> bn
+
+note as dn
+指挥者，是构建一个使用Builder接口的对象
+end note
+Director -up-> dn
+
+note as cbn
+具体建造者，实现Builder接口，构造和装配各个部件
+end note
+ConcreteBuilder --> cbn
+
+note as pn
+具体产品
+end note
+Product --> pn
+
+@enduml
