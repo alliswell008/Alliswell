@@ -1,0 +1,47 @@
+@startuml
+title __**享元模式**__\n
+
+note as N1
+**定义：**运用共享技术有效地支持大量细粒度的对象。
+**角色：**享元池、享元接口、具体享元对象
+**理解：**客户端需要享元对象时，先去享元池寻找，
+如果找到了就直接复用，如果没有找到就创建享元对象并保存到享元池。
+end note
+
+newpage
+Client -u-> FlyweightFactory
+FlyweightFactory *-r-> Flyweight
+ConcreteFlyweight -u-|> Flyweight
+UnsharedConcreteFlyweight -u-|> Flyweight
+
+Client --> ConcreteFlyweight
+Client -r-> UnsharedConcreteFlyweight
+
+
+note as ffn
+一个享元工厂，用来创建并管理Flyweight对象。
+它主要用来确保合理地共享Flyweight，当用户
+请求一个Flyweight时，它提供一个已创建的实例
+或创建一个（如果不存在的话）。
+end note
+FlyweightFactory .u. ffn
+
+note as fn
+所有具体享元类的超类或接口，通过这个接口，
+Flyweight可以接收并作用于外部状态。
+end note
+Flyweight .u. fn
+
+note as cfn
+继承Flyweight超类或实现接口，
+并为内部状态增加空间。
+end note
+ConcreteFlyweight .. cfn
+
+note as ucfn
+指那些不需要共享的Flyweight子类。因为Flyweight接口
+共享成为可能，但它并不强制共享。
+end note
+UnsharedConcreteFlyweight .. ucfn
+
+@enduml

@@ -1,0 +1,45 @@
+@startuml
+title __**外观模式**__\n
+
+note as N1
+定义：为子系统中一组不同的接口提供统一的接口
+场景：
+1.子系统正逐渐变得复杂，应用模式的过程中演化出许多类。
+可以使用外观为这些子系统类提供一个较简单的接口。
+2.可以使用外观对子系统分层，每个字系统级别有一个外观做为入口。
+让她们通过外观进行通信，可以简化他们的依赖关系。
+end note
+
+newpage
+Client --> Facade
+Facade --> SubSystemOne
+Facade --> SubSystemTwo
+Facade --> SubSystemThree
+Facade --> SubSystemFour
+
+Facade : +methodA()
+Facade : +methodB()
+
+SubSystemOne : +methodOne()
+SubSystemTwo : +methodTwo()
+SubSystemThree : +methodThree()
+SubSystemFour : +methodFour()
+
+note as fn
+Facade外观类
+知道哪些子系统负责处理请求，
+将客户的请求代理给适当的子系统对象
+end note
+Facade .r. fn
+
+note as sn
+子系统类集合
+实现子系统的功能，处理Facade对象指派的任务，
+注意子类中没有Facade的任何信息，即没有对Facade对象的引用。
+end note
+SubSystemOne .. sn
+SubSystemTwo .. sn
+SubSystemThree .. sn
+SubSystemFour .. sn
+
+@enduml

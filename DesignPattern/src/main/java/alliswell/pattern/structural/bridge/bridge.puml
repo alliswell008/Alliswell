@@ -1,0 +1,70 @@
+@startuml
+title __**模式桥接**__\n
+
+note as N1
+**定义：**将抽象部分与它的实现部分分离，使它可以独立的变更
+**角色：**抽象层接口（Abstraction）、具体抽象层、实现者接口、具体实现者。
+**理解：**这里有两个接口，一个是抽象层接口Abstraction，一个是Implementor接口，
+其中Abstraction持有Implementor的引用。客户端通过Abstraction来连接Implementor，
+以后Implementor可以动态的改变而不影响Abstraction。
+**场景：**
+1.不想在抽象与实现之间形成固定的绑定关系（这样就能在运行时切换实现）。
+2.抽象与实现都应可以通过子类化独立进行扩展。
+3.对抽象的实现进行修改不应影响客户端代码。
+4.如果每个实现需要额外的子类以细化抽象，则说明有必要把它们分成两个部分。
+5.想在带有不同抽象接口的多个对象之间共享一个实现。
+end note
+
+newpage
+
+Abstraction *-r- Implementor
+ConcreteImplementorA -u-|> Implementor
+ConcreteImplementorB -u-|> Implementor
+RefinedAbstraction -u-|> Abstraction
+
+Abstraction : +operation()
+RefinedAbstraction : +operation()
+
+Implementor : +operationImp()
+ConcreteImplementorA : +operationImp()
+ConcreteImplementorB : +operationImp()
+
+note as an
+抽象
+end note
+Abstraction .l. an
+
+note as in
+实现
+end note
+Implementor .r. in
+
+note as ran
+被提炼的抽象
+end note
+RefinedAbstraction .. ran
+
+note as cin
+具体实现
+end note
+ConcreteImplementorA .. cin
+ConcreteImplementorB .. cin
+
+newpage
+
+手机品牌 <|-- 手机品牌M
+手机品牌 <|-- 手机品牌N
+手机品牌M <|-- 手机品牌M通讯录
+手机品牌M <|-- 手机品牌M游戏
+手机品牌N <|-- 手机品牌N通讯录
+手机品牌N <|-- 手机品牌N游戏
+
+newpage
+
+手机品牌 <|-- 手机品牌M
+手机品牌 <|-- 手机品牌N
+手机软件 <|-- 通讯录
+手机软件 <|-- 游戏
+手机品牌 o-r- 手机软件
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+title __**代理模式**__\n
+
+note as N1
+定义：为其他对象提供一种代理以控制对这个对象的访问
+角色：客户端（Client）、目标接口（subject）代理对象（Proxy）、真正的目标对象（RealSubject）
+虚拟代理：客户端拥有Subject的引用，其实就是Proxy对象，Proxy对象持有RealSubject的引用，调用Proxy.request   Proxy会实际调用RealSubject.request
+end note
+
+newpage
+Client -r-> Subject
+Subject <|-- Proxy
+Subject <|-- RealSubject
+RealSubject <-left- Proxy
+
+note as sn
+定义了RealSubject和Proxy的共用接口，
+这样就能在使用RealSubject的地方使用Proxy替换
+end note
+Subject .up. sn
+
+note as pn
+保存一个引用使得代理可以访问实体，
+并提供一个与Subject的接口相同的接口，
+这样代理就可以代替实体
+end note
+Proxy .r. pn
+
+note as rsn
+定义Proxy所代表的真实实体
+end note
+RealSubject .l. rsn
+
+@enduml

@@ -13,6 +13,13 @@ end note
 
 newpage
 
+Client -r-> Handler
+Handler <|-- ConcreteHandler1
+Handler <|-- ConcreteHandler2
+Handler o-u-> Handler
+
+newpage
+
 Client -right-> Logger
 Logger <|--StderrLogger
 Logger <|--StdoutLogger
