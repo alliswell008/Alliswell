@@ -1,7 +1,6 @@
 package alliswell.pattern.behavior.chain.order;
 
-import java.util.ArrayList;
-import java.util.List;
+import cn.hutool.json.JSONUtil;
 
 /**
  * TODO 功能描述
@@ -26,12 +25,13 @@ public class Main {
 
         Order order = new Order("0001", 20, "元");
         // 使用顺序：券、积分、红包
-        order.addPromotion(new Coupon(10,2));
+        order.addPromotion(new Coupon(10, 2));
         order.addPromotion(new Integral(4));
         order.addPromotion(new RedEnvelope(8));
-        order.addPromotion(new Coupon(2,1));
+        order.addPromotion(new Coupon(2, 1));
+        System.out.println(JSONUtil.toJsonStr(order));
         for (Promotion promotion : order.getPromotionList()) {
-            couponHandler.caculatePrice(order,promotion);
+            couponHandler.caculatePrice(order, promotion);
         }
 
         System.out.println("----------");
@@ -40,10 +40,11 @@ public class Main {
         // 使用顺序：积分、红包、券
         order.addPromotion(new Integral(4));
         order.addPromotion(new RedEnvelope(8));
-        order.addPromotion(new Coupon(10,2));
-        order.addPromotion(new Coupon(2,1));
+        order.addPromotion(new Coupon(10, 2));
+        order.addPromotion(new Coupon(2, 1));
+        System.out.println(JSONUtil.toJsonStr(order));
         for (Promotion promotion : order.getPromotionList()) {
-            couponHandler.caculatePrice(order,promotion);
+            couponHandler.caculatePrice(order, promotion);
         }
     }
 
@@ -56,10 +57,11 @@ public class Main {
         integralHandler.setHandler(redEnvelopeHandler);
 
         Order order = new Order("0001", 20, "元");
-        order.addPromotion(new Coupon(10,2));
+        order.addPromotion(new Coupon(10, 2));
         order.addPromotion(new Integral(4));
         order.addPromotion(new RedEnvelope(8));
-        order.addPromotion(new Coupon(2,1));
+        order.addPromotion(new Coupon(2, 1));
+        System.out.println(JSONUtil.toJsonStr(order));
         couponHandler.caculatePrice(order);
 
         System.out.println("----------");
@@ -69,10 +71,11 @@ public class Main {
         couponHandler.setHandler(null);
 
         order = new Order("0001", 20, "元");
-        order.addPromotion(new Coupon(10,2));
+        order.addPromotion(new Coupon(10, 2));
         order.addPromotion(new Integral(4));
         order.addPromotion(new RedEnvelope(8));
-        order.addPromotion(new Coupon(2,1));
+        order.addPromotion(new Coupon(2, 1));
+        System.out.println(JSONUtil.toJsonStr(order));
         integralHandler.caculatePrice(order);
     }
 }
