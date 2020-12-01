@@ -36,10 +36,10 @@ public class AbstractReflectFactoryCalculator {
     // 可配置的操作符-操作类名字符串
     private static Map<String,String> map = new HashMap<String,String>();
     static {
-        map.put("+", "计算器.操作.加法");
-        map.put("-", "计算器.操作.减法");
-        map.put("*", "计算器.操作.乘法");
-        map.put("/", "计算器.操作.除法");  // 扩展除法时，增加key-value
+        map.put("+", "alliswell.calculator.originalimprove.operation.Addition");
+        map.put("-", "alliswell.calculator.originalimprove.operation.Subtraction");
+        map.put("*", "alliswell.calculator.originalimprove.operation.Multiplication");
+        map.put("/", "alliswell.calculator.originalimprove.operation.Division");  // 扩展除法时，增加key-value
     }
 
     // 可配置的操作符-具体工厂标识
@@ -53,7 +53,7 @@ public class AbstractReflectFactoryCalculator {
     // 可配置的具体工厂标识-具体操作工厂
     private static Map<String,String> fmap = new HashMap<String,String>();
     static {
-        fmap.put("具体操作工厂", "计算器.抽象工厂_反射.具体操作工厂");
+        fmap.put("具体操作工厂", "alliswell.calculator.abstractfactoryreflect.OperationConcreteFactory");
     }
 
     /**

@@ -1,7 +1,10 @@
-package alliswell.pattern.creational.factory;
+package alliswell.pattern.creational.factory.factory;
+
+import alliswell.pattern.creational.factory.IProduct;
+import alliswell.pattern.creational.factory.ProductA;
 
 /**
- * TODO 功能描述
+ * 具体工厂
  *
  * @author chengxs
  * @date 2020/11/16

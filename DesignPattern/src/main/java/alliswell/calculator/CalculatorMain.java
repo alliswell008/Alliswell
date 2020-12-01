@@ -14,6 +14,8 @@
  */
 package alliswell.calculator;
 
+import alliswell.calculator.abstractfactoryreflect.AbstractReflectFactoryCalculator;
+import alliswell.calculator.abstractfactoryreflectspi.AbstractReflectFactoryCalculatorSPI;
 import alliswell.calculator.original.OriginalCalculator;
 import alliswell.calculator.originalimprove.OriginalImproveCalculator;
 import alliswell.calculator.simplefactory.SimpleFactoryCalculator;
@@ -33,20 +35,23 @@ public class CalculatorMain {
         System.out.println("2.现要求增加一个除法运算");
         System.out.println("3.实现GUI客户端，使用awt、swing或swt");
 
-        System.out.println("\n原始计算器：");
-        OriginalCalculator.client_Original(); // 已经满足需求1。但当增加需求2时，不满足面向对象的思想和开闭原则。
-
-        System.out.println("\n原始改进计算器：");
-        OriginalImproveCalculator.client_OriginalImprove(); // 以面向对象的思想，我将可能会变化的运算操作抽象出来，但在增加除法运算时仍不满足开闭原则。
-
-        System.out.println("\n简单工厂计算器：");
-        SimpleFactoryCalculator.client_SimpleFactory(); // 使用简单工厂，我将计算器客户端和运算操作逻辑分离出来，在增加除法运算时除了增加除法操作类外，仍要修改简单工厂类（增加case/if的判断）。
-
-        System.out.println("\n简单工厂_反射计算器：");
-        SimpleReflectFactoryCalculator.client_SimpleReflectFactory(); // 使用简单工厂和反射，消除了简单工厂类中的case/if判断，通过配置操作类的key-value来创建具体操作类。
+//        System.out.println("\n原始计算器：");
+//        OriginalCalculator.client_Original(); // 已经满足需求1。但当增加需求2时，不满足面向对象的思想和开闭原则。
+//
+//        System.out.println("\n原始改进计算器：");
+//        OriginalImproveCalculator.client_OriginalImprove(); // 以面向对象的思想，我将可能会变化的运算操作抽象出来，但在增加除法运算时仍不满足开闭原则。
+//
+//        System.out.println("\n简单工厂计算器：");
+//        SimpleFactoryCalculator.client_SimpleFactory(); // 使用简单工厂，我将计算器客户端和运算操作逻辑分离出来，在增加除法运算时除了增加除法操作类外，仍要修改简单工厂类（增加case/if的判断）。
+//
+//        System.out.println("\n简单工厂_反射计算器：");
+//        SimpleReflectFactoryCalculator.client_SimpleReflectFactory(); // 使用简单工厂和反射，消除了简单工厂类中的case/if判断，通过配置操作类的key-value来创建具体操作类。
 //
 //        System.out.println("\n抽象工厂_反射计算器：");
-//        抽象工厂_反射计算器.client_抽象工厂_反射(); // 使用抽象工厂和反射，可以配置工厂类和操作类的key-value来创建具体操作类。
+//        AbstractReflectFactoryCalculator.client_抽象工厂_反射(); // 使用抽象工厂和反射，可以配置工厂类和操作类的key-value来创建具体操作类。
+
+        System.out.println("\n抽象工厂_反射计算器_SPI");
+        AbstractReflectFactoryCalculatorSPI.client_AbstractReflectFactoryCalculatorSPI();
 
         System.out.println("\n运行结束...");
     }

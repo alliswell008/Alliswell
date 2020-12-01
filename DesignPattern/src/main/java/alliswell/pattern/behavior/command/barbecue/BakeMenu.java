@@ -7,7 +7,14 @@ package alliswell.pattern.behavior.command.barbecue;
  * @date 2020/11/4
  */
 public enum BakeMenu {
-    Gluten("面筋"),Mutton("羊肉");
+    /**
+     * 面筋
+     */
+    Gluten("面筋"),
+    /**
+     * 羊肉
+     */
+    Mutton("羊肉");
 
     private String value;
 

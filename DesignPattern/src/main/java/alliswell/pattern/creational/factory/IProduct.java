@@ -1,7 +1,7 @@
 package alliswell.pattern.creational.factory;
 
 /**
- * TODO 功能描述
+ * 抽象产品
  *
  * @author chengxs
  * @date 2020/11/16
