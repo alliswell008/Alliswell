@@ -1,5 +1,8 @@
 package alliswell.demo.reflect;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @Title: ReflectDemo
  * @Package alliswell.demo.reflect
@@ -20,6 +23,44 @@ package alliswell.demo.reflect;
  * *****************************************************
  */
 public class ReflectDemo {
+
+    private String name;
+
+    private int age;
+
+    private Map<String, ReflectDemo> map;
+
+    private ReflectDemo() {
+    }
+
+    public ReflectDemo(String name) {
+        this.name = name;
+    }
+
+    public ReflectDemo(int age) {
+        this.age = age;
+    }
+
+    public ReflectDemo(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Map<String, ReflectDemo> getMap() {
+        return map;
+    }
+
+    public void setMap(Map<String, ReflectDemo> map) {
+        this.map = map;
+    }
+
+    @Override
+    public String toString() {
+        return "ReflectDemo{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 
     public static void main(String[] args) {
         System.out.println("main方法运行了");

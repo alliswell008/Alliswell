@@ -24,24 +24,49 @@ package alliswell.demo.variables;
 public class FinalVariablesTest {
 
     public static void main(String[] args) throws ClassNotFoundException {
-//        System.out.println(VariablesClass.str0);
+        System.out.println(VariablesClass.str5);
+        System.out.println("==================");
         new VariablesClass().f();
     }
 }
 
 
 class VariablesClass {
-    // 非常量成员具有默认初始值
-    static String str0;
-    // 常量成员必须被初始化，再被调用时不会加载类
-    static final String str1 = "abc";
-    static String str2 = new String("abc");
-    static final String str3 = new String("abc");
-    static final FinalVariablesTest str4 = new FinalVariablesTest();
+    // 这里static是为了不new对象来调用成员变量，因为new对象时类会先运行：1.装载 2.连接 3.初始化
+    // 基本数据类型，这里以int为例
+    // 成员变量（不是常量）具有默认初始值0，不需要显式初始化
+    static int i1;
+    // 成员变量显式初始化
+    static int i2 = 0;
+    // 编译错误，常量成员必须被显式初始化
+//    static final int i3;
+    // 基本数据类型的常量成员，在被调用时不会加载运行类，表现为该类中的静态代码块不会执行
+    static final int i4 = 0;
 
-    static final String str10 = null;
+    // 引用类型
+    // 成员变量（不是常量）具有默认初始值null，不需要显式初始化
+    static String str0;
+    // 成员变量显式初始化
+    static String str1 = "abc";
+    static String str2 = "abc".intern();
+    static String str3 = new String("abc");
     static String str20 = null;
-    static final FinalVariablesTest str40 = null;
+    // 编译错误，常量成员必须被显式初始化
+    //    static final String str4;
+    // String作为引用类型的特列，如果被初始化为"abc"时，那么在被调用时不会加载运行类，表现为该类中的静态代码块不会执行
+    static final String str5 = "abc";
+    // 其他情况的引用类型初始化时，都会加载运行类，表现为该类中的静态代码块执行
+    static final String str6 = "abc".intern();
+    static final String str7 = new String("abc");
+    static final String str10 = null;
+
+    static FinalVariablesTest test1;
+    static FinalVariablesTest test2 = new FinalVariablesTest();
+    static FinalVariablesTest test3 = null;
+//    static final FinalVariablesTest test4;
+    static final FinalVariablesTest test5 = new FinalVariablesTest();
+    static final FinalVariablesTest test6 = null;
+
 
     static {
         System.out.println("static class VariablesClass");

@@ -28,7 +28,8 @@ public class TrycatchfinallyDemo {
 
     public static String testFinally() {
         try {
-            return "string";
+            System.out.println("try语句");
+            return fun();
         } catch (Exception e) {
 
         } finally {
@@ -37,5 +38,10 @@ public class TrycatchfinallyDemo {
             // 被最终采纳，所以返回的是null而不是“string”
             return null;
         }
+    }
+
+    static String fun() {
+        System.out.println("fun-string");
+        return "string";
     }
 }

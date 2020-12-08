@@ -25,6 +25,7 @@ public class ExplicitStatic {
     public static void main(String[] args) {
         System.out.println("Inside Main()");
         Cups.fun();
+        System.out.println("----------");
         Cups.c2.f(99);
     }
 //    static Cups x = new Cups();
