@@ -3,6 +3,8 @@ package alliswell.demo.reflect;
 import alliswell.AttributeUtil;
 import cn.hutool.core.util.ReflectUtil;
 
+import java.beans.IntrospectionException;
+import java.beans.PropertyDescriptor;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -39,6 +41,7 @@ public class ReflectTest {
         getActualType();
         System.out.println("==================");
         compare();
+
     }
 
     public static void callStaticMethod() {
@@ -121,6 +124,22 @@ public class ReflectTest {
         ReflectDemo r1 = new ReflectDemo("张三",1);
         ReflectDemo r2 = new ReflectDemo("李四",2);
 
+
+        PropertyDescriptor pd = null;
+        try {
+            pd = new PropertyDescriptor("age", ReflectDemo.class);
+            Method getMethod = pd.getReadMethod();
+            Object invoke = getMethod.invoke(r1);
+            System.out.println("------"+invoke);
+        } catch (IntrospectionException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+
+        // TODO 这个方法可能存在线程安全的问题，可考虑上面的方式
         // 比较两个对象的属性，并返回发生变更的属性集合
         List<AttributeUtil.Attribute> compare = AttributeUtil.compare(r1, r2);
         System.out.println(compare);

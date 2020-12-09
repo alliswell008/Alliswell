@@ -27,16 +27,18 @@ public class TrycatchfinallyDemo {
     }
 
     public static String testFinally() {
+        String result = null;
         try {
             System.out.println("try语句");
-            return fun();
+            // try代码块中return后面的表达式会先于finally代码块中的return
+            return result=fun();
         } catch (Exception e) {
 
         } finally {
             // 不论是否抛出异常或者直接return，都会执行
             System.out.println("finally语句");
             // 被最终采纳，所以返回的是null而不是“string”
-            return null;
+            return result + "-finally";
         }
     }
 
