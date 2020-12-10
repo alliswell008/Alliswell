@@ -132,27 +132,24 @@ public class FileDemo {
      */
     public static void getFileAttribute(File file) throws IOException {
         // 文件名= 前缀名+后缀名
-        System.out.println("\n文件名= 前缀名+后缀名");
-        System.out.println(file.getName());
+        System.out.println("\n文件名= 前缀名+后缀名："+file.getName());
 
         // 文件路径
         System.out.println("\n文件路径");
         // 相对路径，相对路径创建时才可以返回相对路径，否则返回与绝对路径一样，且会包含冗余的名称，例如"."和".."
-        System.out.println(file.getPath());
+        System.out.println("文件路径："+file.getPath());
         // 绝对路径
         // 是否绝对路径
-        System.out.println("是否绝对路径创建" + file.isAbsolute());
-        System.out.println(file.getAbsolutePath());
+        System.out.println("是否绝对路径创建：" + file.isAbsolute());
+        System.out.println("绝对路径："+file.getAbsolutePath());
         // 标准路径，会从路径名中删除冗余名称，例如"."和".."
-        System.out.println(file.getCanonicalPath());
+        System.out.println("标准路径："+file.getCanonicalPath());
 
         // 文件大小
-        System.out.println("\n文件大小");
-        System.out.println(file.length());
+        System.out.println("\n文件大小："+file.length());
 
         // 文件最后修改时间
-        System.out.println("\n文件最后修改时间");
-        System.out.println(new Date(file.lastModified()));
+        System.out.println("\n文件最后修改时间："+ new Date(file.lastModified()));
 
         // 文件读写执行权限
         System.out.println("\n文件读写执行权限");

@@ -1,7 +1,6 @@
 package alliswell.demo.reflect;
 
 import alliswell.AttributeUtil;
-import cn.hutool.core.util.ReflectUtil;
 
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;
@@ -42,6 +41,18 @@ public class ReflectTest {
         System.out.println("==================");
         compare();
 
+        System.out.println("==================");
+
+//        ReflectDemo r = new ReflectDemo(1);
+//        FieldAccess fieldAccess = FieldAccess.get(r.getClass());
+//        fieldAccess.set(r, "name", "name");
+//        Object name = fieldAccess.get(r, "name");
+//        System.out.println(name);
+//
+//        MethodAccess methodAccess = MethodAccess.get(ReflectDemo.class);
+//        int getName = methodAccess.getIndex("getAge");
+//        Object invoke = methodAccess.invoke(r, getName);
+//        System.out.println(invoke);
     }
 
     public static void callStaticMethod() {
@@ -121,8 +132,8 @@ public class ReflectTest {
 
 
     public static void compare() {
-        ReflectDemo r1 = new ReflectDemo("张三",1);
-        ReflectDemo r2 = new ReflectDemo("李四",2);
+        ReflectDemo r1 = new ReflectDemo("张三", 1);
+        ReflectDemo r2 = new ReflectDemo("李四", 2);
 
 
         PropertyDescriptor pd = null;
@@ -130,7 +141,7 @@ public class ReflectTest {
             pd = new PropertyDescriptor("age", ReflectDemo.class);
             Method getMethod = pd.getReadMethod();
             Object invoke = getMethod.invoke(r1);
-            System.out.println("------"+invoke);
+            System.out.println("------" + invoke);
         } catch (IntrospectionException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {

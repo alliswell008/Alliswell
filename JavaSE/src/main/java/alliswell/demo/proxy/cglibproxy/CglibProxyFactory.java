@@ -1,6 +1,5 @@
 package alliswell.demo.proxy.cglibproxy;
 
-import alliswell.demo.proxy.A;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -13,13 +12,14 @@ class CglibProxy implements MethodInterceptor {
 
     }
 
-    public static <T extends A> A newProxyInstance(Class<T> targetInstanceClazz) {
+    public static <T> T newProxyInstance(Class<T> targetInstanceClazz) {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(targetInstanceClazz);
         enhancer.setCallback(new CglibProxy());
-        return (A) enhancer.create();
+        return (T) enhancer.create();
     }
 
+    @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
         System.out.println("cglib proxy enhance start");
         Object objProxy = proxy.invokeSuper(obj, args);
