@@ -28,8 +28,7 @@ public class TestThreeThread {
             t2.start();
             t2.join();
             t3.start();
-//            t3.join();// 可以没有，但与main方法的线程顺序就不可控了
-
+            t3.join();// 可以没有，但与main方法的线程顺序就不可控了
 
             // 利用并发包里的Excutors的newSingleThreadExecutor产生一个单线程的线程池，
             // 而这个线程池的底层原理就是一个先进先出（FIFO）的队列。
@@ -39,7 +38,7 @@ public class TestThreeThread {
 //        executor.submit(t3);
 //        executor.shutdown();
 
-            System.out.println("main is over");
+//            System.out.println("main is over");
         }
     }
 }
@@ -89,5 +88,6 @@ class MyThread3 implements Runnable {
     @Override
     public void run() {
         System.out.println("I am thread 3");
+        System.out.println("-----------");
     }
 }
