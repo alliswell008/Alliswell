@@ -42,10 +42,12 @@ public class Java8Tester {
         System.out.println("10 + 5 = " + tester.operate(10, 5, (a,b)-> {int c =a+b; return c;}));
     }
 
+    @FunctionalInterface
     interface MathOperation {
         int operation(int a, int b);
     }
 
+    @FunctionalInterface
     interface GreetingService {
         void sayMessage(String message);
     }

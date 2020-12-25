@@ -1,8 +1,12 @@
 package alliswell.demo.java8;
 
+import com.google.common.collect.Lists;
+
+import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -13,13 +17,19 @@ public class Java8Tester6 {
         System.out.println("使用 Java 7: ");
 
         // 计算空字符串
+        /**
+         * Arrays.asList 返回一个固定size的List，这个List是java.util.Arrays.ArrayList，
+         * 它没有实现java.util.AbstractList中的remove方法{@link AbstractList#remove(int)}，
+         * 所以不能remove，同理add也不能
+         */
         List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+        strings = Lists.newArrayList("abc", "", "bc", "efg", "abcd","", "jkl");
         System.out.println("列表: " +strings);
+
         long count = getCountEmptyStringUsingJava7(strings);
-
         System.out.println("空字符数量为: " + count);
-        count = getCountLength3UsingJava7(strings);
 
+        count = getCountLength3UsingJava7(strings);
         System.out.println("字符串长度为 3 的数量为: " + count);
 
         // 删除空字符串
@@ -117,15 +127,25 @@ public class Java8Tester6 {
     }
 
     private static List<String> deleteEmptyStringsUsingJava7(List<String> strings){
-        List<String> filteredList = new ArrayList<String>();
-
-        for(String string: strings){
-
-            if(!string.isEmpty()){
-                filteredList.add(string);
+        Iterator<String> iterator = strings.iterator();
+        while (iterator.hasNext()) {
+            String next = iterator.next();
+            if (next.isEmpty()) {
+                iterator.remove();
             }
         }
-        return filteredList;
+
+        return strings;
+
+//        List<String> filteredList = new ArrayList<String>();
+//
+//        for(String string: strings){
+//
+//            if(!string.isEmpty()){
+//                filteredList.add(string);
+//            }
+//        }
+//        return filteredList;
     }
 
     private static String getMergedStringUsingJava7(List<String> strings, String separator){

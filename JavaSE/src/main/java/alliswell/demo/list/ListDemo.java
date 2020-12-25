@@ -15,11 +15,9 @@
  */
 package alliswell.demo.list;
 
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @author alliswell
@@ -33,28 +31,31 @@ public class ListDemo implements Cloneable {
     List<Student> students;
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        Timestamp t = new Timestamp(System.currentTimeMillis());
-        System.out.println(t);
+//        Timestamp t = new Timestamp(System.currentTimeMillis());
+//        System.out.println(t);
+//
+//        List<Student> list = new ArrayList<>();
+//        Student s1 = new Student("张三", "11");
+//        Student s2 = new Student("李四", "12");
+//        Student s3 = new Student("王五", "13");
+//        list.add(s1);
+//        list.add(s2);
+//        list.add(s3);
+//
+//        modifyTest(list);
+//        System.out.println("=======modifyTest=======");
+//        cloneTest(list);
+//        System.out.println("=======cloneTest=======");
 
-        List<Student> list = new ArrayList<>();
-        Student s1 = new Student("张三", "11");
-        Student s2 = new Student("李四", "12");
-        Student s3 = new Student("王五", "13");
-        list.add(s1);
-        list.add(s2);
-        list.add(s3);
-
-        modifyTest(list);
-        cloneTest(list);
-
-//        fun();
-        fun2();
+        fun();
+//        fun2();
 
     }
 
     /**
      * Iterator不能添加和删除元素，否则会抛出异常java.util.ConcurrentModificationException（并发修改异常）
-     * 源码分析：ArrayList.remove()比Itr.remove()少了一步操作expectedModCount = modCount;
+     * 源码分析：{@link ArrayList#remove(java.lang.Object)}比{@link ArrayList.Itr#remove()}少了一步操作expectedModCount = modCount;
+     *
      */
     public static void fun() {
         ArrayList<String> list = new ArrayList<String>();
@@ -64,9 +65,12 @@ public class ListDemo implements Cloneable {
         while (iterator.hasNext()) {
             String item = iterator.next();
             // 删除第一个元素，不会抛出并发修改异常
-            if ("2".equals(item)) {
+//            if ("1".equals(item)) {
+                // 没有if条件时只删除了2这个元素
                 list.remove(item);
-            }
+                // 没有if条件是所有元素都删除了
+//                iterator.remove();
+//            }
         }
         System.out.println(list);
 
@@ -76,18 +80,19 @@ public class ListDemo implements Cloneable {
 //            }
 //        }
 
-        ArrayList<String> list2 = new ArrayList<String>();
-        list2.add("1");
-        list2.add("2");
-        Iterator<String> iterator2 = list2.iterator();
-        while (iterator2.hasNext()) {
-            String item = iterator2.next();
-            // 删除最后一个元素，才会抛出并发修改异常
-            if ("2".equals(item)) {
-                list2.remove(item);
-            }
-        }
-        System.out.println(list2);
+//        ArrayList<String> list2 = new ArrayList<String>(2);
+//        list2.add("1");
+//        list2.add("2");
+//        Iterator<String> iterator2 = list2.iterator();
+//        while (iterator2.hasNext()) {
+//            String item = iterator2.next();
+//            // 删除最后一个元素，才会抛出并发修改异常
+//            if ("2".equals(item)) {
+////                list2.remove(item);
+//                iterator2.remove();
+//            }
+//        }
+//        System.out.println(list2);
     }
 
     /**
@@ -149,33 +154,44 @@ public class ListDemo implements Cloneable {
      * @param list
      */
     public static void modifyTest(List<Student> list) {
-//        for (Student o : list) {
-//            if ("张三".equals(o.getName())) {
-//                list.remove(o);
-//            }
-//            System.out.println(o.getName() +":"+ o.getAge());
-//            System.out.println(list.size());
-//        }
+        ListDemo listDemo = new ListDemo();
+        listDemo.setStudents(list);
+        ListDemo clone = (ListDemo) listDemo.clone();
+        List<Student> students1 = clone.getStudents();
+        clone = (ListDemo) listDemo.clone();
+        List<Student> students2 = clone.getStudents();
+        clone = (ListDemo) listDemo.clone();
+        List<Student> students3 = clone.getStudents();
 
-//        for (int i=0; i<list.size(); i++) {
-//            Student o = list.get(i);
-//            if ("王五".equals(o.getName())) {
-//                list.remove(o);
-//            }
-//            System.out.println(o.getName() +":"+ o.getAge());
-//            System.out.println(list.size());
-//        }
+        for (Student o : students1) {
+            if ("张三".equals(o.getName())) {
+                students1.remove(o);
+                break;
+            }
+        }
+        System.out.println(students1);
 
-//        Iterator it = list.iterator();
-//        while (it.hasNext()) {
-//            Student o = (Student) it.next();
-//            if ("王五".equals(o.getName())) {
-////                list.remove(o);
-//                it.remove();
-//            }
-//            System.out.println(o.getName() +":"+ o.getAge());
-//            System.out.println(list.size());
-//        }
+        System.out.println("----------------");
+
+        for (int i=0; i<students2.size(); i++) {
+            Student o = students2.get(i);
+            if ("张三".equals(o.getName())) {
+                students2.remove(o);
+            }
+            System.out.println(students2);
+        }
+
+        System.out.println("----------------");
+
+        Iterator it = students3.iterator();
+        while (it.hasNext()) {
+            Student o = (Student) it.next();
+            if ("王五".equals(o.getName())) {
+//                list.remove(o);
+                it.remove();
+            }
+        }
+        System.out.println(students3);
     }
 
 
@@ -269,5 +285,13 @@ class Student implements Cloneable {
             e.printStackTrace();
         }
         return o;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }
