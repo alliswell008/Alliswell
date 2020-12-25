@@ -26,8 +26,10 @@ public class Test3 {
             } finally {
                 // finally语句会在return之前执行
                 System.out.println("finally语句：" + this.value);
+                // 根据this的实际对象，调用实际的方法，并且不会影响try语句中return返回的值
                 this.setValue(value);
                 System.out.println(value);
+//                return value;
             }
             return value;
         }
