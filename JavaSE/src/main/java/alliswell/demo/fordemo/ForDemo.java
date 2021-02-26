@@ -1,5 +1,7 @@
 package alliswell.demo.fordemo;
 
+import java.text.SimpleDateFormat;
+
 /**
  * @Title: ForDemo
  * @Package alliswell.demo.fordemo
@@ -46,23 +48,26 @@ public class ForDemo {
         }
     }
 
-
+    /**
+     * {@link SimpleDateFormat#subParse} break parsing;
+     */
     public static void testBreakDoubleFor() {
         // 设置标签，在循环中可以直接break到这个标签
-        breakloop:
+//        breakloop:
         for (int i = 0; i < 10; i++) {
             System.out.println("i=" + i);
+            breakloop:
             for (int j = 0; j < 10; j++) {
-                System.out.println("j=" + j);
                 if (j == 1) {
                     break breakloop;
                 }
+                System.out.println("j=" + j);
             }
         }
     }
 
     public static void testReturnDoubleFor() {
-        // 设置标签，在循环中可以直接break到这个标签
+        // 设置标签，在循环中可以直接break到这个for标签
         for (int i = 0; i < 10; i++) {
             System.out.println("i=" + i);
             for (int j = 0; j < 10; j++) {

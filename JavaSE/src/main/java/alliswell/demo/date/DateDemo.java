@@ -17,6 +17,10 @@ package alliswell.demo.date;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -56,7 +60,7 @@ public class DateDemo {
         Date date1 = new Date();
         Date date11 = new Date(1000 * 1438725620L);// long类型转化成Date
         // 创建方式二：
-        Date date2 = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").parse("2016-10-19 1:00:00");// String类型转化为Date
+        Date date2 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse("2016-10-19 1:00:00");// String类型转化为Date
         // 格式"yyyy-mm-dd hh:mm:ss EE"解析日期时间"2016-10-19 1:00:00"会异常
 //        Date date21 = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss EE").parse("2016-10-19 1:00:00");
         // 创建方式三：
@@ -70,55 +74,84 @@ public class DateDemo {
         Date date5 = calendar.getTime();
 
         String strDate2 = "2016-10-19 1:00:00 星期二";
-        // 定义日期时间显示格式
-        DateFormat dateFormat1 = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        DateFormat dateFormat2 = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss EE");
+        /**
+         * 定义日期时间显示格式
+         * {@link java.text.DateFormatSymbols}
+         */
+        DateFormat dateFormat1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        DateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss EE");
         //产生一个指定国家指定长度的日期格式，长度不同，显示的日期完整性也不同
         DateFormat dateFormat3 = DateFormat.getDateInstance(DateFormat.FULL, Locale.CHINA);
         DateFormat dateFormat4 = new SimpleDateFormat("yyyy年MM月dd日 hh时mm分ss秒 EE", Locale.CHINA);
         DateFormat dateFormat5 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss EEEE", Locale.US);
+        //ww:WEEK_OF_YEAR
+        // u:DAY_OF_WEEK
+        DateFormat dateFormat6 = new SimpleDateFormat("YYYY-'W'ww-u", Locale.US);
 
         // 按照日期格式显示，其实也就是将Date类型转化为String类型
-        System.out.println("---------");
+        System.out.println("----1-----");
         System.out.println(dateFormat1.format(date1));
         System.out.println(dateFormat1.format(date11));
         System.out.println(dateFormat1.format(date2));
         System.out.println(dateFormat1.format(date3));
         System.out.println(dateFormat1.format(date4));
         System.out.println(dateFormat1.format(date5));
-        System.out.println("---------");
+        System.out.println("----2-----");
         System.out.println(dateFormat2.format(date1));
         System.out.println(dateFormat2.format(date11));
         System.out.println(dateFormat2.format(date2));
         System.out.println(dateFormat2.format(date3));
         System.out.println(dateFormat2.format(date4));
         System.out.println(dateFormat2.format(date5));
-        System.out.println("---------");
+        System.out.println("----3-----");
         System.out.println(dateFormat3.format(date1));
         System.out.println(dateFormat3.format(date11));
         System.out.println(dateFormat3.format(date2));
         System.out.println(dateFormat3.format(date3));
         System.out.println(dateFormat3.format(date4));
         System.out.println(dateFormat3.format(date5));
-        System.out.println("---------");
+        System.out.println("----4-----");
         System.out.println(dateFormat4.format(date1));
         System.out.println(dateFormat4.format(date11));
         System.out.println(dateFormat4.format(date2));
         System.out.println(dateFormat4.format(date3));
         System.out.println(dateFormat4.format(date4));
         System.out.println(dateFormat4.format(date5));
-        System.out.println("---------");
+        System.out.println("----5-----");
         System.out.println(dateFormat5.format(date1));
         System.out.println(dateFormat5.format(date11));
         System.out.println(dateFormat5.format(date2));
         System.out.println(dateFormat5.format(date3));
         System.out.println(dateFormat5.format(date4));
         System.out.println(dateFormat5.format(date5));
+        System.out.println("----6-----");
+        System.out.println(dateFormat6.format(date1));
+        System.out.println(dateFormat6.format(date11));
+        System.out.println(dateFormat6.format(date2));
+        System.out.println(dateFormat6.format(date3));
+        System.out.println(dateFormat6.format(date4));
+        System.out.println(dateFormat6.format(date5));
         System.out.println("---------");
         long cTime = System.currentTimeMillis();
         long lTime = System.currentTimeMillis()-1L;
         System.out.println(dateFormat5.format(new Date(cTime)));
         System.out.println(dateFormat5.format(new Date(lTime)));
+        System.out.println("---------");
+        DateTimeFormatter dfDate = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+        System.out.println(dfDate.format(LocalDateTime.now()));
+        System.out.println(LocalDateTime.parse("2021-01-04T10:40:45.100"));
+
+        LocalDateTime ldt = LocalDateTime.now();
+        ZonedDateTime zdt = ldt.atZone(ZoneOffset.UTC); //you might use a different zone
+        System.out.println(zdt);
+
+        //获取秒数
+        Long second = LocalDateTime.parse("2021-01-04T10:40:45.100").toEpochSecond(ZoneOffset.of("+8"));
+        //获取毫秒数
+        Long milliSecond = LocalDateTime.parse("2021-01-04T10:40:45.100").toInstant(ZoneOffset.of("+8")).toEpochMilli();
+        System.out.println(second + ":" + milliSecond);
+        System.out.println(LocalDateTime.MIN);
+        System.out.println(LocalDateTime.MAX);
 
     }
 

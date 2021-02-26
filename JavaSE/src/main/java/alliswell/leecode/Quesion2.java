@@ -1,8 +1,6 @@
 package alliswell.leecode;
 
 
-import java.util.Stack;
-
 /**
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
  * <p>
@@ -26,17 +24,11 @@ public class Quesion2 {
         Solution solution = new Solution();
         ListNode result = null;
 
-        ListNode l1 = new ListNode(2);
-        l1.next = new ListNode(4);
-        l1.next.next = new ListNode(3);
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3, new ListNode(7))));
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(7))));
 
-        ListNode l2 = new ListNode(5);
-        l2.next = new ListNode(6);
-        l2.next.next = new ListNode(4);
         result = solution.addTwoNumbers(l1, l2);
-        System.out.println(result.val);
-        System.out.println(result.next.val);
-        System.out.println(result.next.next.val);
+        result.showNode();
     }
 
 
@@ -70,6 +62,31 @@ public class Quesion2 {
 
         ListNode(int x) {
             val = x;
+        }
+
+        ListNode(int x, ListNode next) {
+            this.val = x;
+            this.next = next;
+        }
+
+        /**
+         * 打印链表
+         */
+        public void showNode() {
+            if (this == null) {
+                System.out.println("node is null");
+                return;
+            }
+
+            if (this.next == null) {
+                System.out.print(this.val + "\n");
+            } else {
+                System.out.print(this.val + "->");
+            }
+
+            if (this.next != null) {
+                this.next.showNode();
+            }
         }
     }
 

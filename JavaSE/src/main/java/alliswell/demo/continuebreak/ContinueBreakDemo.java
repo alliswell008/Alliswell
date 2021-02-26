@@ -26,6 +26,8 @@ public class ContinueBreakDemo {
         continue_Fun();
         System.out.println("-----");
         break_Fun();
+        System.out.println("-----");
+        label_Fun();
     }
 
     public static void continue_Fun() {
@@ -50,5 +52,20 @@ public class ContinueBreakDemo {
             }
             System.out.println("i=" + i);
         }
+    }
+
+    public static void label_Fun() {
+        bk: // label
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i=" + i);
+            for (int j = 0; j < 10; j++) {
+                System.out.println("j=" + j);
+                if (j == 2) {
+                    System.out.println("bk");
+                    break bk;
+                }
+            }
+        }
+        System.out.println("bk over");
     }
 }

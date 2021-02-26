@@ -37,7 +37,7 @@
     
     - ​		选中光标上下行的代码 shift + ↑或↓
     
-    - ​		选中光标所在位置对应词的所有代码 ctrl + shift + alt + J
+    - ​		选中光标所在位置对应词的所有代码（Select All Occurrences） ctrl + shift + alt + J 
 
 7. 提取代码：
 

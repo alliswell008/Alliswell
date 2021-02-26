@@ -16,7 +16,11 @@ public class IntegerDemo {
         }
 
         if (in.equals(5)) {
-            System.out.println("Integer 5 == Integer 5");
+            System.out.println("Integer 5 == int 5");
+        }
+
+        if (new Integer(5) == 5) {
+            System.out.println("new Integer 5 == int 5");
         }
 
         System.out.println(in == 5);
