@@ -61,6 +61,7 @@ public class Quesion198 {
                 current = Math.max(next1, next2 + nums[i]);
                 next2 = next1;
                 next1 = current;
+                System.out.println(next1 + ", " +next2);
             }
             return current;
         }

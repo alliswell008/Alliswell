@@ -1,9 +1,11 @@
 package alliswell.demo.clone;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2018/3/1.
  */
-public class C implements Cloneable {
+public class C implements Cloneable, Serializable {
     String name;
 
 

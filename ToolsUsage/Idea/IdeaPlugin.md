@@ -30,3 +30,16 @@ Java Stream Debugger：将 Stream 的操作步骤可视化，非常有助于我�
 SequenceDiagram：根据代码调用链路自动生成时序图
 
 PlantUml：程序常用设计图
+
+GitToolBox：光标移动时自动提示提交信息
+
+JUnitGenerator V2.0：测试
+
+GenerateAllSetter：按下快捷键 alt+enter，自动生成set方法
+
+Statistic：分析项目代码行数，可以细化到每个类的量级
+
+Rainbow Brackets：彩虹代码块，更好看的代码高亮
+
+MyBatisCodeHelper-Pro：自动生成bean，dao，mapper.xml等文件
+
